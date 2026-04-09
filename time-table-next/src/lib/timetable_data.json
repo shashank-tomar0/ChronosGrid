@@ -1,0 +1,138 @@
+{
+  "ABC": {
+    "name": "Mr. ABC",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 6,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 403/CSE-27\n{ABC}/KC-305",
+        "12:20-01:10": "BCS 403/CSE-21\n{ABC}/KC-301",
+        "02:00-02:50": "BCS 403/CSE-21\n{ABC}/KC-301",
+        "03:40-04:30": "DSA TRAINING/ CSE24/KC 210\n{ABC, KLM}"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BCS 403/CSE-27\n{ABC}/KC-305",
+        "11:30-12:20": "DSA TRAINING/ CSE24/KC 210\n{ABC, KLM}",
+        "02:50-03:40": "BCS 403/CSE-27\n{ABC}/KC-305",
+        "03:40-04:30": "DSA TRAINING/ CSE21/KC 207\n{ABC, MNO}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "\"BCS 452\n{ABC,SP} /CSE-27/ KC-305\"",
+        "12:20-01:10": "BCS 403/CSE-21\n{ABC}/KC-301",
+        "02:50-03:40": "\"BCS 452\n{ABC,RA} /CSE-21/ KC-301\""
+      },
+      "THURSDAY": {
+        "02:00-02:50": "BCS 403/CSE-27\n{ABC}/KC-305",
+        "03:40-04:30": "BCS 403/CSE-21\n{ABC}/KC-301"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE21/KC 207\n{ABC, MNO}",
+        "11:30-12:20": "BCS 403/CSE-27\n{ABC}/KC-305",
+        "02:00-02:50": "BCS 403/CSE-21\n{ABC}/KC-301"
+      }
+    }
+  },
+  "DEF": {
+    "name": "DEF",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 8,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
+        "02:50-03:40": "BCS 401\n{DEF}/ CSE-29/ KC-307",
+        "03:40-04:30": "BCS 401\n{DEF}/ CSE-29/ KC-307"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE22/KC 304\n{DEF, VV}",
+        "09:40-10:30": "BCS 401\n{DEF}/ CSE-26/ KC-301",
+        "11:30-12:20": "BCS 401\n{DEF}/ CSE-26/ KC-301",
+        "02:50-03:40": "\"BCS 451\n{DEF,ACH}/CSE-26/ KC-301\""
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing )/3rd Year",
+        "02:50-03:40": "\"BCS 451\n{DEF,NG}/CSE-29/ KC-307\""
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 401\n{DEF}/ CSE-26/ KC-301",
+        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
+        "12:20-01:10": "BCS 401\n{DEF}/ CSE-26/ KC-301",
+        "02:50-03:40": "DSA TRAINING/ CSE22/KC 304\n{DEF, VV}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 401\n{DEF}/ CSE-29/ KC-307",
+        "02:00-02:50": "BCS 401\n{DEF}/ CSE-29/ KC-307"
+      }
+    }
+  },
+  "HIJ": {
+    "name": "HIJ",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 9,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "09:40-10:30": "FSD/CSE27/KC 304\n{HIJ, LS}",
+        "12:20-01:10": "FSD/CSE  24/KC 210\n{mno, HIJ}",
+        "02:00-02:50": "FSD/CSE11/KC 101\n{HIJ,mno}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
+        "09:40-10:30": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
+        "02:50-03:40": "BCS 452/CSE-17\n{MAG,HIJ}/KC-202"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
+        "12:20-01:10": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
+        "02:50-03:40": "FSD/CSE27/KC 304\n{HIJ, LS}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 452\n{HIJ,MAG}/ CSE-14/ KC-105",
+        "02:50-03:40": "FSD/CSE11/KC 101\n{HIJ,mno}"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "FSD/CSE  24/KC 210\n{mno, HIJ}",
+        "03:40-04:30": "BCS 403\n{HIJ}/ CSE-14/ KC-105"
+      }
+    }
+  },
+  "KLM": {
+    "name": "klm",
+    "department": "Computer Science and Engineering",
+    "lectures": 11,
+    "tutorials": 6,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "BCS 061/CSE-C\n{klm}/KC-402",
+        "12:20-01:10": "FSD/CSE12/KC 102\n{klm, SWT}",
+        "02:00-02:50": "BCS 402/CSE-19\n{klm}/KC-205"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 452\n{klm,ATD}/ CSE-19/ KC-205",
+        "11:30-12:20": "FSD/CSE12/KC 102\n{klm, SWT}",
+        "03:40-04:30": "BCS 402/CSE-19\n{klm}/KC-205"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 061/CSE-D\n{klm}/KC-404",
+        "09:40-10:30": "BCS 061/CSE-C\n{klm}/KC-402",
+        "12:20-01:10": "BCS 402/CSE-19\n{klm}/KC-205",
+        "02:00-02:50": "BCS 061/CSE-D\n{klm}/KC-404",
+        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, klm}"
+      },
+      "THURSDAY": {
+        "02:50-03:40": "BCS 402/CSE-19\n{klm}/KC-205"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 061/CSE-C\n{klm}/KC-402",
+        "11:30-12:20": "BCS 402/CSE-19\n{klm}/KC-205",
+        "02:00-02:50": "BCS 061/CSE-D\n{klm}/KC-404",
+        "03:40-04:30": "FSD/CSE13/KC 104\n{klm, SWT}"
+      }
+    }
+  }
+}
