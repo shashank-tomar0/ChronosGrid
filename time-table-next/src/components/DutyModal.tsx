@@ -47,35 +47,35 @@ export function DutyModal({ isOpen, onClose, onConfirm, onTeacherChange, teacher
             initial={{ opacity: 0, scale: 0.95, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
-            transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
-            className="relative w-full max-w-xl bg-surface border border-grid shadow-massive overflow-hidden"
+            transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] }}
+            className="relative w-full max-w-xl bg-ink/95 backdrop-blur-3xl border border-grid shadow-[0_0_40px_rgba(50,95,232,0.15)] rounded-2xl overflow-hidden"
           >
             {/* Header Accent Line */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-copper via-copper/30 to-transparent" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-copper to-magenta" />
 
-            <div className="p-10 md:p-14">
-              <div className="mb-10">
+            <div className="p-8 md:p-12 relative z-10">
+              <div className="mb-8">
                 <div className="flex items-center gap-3 mb-2">
-                   <div className="w-2 h-2 bg-copper rounded-full animate-pulse" />
-                   <span className="text-[10px] font-sans text-muted uppercase tracking-[0.4em] block">Administrative Directive</span>
+                   <div className="w-2 h-2 bg-copper rounded-sm animate-pulse shadow-[0_0_8px_rgba(50,95,232,0.8)]" />
+                   <span className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.2em] block">Resource Allocation Protocol</span>
                 </div>
-                <h2 className="text-5xl font-display text-cream uppercase leading-none tracking-tight">Assign <span className="text-copper italic">Duty</span></h2>
+                <h2 className="text-3xl font-display font-black text-cream uppercase leading-none tracking-tighter mt-3">Assign <span className="text-transparent bg-clip-text bg-gradient-to-r from-copper to-magenta">Task</span></h2>
               </div>
 
-              <div className="space-y-10">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10 py-8 border-y border-grid/60">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[9px] font-sans text-muted uppercase tracking-[0.3em]">Current Selection</label>
-                    <div className="font-display text-3xl uppercase text-cream tracking-tight group cursor-default">
+              <div className="space-y-8">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 py-6 border-y border-grid bg-surface/50 -mx-8 md:-mx-12 px-8 md:px-12">
+                  <div className="flex flex-col gap-1">
+                    <label className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em]">Target Entity</label>
+                    <div className="font-display font-bold text-xl uppercase text-cream tracking-tight cursor-default">
                        {teacher.name}
                     </div>
                   </div>
-                  <div className="flex flex-col md:items-end gap-2">
-                    <label className="text-[9px] font-sans text-muted uppercase tracking-[0.3em]">Temporal Slot</label>
-                    <div className="font-display text-xl uppercase text-copper flex items-center gap-3">
+                  <div className="flex flex-col md:items-end gap-1">
+                    <label className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em]">Temporal Slot</label>
+                    <div className="font-sans font-bold text-sm uppercase text-copper flex items-center gap-3 bg-copper/10 border border-copper/30 px-4 py-1.5 rounded-sm shadow-[0_0_10px_rgba(50,95,232,0.1)]">
                        <span>{day}</span>
-                       <span className="w-1.5 h-1.5 bg-grid/40 rounded-full" />
-                       <span className="text-cream italic">{slot}</span>
+                       <span className="w-1 h-1 bg-copper rounded-sm" />
+                       <span className="text-cream">{slot}</span>
                     </div>
                   </div>
                 </div>
@@ -83,18 +83,21 @@ export function DutyModal({ isOpen, onClose, onConfirm, onTeacherChange, teacher
                 {/* AI Recommendations */}
                 {recommendations.length > 0 && (
                   <div>
-                    <label className="text-[9px] font-sans text-muted uppercase tracking-[0.4em] block mb-6 px-1">Best-Fit Alternatives (AI Suggestions)</label>
-                    <div className="flex gap-4 overflow-x-auto pb-4 custom-scrollbar no-scrollbar">
+                    <label className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.2em] block mb-4 flex items-center gap-2">
+                      <span className="w-1 h-1 bg-copper animate-ping rounded-full inline-block"></span> AI Alternatives Detected
+                    </label>
+                    <div className="flex gap-3 overflow-x-auto pb-4 custom-scrollbar no-scrollbar">
                         {recommendations.map(rec => {
                            const status = getLoadStatus(rec.id);
                            return (
                              <button
                                key={rec.id}
                                onClick={() => onTeacherChange?.(rec)}
-                               className="flex-shrink-0 w-40 p-5 bg-ink/30 border border-grid hover:border-copper transition-all text-left group"
+                               className="flex-shrink-0 w-36 p-4 bg-surface/40 border border-grid hover:border-copper hover:bg-copper/5 transition-all text-left group rounded-xl shadow-sm relative overflow-hidden"
                              >
-                               <div className="text-xs font-display text-cream uppercase mb-2 group-hover:text-copper transition-colors truncate">{rec.name}</div>
-                               <div className={`text-[8px] font-sans uppercase tracking-[0.1em] ${status.color}`}>
+                               <div className="absolute top-0 left-0 w-1 h-full bg-grid group-hover:bg-copper transition-colors"></div>
+                               <div className="text-sm font-display font-bold text-cream uppercase mb-1 group-hover:text-copper transition-colors truncate pl-2">{rec.name}</div>
+                               <div className={`text-[10px] font-sans font-bold uppercase tracking-[0.1em] pl-2 ${status.color}`}>
                                  {status.label}
                                </div>
                              </button>
@@ -105,39 +108,43 @@ export function DutyModal({ isOpen, onClose, onConfirm, onTeacherChange, teacher
                 )}
 
                 <div className="relative group">
-                  <label className="text-[9px] font-sans text-muted uppercase tracking-[0.4em] block mb-4">Reason for Assignment</label>
-                  <input
-                    type="text"
-                    autoFocus
-                    value={reason}
-                    onChange={(e) => setReason(e.target.value)}
-                    onFocus={(e) => e.target.select()}
-                    onKeyDown={(e) => e.key === "Enter" && handleConfirm()}
-                    className="w-full bg-ink/30 border-b border-grid py-5 text-2xl font-display text-cream focus:outline-none focus:border-copper transition-all placeholder:text-muted/20 pr-12 group-hover:bg-ink/50"
-                    placeholder="Enter reason..."
-                  />
+                  <label className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] block mb-3">Task Parameter</label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      autoFocus
+                      value={reason}
+                      onChange={(e) => setReason(e.target.value)}
+                      onFocus={(e) => e.target.select()}
+                      onKeyDown={(e) => e.key === "Enter" && handleConfirm()}
+                      className="w-full bg-surface/50 border border-grid rounded-xl px-5 py-4 text-lg font-display font-bold text-cream focus:outline-none focus:border-copper focus:bg-copper/5 focus:shadow-[0_0_15px_rgba(50,95,232,0.15)] transition-all placeholder:text-muted/50"
+                      placeholder="Initialize description..."
+                    />
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-copper rounded-sm animate-pulse"></div>
+                  </div>
                 </div>
 
-                <div className="flex gap-4 pt-6">
+                <div className="flex gap-4 pt-4">
                   <button
                     onClick={handleConfirm}
-                    className="flex-[2] bg-copper hover:bg-copper/80 transition-all text-ink uppercase tracking-[0.3em] font-sans font-black text-[11px] py-6 shadow-xl hover:shadow-copper/20"
+                    className="flex-[2] bg-copper hover:bg-cream text-white hover:text-surface transition-all uppercase tracking-[0.2em] font-sans font-black text-xs py-4 rounded-xl shadow-[0_0_15px_rgba(50,95,232,0.4)] hover:shadow-none"
                   >
-                    Confirm Duty
+                    Execute
                   </button>
                   <button
                     onClick={onClose}
-                    className="flex-1 border border-grid hover:border-muted transition-all text-muted hover:text-cream uppercase tracking-[0.3em] font-sans text-[11px] py-6"
+                    className="flex-1 border border-grid hover:border-magenta hover:text-magenta transition-all text-muted uppercase tracking-[0.2em] font-sans font-bold text-xs py-4 rounded-xl hover:bg-magenta/5"
                   >
-                    Discard
+                    Abort
                   </button>
                 </div>
               </div>
             </div>
 
             {/* Background Aesthetic */}
-            <div className="absolute -bottom-10 -right-10 pointer-events-none opacity-[0.03] select-none">
-              <span className="text-[14rem] font-display uppercase italic leading-none">Task</span>
+            <div className="absolute inset-0 bg-grid opacity-[0.15] pointer-events-none mix-blend-screen" />
+            <div className="absolute -bottom-20 -right-20 pointer-events-none opacity-[0.02] select-none blur-sm">
+              <span className="text-[12rem] font-display font-black uppercase leading-none">SYS</span>
             </div>
           </motion.div>
         </div>

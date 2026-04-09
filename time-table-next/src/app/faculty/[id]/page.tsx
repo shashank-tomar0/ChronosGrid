@@ -167,37 +167,31 @@ export default function FacultyDetailPage() {
 
         {/* Weekly Matrix Schedule */}
         <section className="bg-surface/20 border border-grid overflow-hidden rounded-sm">
-          <div className="grid grid-cols-1 md:grid-cols-[120px_1fr]">
-            {/* Sidebar with Time Slots */}
-            <div className="hidden md:flex flex-col border-r border-grid bg-ink/40">
-              <div className="h-20 border-b border-grid flex items-center justify-center">
-                 <Clock size={16} className="text-muted/40" />
-              </div>
-              {TIME_SLOTS.map(slot => (
-                <div key={slot} className="h-24 border-b last:border-0 border-grid flex items-center justify-center p-4">
-                  <span className="text-[9px] font-sans text-muted uppercase vertical-text tracking-widest rotate-180">
-                    {slot}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Weekly Grid */}
-            <div className="flex flex-col overflow-x-auto">
-              {/* Day Headers with Dates */}
-              <div className="flex border-b border-grid bg-surface/40">
-                {DAYS.map(day => (
-                  <div key={day} className="flex-1 p-4 text-center border-r last:border-0 border-grid">
-                    <span className="text-[11px] font-sans text-cream uppercase tracking-[0.3em] block">{day}</span>
-                    <span className="text-[9px] font-sans text-muted/60 uppercase tracking-widest">{getDayDate(day)}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Slot Rows */}
-              <div className="flex flex-col">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse" style={{ tableLayout: 'fixed' }}>
+              <colgroup>
+                <col style={{ width: '120px' }} />
+                {DAYS.map(day => <col key={day} />)}
+              </colgroup>
+              <thead>
+                <tr className="border-b border-grid bg-surface/40">
+                  <th className="p-4 border-r border-grid text-center bg-ink/40">
+                    <Clock size={16} className="text-muted/40 mx-auto" />
+                  </th>
+                  {DAYS.map(day => (
+                    <th key={day} className="p-4 border-r last:border-r-0 border-grid text-center">
+                      <span className="text-[11px] font-sans text-cream uppercase tracking-[0.3em] block">{day}</span>
+                      <span className="text-[9px] font-sans text-muted/60 uppercase tracking-widest">{getDayDate(day)}</span>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
                 {TIME_SLOTS.map(slot => (
-                  <div key={slot} className="flex border-b last:border-0 border-grid group">
+                  <tr key={slot} className="border-b last:border-0 border-grid">
+                    <td className="p-3 border-r border-grid bg-ink/40 text-center align-middle">
+                      <span className="font-mono text-xs text-muted font-semibold">{slot}</span>
+                    </td>
                     {DAYS.map(day => {
                       const subject = teacher.schedule[day]?.[slot];
                       const parsed = subject ? parseSubject(subject) : null;
@@ -206,24 +200,24 @@ export default function FacultyDetailPage() {
                       const isOccupied = !!subject || hasDuty;
                       
                       return (
-                        <div 
+                        <td 
                           key={`${day}-${slot}`} 
                           onClick={() => handleSlotClick(day, slot, isOccupied)}
-                          className={`flex-1 h-24 p-4 border-r last:border-0 border-grid transition-all ${isOccupied ? 'cursor-default' : 'cursor-pointer hover:bg-surface2/40'} ${
+                          className={`p-3 border-r last:border-r-0 border-grid align-middle transition-all h-20 ${isOccupied ? 'cursor-default' : 'cursor-pointer hover:bg-surface2/40'} ${
                             subject ? 'bg-ink/60' : hasDuty ? 'bg-copper/10 border-l-2 border-l-copper/50' : 'bg-transparent'
                           }`}
                         >
                           {subject && parsed ? (
-                            <div className="flex flex-col h-full justify-between">
+                            <div className="flex flex-col gap-1">
                               <span className="text-[10px] font-display text-copper uppercase tracking-wider line-clamp-2 leading-tight">
                                 {parsed.short}
                               </span>
-                              <span className="text-[8px] font-sans text-muted uppercase tracking-widest truncate">
+                              <span className="text-[8px] font-sans text-muted uppercase tracking-widest">
                                 SCHEDULED
                               </span>
                             </div>
                           ) : hasDuty ? (
-                            <div className="flex flex-col h-full justify-between">
+                            <div className="flex flex-col gap-1">
                                <span className="text-[10px] font-display text-copper uppercase tracking-widest leading-tight">
                                  {dutyInfo?.reason || 'Duty'}
                                </span>
@@ -232,19 +226,19 @@ export default function FacultyDetailPage() {
                                </span>
                             </div>
                           ) : (
-                            <div className="flex flex-col h-full justify-end group/slot">
-                              <span className="text-[8px] font-sans text-copper/30 uppercase tracking-widest group-hover/slot:text-copper transition-colors">
+                            <div className="flex flex-col justify-end">
+                              <span className="text-[8px] font-sans text-copper/30 uppercase tracking-widest hover:text-copper transition-colors">
                                 Free
                               </span>
                             </div>
                           )}
-                        </div>
+                        </td>
                       );
                     })}
-                  </div>
+                  </tr>
                 ))}
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
         </section>
 

@@ -1,6 +1,6 @@
 # ChronosGrid 🗓️
 
-**ChronosGrid** is an advanced college timetable management system designed to streamline faculty scheduling, duty allocations, and workload optimization.
+**ABES GO** is an advanced college timetable management system designed to streamline faculty scheduling, duty allocations, and workload optimization.
 
 Built with a hybrid architecture of Python and Next.js, it transforms complex Excel schedules into an interactive, date-aware dashboard for administrators and faculty.
 
