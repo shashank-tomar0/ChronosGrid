@@ -47,7 +47,7 @@ export function CinematicLoader() {
     <motion.div
       initial={{ y: "0%" }}
       animate={{ y: isLoaded ? "-100%" : "0%" }}
-      transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+      transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] as any }}
       className="fixed inset-0 z-[10000] bg-ink flex flex-col justify-end p-8 lg:p-16 pointer-events-none"
     >
       <div className="flex justify-between items-end overflow-hidden pb-4">

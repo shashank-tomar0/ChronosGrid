@@ -47,7 +47,7 @@ export function DutyModal({ isOpen, onClose, onConfirm, onTeacherChange, teacher
             initial={{ opacity: 0, scale: 0.95, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
-            transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] }}
+            transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] as any }}
             className="relative w-full max-w-xl bg-ink/95 backdrop-blur-3xl border border-grid shadow-[0_0_40px_rgba(50,95,232,0.15)] rounded-2xl overflow-hidden"
           >
             {/* Header Accent Line */}

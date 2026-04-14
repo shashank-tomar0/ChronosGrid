@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { TEACHERS, TIME_SLOTS, DAYS, Day, TimeSlot, parseSubject, getTotalFreeSlots } from "@/lib/data";
@@ -8,7 +8,7 @@ import { useDuties, getMonday, getWeekKey, getDateForDay } from "@/hooks/useDuti
 import { DutyModal } from "@/components/DutyModal";
 import { ChevronLeft, ChevronRight, CalendarDays, Trash2, XCircle } from "lucide-react";
 
-export default function FacultyPage() {
+function FacultyPageContent() {
   const [mounted, setMounted] = useState(false);
   const searchParams = useSearchParams();
   const idParam = searchParams.get("id");
@@ -74,7 +74,7 @@ export default function FacultyPage() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as any } }
   };
 
   const handleCellClick = (day: Day, slot: TimeSlot) => {
@@ -459,5 +459,19 @@ export default function FacultyPage() {
         </div>
       </motion.div>
     </main>
+  );
+}
+
+export default function FacultyPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-ink flex items-center justify-center">
+        <div className="text-copper font-display font-black text-2xl animate-pulse tracking-widest uppercase">
+          Initializing Protocol...
+        </div>
+      </div>
+    }>
+      <FacultyPageContent />
+    </Suspense>
   );
 }

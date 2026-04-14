@@ -74,7 +74,7 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] as any }}
             className="fixed inset-0 z-[100] bg-ink/95 backdrop-blur-3xl text-cream p-6 border-b border-grid flex flex-col"
           >
             {/* Overlay Header */}

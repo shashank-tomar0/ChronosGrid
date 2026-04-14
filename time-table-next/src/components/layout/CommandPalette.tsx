@@ -66,7 +66,7 @@ export function CommandPalette() {
             initial={{ opacity: 0, scale: 0.95, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
-            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] as any }}
             className="relative w-full max-w-xl bg-surface border border-grid shadow-2xl overflow-hidden"
           >
             <div className="p-4 border-b border-grid flex items-center gap-4">
