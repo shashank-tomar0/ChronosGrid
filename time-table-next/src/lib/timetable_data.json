@@ -1,138 +1,2710 @@
 {
-  "ABC": {
-    "name": "Mr. ABC",
+  "PKS": {
+    "name": "Prof (Dr) Pankaj Sharma(PKS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 3,
+    "tutorials": 4,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "ECE-B APPLIED AI {MM, PKS }",
+        "01:10-02:00": "LUNCH"
+      },
+      "TUESDAY": {},
+      "WEDNESDAY": {},
+      "THURSDAY": {
+        "12:20-01:10": "BCS 061/CSE-A\n{PKS}\n(KC-209)"
+      },
+      "FRIDAY": {}
+    }
+  },
+  "BK": {
+    "name": "Ms. Babli Kumari(BK)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 3,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BCS 603/CSE-A\n{BK}/KC-209",
+        "02:50-03:40": "BCS 603/CSE-A\n{BK}/KC-209"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 452\n{SPG,BK}/ KC-305",
+        "02:50-03:40": "BCS 603/CSE-A\n{BK}/KC-209",
+        "03:40-04:30": "BCS 603/CSE-A\n{BK}/KC-209"
+      },
+      "THURSDAY": {
+        "02:00-02:50": "BCS 603/CSE-A\n{BK}/KC-209"
+      },
+      "FRIDAY": {
+        "12:20-01:10": "BCS 603/CSE-A\n{BK}/KC-209",
+        "02:00-02:50": "BCS 603/CSE-A\n{BK}/KC-209",
+        "02:50-03:40": "BCS 653/KC-610/CS-D\n{PSG,BK}"
+      }
+    }
+  },
+  "MS": {
+    "name": "Prof.(Dr.) Manu Singh(MS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401",
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 651/KC-404/CSE-D\n{ SJ, MS }"
+      },
+      "TUESDAY": {
+        "02:00-02:50": "25MCS 042         {MS}",
+        "02:50-03:40": "25MCS 042         {MS}"
+      },
+      "WEDNESDAY": {
+        "02:00-02:50": "25MCS 042         {MS}"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401"
+      }
+    }
+  },
+  "AKD": {
+    "name": "Prof.(Dr.) Anil Kr Dubey",
+    "department": "Computer Science and Engineering",
+    "lectures": 9,
+    "tutorials": 5,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 061/CSE-B\n{AKD}/KC-401",
+        "03:40-04:30": "BCS 061/CS-D\n{AKD}/KC-610"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BCS 061/CSE-B\n{AKD}/KC-401",
+        "02:00-02:50": "BCS 061/CS-D\n{AKD}/KC-610"
+      },
+      "WEDNESDAY": {
+        "02:00-02:50": "BCS 061/CS-D\n{AKD}/KC-610"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "AIML+DS/CS-II nd Yr",
+        "02:00-02:50": "BCS 061/CSE-B\n{AKD}/KC-401",
+        "03:40-04:30": "25MCS 031         {AKD}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 061/CS-D\n{AKD}/KC-610",
+        "01:10-02:00": "25MCS 031         {AKD}"
+      }
+    }
+  },
+  "CHM": {
+    "name": "Mr. Chandrahas Mishra(CHM)",
     "department": "Computer Science and Engineering",
     "lectures": 10,
     "tutorials": 6,
     "practicals": 4,
     "schedule": {
       "MONDAY": {
-        "08:50-09:40": "BCS 403/CSE-27\n{ABC}/KC-305",
-        "12:20-01:10": "BCS 403/CSE-21\n{ABC}/KC-301",
-        "02:00-02:50": "BCS 403/CSE-21\n{ABC}/KC-301",
-        "03:40-04:30": "DSA TRAINING/ CSE24/KC 210\n{ABC, KLM}"
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "02:00-02:50": "BCS 403/CSE-25\n{CHM}/KC-301",
+        "02:50-03:40": "BCS 403/CSE-28\n{CHM}/KC-305"
       },
       "TUESDAY": {
-        "09:40-10:30": "BCS 403/CSE-27\n{ABC}/KC-305",
-        "11:30-12:20": "DSA TRAINING/ CSE24/KC 210\n{ABC, KLM}",
-        "02:50-03:40": "BCS 403/CSE-27\n{ABC}/KC-305",
-        "03:40-04:30": "DSA TRAINING/ CSE21/KC 207\n{ABC, MNO}"
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "10:40-11:30": "BCS 403/CSE-28\n{CHM}/KC-305",
+        "02:00-02:50": "BCS 403/CSE-25\n{CHM}/KC-301"
       },
       "WEDNESDAY": {
-        "08:50-09:40": "\"BCS 452\n{ABC,SP} /CSE-27/ KC-305\"",
-        "12:20-01:10": "BCS 403/CSE-21\n{ABC}/KC-301",
-        "02:50-03:40": "\"BCS 452\n{ABC,RA} /CSE-21/ KC-301\""
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "03:40-04:30": "BCS 403/CSE-25\n{CHM}/KC-301"
       },
       "THURSDAY": {
-        "02:00-02:50": "BCS 403/CSE-27\n{ABC}/KC-305",
-        "03:40-04:30": "BCS 403/CSE-21\n{ABC}/KC-301"
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "10:40-11:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "01:10-02:00": "Dr",
+        "02:00-02:50": "BCS 403/CSE-28\n{CHM}/KC-305",
+        "02:50-03:40": "BCS 403/CSE-28\n{CHM}/KC-305",
+        "03:40-04:30": "BCS 403/CSE-25\n{CHM}/KC-301"
       },
       "FRIDAY": {
-        "08:50-09:40": "DSA TRAINING/ CSE21/KC 207\n{ABC, MNO}",
-        "11:30-12:20": "BCS 403/CSE-27\n{ABC}/KC-305",
-        "02:00-02:50": "BCS 403/CSE-21\n{ABC}/KC-301"
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "02:00-02:50": "BCS 403/CSE-25\n{CHM}/KC-301",
+        "03:40-04:30": "BCS 403/CSE-28\n{CHM}/KC-305"
       }
     }
   },
-  "DEF": {
-    "name": "DEF",
+  "SG": {
+    "name": "Dr. Shruti Gupta(SG)",
     "department": "Computer Science and Engineering",
-    "lectures": 8,
-    "tutorials": 8,
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING",
+        "02:50-03:40": "BCS603/CS-A\n{SG}/KC-405"
+      },
+      "TUESDAY": {
+        "01:10-02:00": "25MCS 202         {SG}",
+        "02:00-02:50": "BCS603/CS-A\n{SG}/KC-405"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS603/CS-A\n{SG}/KC-405",
+        "01:10-02:00": "25MCS 202         {SG}",
+        "02:50-03:40": "25MCS 251 {SG}"
+      },
+      "THURSDAY": {
+        "12:20-01:10": "BCS603/CS-A\n{SG}/KC-405",
+        "02:00-02:50": "BCS603/CS-A\n{SG}/KC-405"
+      },
+      "FRIDAY": {
+        "12:20-01:10": "BCS603/CS-A\n{SG}/KC-405",
+        "03:40-04:30": "25MCS 202         {SG}"
+      }
+    }
+  },
+  "DK": {
+    "name": "Mr. Dhaneshwar Kumar(DK)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 12,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK,PSG)/ CS-B"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "10:40-11:30": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "02:00-02:50": "BCS 403\n{DK}/ CSE-12/ KC-102"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "02:00-02:50": "BCS 403\n{DK}/ CSE-12/ KC-102"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "10:40-11:30": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "02:50-03:40": "BCS 403\n{DK}/ CSE-12/ KC-102",
+        "03:40-04:30": "BCS 403\n{DK}/ CSE-12/ KC-102"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "03:40-04:30": "BCS 403\n{DK}/ CSE-12/ KC-102"
+      }
+    }
+  },
+  "SK": {
+    "name": "Ms. Shruti Keshari (SK)",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 3,
     "practicals": 4,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
-        "02:50-03:40": "BCS 401\n{DEF}/ CSE-29/ KC-307",
-        "03:40-04:30": "BCS 401\n{DEF}/ CSE-29/ KC-307"
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "02:50-03:40": "\"BCS 403/CSE-27\n{SK}/KC-304\"",
+        "03:40-04:30": "\"BCS 403/CSE-27\n{SK}/KC-304\""
       },
       "TUESDAY": {
-        "08:50-09:40": "DSA TRAINING/ CSE22/KC 304\n{DEF, VV}",
-        "09:40-10:30": "BCS 401\n{DEF}/ CSE-26/ KC-301",
-        "11:30-12:20": "BCS 401\n{DEF}/ CSE-26/ KC-301",
-        "02:50-03:40": "\"BCS 451\n{DEF,ACH}/CSE-26/ KC-301\""
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "10:40-11:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "02:50-03:40": "\"BCS 403/CSE-27\n{SK}/KC-304\""
       },
       "WEDNESDAY": {
-        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing )/3rd Year",
-        "02:50-03:40": "\"BCS 451\n{DEF,NG}/CSE-29/ KC-307\""
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "02:50-03:40": "BCS 402\n{SK}/ CSE-14/ KC-105",
+        "03:40-04:30": "BCS 402\n{SK}/ CSE-14/ KC-105"
       },
       "THURSDAY": {
-        "08:50-09:40": "BCS 401\n{DEF}/ CSE-26/ KC-301",
-        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
-        "12:20-01:10": "BCS 401\n{DEF}/ CSE-26/ KC-301",
-        "02:50-03:40": "DSA TRAINING/ CSE22/KC 304\n{DEF, VV}"
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "10:40-11:30": "\"BCS 403/CSE-27\n{SK}/KC-304\"",
+        "12:20-01:10": "BCS 402\n{SK}/ CSE-14/ KC-105",
+        "02:00-02:50": "BCS 402\n{SK}/ CSE-14/ KC-105",
+        "03:40-04:30": "\"BCS 403/CSE-27\n{SK}/KC-304\""
       },
       "FRIDAY": {
-        "08:50-09:40": "BCS 401\n{DEF}/ CSE-29/ KC-307",
-        "02:00-02:50": "BCS 401\n{DEF}/ CSE-29/ KC-307"
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "02:50-03:40": "BCS 402\n{SK}/ CSE-14/ KC-105",
+        "03:40-04:30": "BCS 402\n{SK}/ CSE-14/ KC-105"
       }
     }
   },
-  "HIJ": {
-    "name": "HIJ",
+  "RR": {
+    "name": "Prof .(Dr.)Rohit Rastogi(RR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 2,
+    "tutorials": 3,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING",
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 453\n{AA, RR}/CSE-21/ KC-207"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "BCC 401 \n{RR}/ CSE-17/ KC-202"
+      },
+      "WEDNESDAY": {},
+      "THURSDAY": {
+        "08:50-09:40": "Ms.",
+        "10:40-11:30": "DOMAIN TRAINING"
+      },
+      "FRIDAY": {
+        "02:50-03:40": "BCS 453\n{DKM, RR}/CSE-17/ KC-202"
+      }
+    }
+  },
+  "RRN": {
+    "name": "Prof .(Dr.)Rakesh Ranjan(RRN)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 3,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING / KC-305",
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "25MCS 201         {RRN}",
+        "03:40-04:30": "25MCS 201         {RRN}"
+      },
+      "TUESDAY": {
+        "03:40-04:30": "25MCS 201         {RRN}"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 402/CSE-11\n{RRN}/KC-101",
+        "02:00-02:50": "BCS 402/CSE-11\n{RRN}/KC-101"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCS 402/CSE-11\n{RRN}/KC-101",
+        "02:00-02:50": "BCS 402/CSE-11\n{RRN}/KC-101"
+      },
+      "FRIDAY": {
+        "09:40-10:30": "BCS 402/CSE-11\n{RRN}/KC-101",
+        "10:40-11:30": "BCS 402/CSE-11\n{RRN}/KC-101",
+        "11:30-12:20": "8"
+      }
+    }
+  },
+  "KA": {
+    "name": "Dr. Kadambari Agarwal (KA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "01:10-02:00": "LUNCH",
+        "02:00-02:50": "BCS 401/CSE-18\n{KA}/KC-204"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BCS 401/CSE-18\n{KA}/KC-204",
+        "02:50-03:40": "BCS 451\n{KA, NS}/CSE-18/ KC-204"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE12/KC 102\n{KA, Manish (TAT)}",
+        "11:30-12:20": "BCS 401/CSE-18\n{KA}/KC-204",
+        "02:50-03:40": "BCS 451\n{AR,KA}/CSE-19/ KC-205"
+      },
+      "THURSDAY": {
+        "11:30-12:20": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 401/CSE-18\n{KA}/KC-204",
+        "02:00-02:50": "BCS 401/CSE-18\n{KA}/KC-204"
+      }
+    }
+  },
+  "AT": {
+    "name": "Prof (Dr) Anshul Tickoo(AT)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 4,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "ECE-C   APPLIED AI {AV, AT }",
+        "01:10-02:00": "LUNCH"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 451\n{NG,AT} /CSE-28/ KC-305",
+        "02:50-03:40": "BCS 451\n{AT, BS}/CSE-13/ KC-104"
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "BCS 401\n{AT}/ CSE-13/ KC-104",
+        "10:40-11:30": "BCS 401\n{AT}/ CSE-13/ KC-104",
+        "02:50-03:40": "AIML-A  APPLIED AI {AT,DM }"
+      },
+      "THURSDAY": {},
+      "FRIDAY": {
+        "12:20-01:10": "BCS 401\n{AT}/ CSE-13/ KC-104",
+        "02:00-02:50": "BCS 401\n{AT}/ CSE-13/ KC-104"
+      }
+    }
+  },
+  "JJ": {
+    "name": "Dr. Jitendra Jindal (JJ)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 6,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 401/CSE-26\n{JJ}/KC-302",
+        "03:40-04:30": "DSA TRAINING/ CSE13/KC 104\n {JJ, KO}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 451\n{JJ,BS} /CSE-26/ KC-302",
+        "02:50-03:40": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 401/CSE-26\n{JJ}/KC-302",
+        "10:40-11:30": "BCS 401/CSE-26\n{JJ}/KC-302",
+        "02:50-03:40": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}",
+        "03:40-04:30": "BCS 401/CSE-26\n{JJ}/KC-302"
+      }
+    }
+  },
+  "SS": {
+    "name": "Dr. Shanu Sharma(SS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 0,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "BCS 602/CS-D\n{SS}/KC-610"
+      },
+      "TUESDAY": {
+        "02:50-03:40": "BCS 652/KC-610/CS-D\n{SS,AY}"
+      },
+      "WEDNESDAY": {
+        "12:20-01:10": "BCS 602/CS-D\n{SS}/KC-610"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 602/CS-D\n{SS}/KC-610",
+        "02:00-02:50": "25MCS 052         {SS}",
+        "02:50-03:40": "25MCS 052         {SS}"
+      },
+      "FRIDAY": {
+        "09:40-10:30": "BCS 602/CS-D\n{SS}/KC-610",
+        "10:40-11:30": "BCS 602/CS-D\n{SS}/KC-610",
+        "02:50-03:40": "25MCS 052         {SS}"
+      }
+    }
+  },
+  "AKS": {
+    "name": "Mr. Akhilesh Kumar Srivastava (AKS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 12,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/ CSE-B"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "11:30-12:20": "BCS 402\n\n{AKS}/ CSE-23/ KC-209",
+        "12:20-01:10": "BCS 402\n\n{AKS}/ CSE-23/ KC-209",
+        "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
+      }
+    }
+  },
+  "SA": {
+    "name": "Dr. Sandhya Avasthi (SA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 5,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 403/CSE-29\n{SA}/KC-307",
+        "09:40-10:30": "BCS 403/CSE-29\n{SA}/KC-307",
+        "01:10-02:00": "25MCS252 {Seminar-1}/{SA}",
+        "03:40-04:30": "BCS 403/CSE-11\n{SA}/KC-101"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 403/CSE-11\n{SA}/KC-101",
+        "02:00-02:50": "BCS 403/CSE-11\n{SA}/KC-101",
+        "03:40-04:30": "BCS 403/CSE-11\n{SA}/KC-101"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 403/CSE-11\n{SA}/KC-101",
+        "12:20-01:10": "BCS 403/CSE-11\n{SA}/KC-101",
+        "02:50-03:40": "BCS 452/KC-101/CSE-11\n{SA,SL}"
+      },
+      "THURSDAY": {
+        "02:00-02:50": "BCS 403/CSE-29\n{SA}/KC-307",
+        "02:50-03:40": "BCS 403/CSE-29\n{SA}/KC-307"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "\"BCS 452\n{SA,ATD} /CSE-29/ KC-307\"",
+        "03:40-04:30": "BCS 403/CSE-29\n{SA}/KC-307"
+      }
+    }
+  },
+  "TNU": {
+    "name": "Ms. Tanushree (TNU)",
+    "department": "Computer Science and Engineering",
+    "lectures": 15,
+    "tutorials": 2,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 402/CSE-15\n{TNU}/KC-107",
+        "09:40-10:30": "BCS 402/CSE-15\n{TNU}/KC-107",
+        "02:50-03:40": "BCS 402/CSE-16\n{TNU}/KC-108"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BCS 402/CSE-29\n{TNU}/KC-307",
+        "11:30-12:20": "BCS 402/CSE-16\n{TNU}/KC-108",
+        "12:20-01:10": "BCS 402/CSE-15\n{TNU}/KC-107",
+        "02:00-02:50": "BCS 402/CSE-15\n{TNU}/KC-107",
+        "02:50-03:40": "BCS 402/CSE-15\n{TNU}/KC-107"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 453\n{VPS,TNU}/CSE-27/ KC-304",
+        "11:30-12:20": "BCS 402/CSE-15\n{TNU}/KC-107",
+        "12:20-01:10": "BCS 402/CSE-15\n{TNU}/KC-107",
+        "02:00-02:50": "BCS 402/CSE-29\n{TNU}/KC-307",
+        "03:40-04:30": "BCS 402/CSE-16\n{TNU}/KC-108"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 402/CSE-16\n{TNU}/KC-108",
+        "11:30-12:20": "BCS 402/CSE-29\n{TNU}/KC-307",
+        "12:20-01:10": "BCS 402/CSE-29\n{TNU}/KC-307",
+        "02:00-02:50": "BCS 402/CSE-16\n{TNU}/KC-108"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 402/CSE-29\n{TNU}/KC-307",
+        "11:30-12:20": "BCS 402/CSE-16\n{TNU}/KC-108",
+        "02:50-03:40": "BCS 402/CSE-29\n{TNU}/KC-307"
+      }
+    }
+  },
+  "NG": {
+    "name": "Dr. Neha Gupta(NG)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 0,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "09:40-10:30": "BCS 401/CSE-17\n{NG}/KC-202",
+        "03:40-04:30": "BCS 401/CSE-28\n{NG}/KC-305"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 451\n{NG,AT} /CSE-28/ KC-305",
+        "12:20-01:10": "BCS 401/CSE-17\n{NG}/KC-202"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 451\n{NG,APS}/ CSE-17/ KC-202",
+        "02:50-03:40": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\""
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCS 401/CSE-28\n{NG}/KC-305",
+        "10:40-11:30": "BCS 401/CSE-28\n{NG}/KC-305"
+      },
+      "FRIDAY": {
+        "09:40-10:30": "BCS 401/CSE-17\n{NG}/KC-202",
+        "02:00-02:50": "BCS 401/CSE-17\n{NG}/KC-202",
+        "02:50-03:40": "BCS 401/CSE-28\n{NG}/KC-305"
+      }
+    }
+  },
+  "SOS": {
+    "name": "Dr. Somya Srivastava (SOS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 15,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BOE 410\n{SOS}/ CSE-17/ KC-202",
+        "09:40-10:30": "\"BCS 402/CSE-27\n{SOS}/KC-304\"",
+        "03:40-04:30": "BOE 410\n{SOS}/ CSE-16/ KC-108"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BOE 410\n{SOS}/ CSE-17/ KC-202",
+        "09:40-10:30": "BOE 410\n{SOS}/ CSE-17/ KC-202",
+        "11:30-12:20": "\"BCS 402/CSE-27\n{SOS}/KC-304\"",
+        "02:50-03:40": "BOE 410\n{SOS}/ CSE-16/ KC-108",
+        "03:40-04:30": "BOE 410\n{SOS}/ CSE-16/ KC-108"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BOE 410\n{SOS}/ CSE-16/ KC-108",
+        "10:40-11:30": "\"BCS 402/CSE-27\n{SOS}/KC-304\"",
+        "12:20-01:10": "\"BCS 402/CSE-27\n{SOS}/KC-304\""
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BOE 410\n{SOS}/ CSE-17/ KC-202",
+        "10:40-11:30": "BOE 410\n{SOS}/ CSE-17/ KC-202",
+        "11:30-12:20": "BOE 410\n{SOS}/ CSE-16/ KC-108"
+      },
+      "FRIDAY": {
+        "09:40-10:30": "\"BCS 402/CSE-27\n{SOS}/KC-304\"",
+        "10:40-11:30": "BOE 410\n{SOS}/ CSE-17/ KC-202",
+        "12:20-01:10": "BOE 410\n{SOS}/ CSE-16/ KC-108",
+        "02:50-03:40": "\"BCS 402/CSE-27\n{SOS}/KC-304\""
+      }
+    }
+  },
+  "AA": {
+    "name": "Dr. Anshika Agarwal",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 3,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 453\n{AA, RR}/CSE-21/ KC-207"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BCS 401\n{AA}/ CSE-24/ KC-210",
+        "02:50-03:40": "BCS 453\n{AA,VIC}/CSE-26/ KC-302"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCC 401\n{AA}/ CSE-21/ KC-207",
+        "12:20-01:10": "BCS 401\n{AA}/ CSE-24/ KC-210"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCC 401\n{AA}/ CSE-21/ KC-207",
+        "10:40-11:30": "BCS 401\n{AA}/ CSE-24/ KC-210",
+        "02:50-03:40": "BCS 451\n{AA, NS}/CSE-24/ KC-210"
+      },
+      "FRIDAY": {
+        "02:00-02:50": "BCS 401\n{AA}/ CSE-24/ KC-210"
+      }
+    }
+  },
+  "VPS": {
+    "name": "Dr. Vipin Sharma(VPS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 5,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "BCS 453\n{DM,VPS}/CSE-29/ KC-307",
+        "12:20-01:10": "BCC 401\n{VPS}/ CSE-23/ KC-209",
+        "02:00-02:50": "BCC 401\n{VPS}/ CSE-27/ KC-304"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 453\n{VPS,TNU}/CSE-27/ KC-304",
+        "02:50-03:40": "BCS 453\n{VPS,SW}/CSE-23/ KC-209"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCC 401\n{VPS}/ CSE-23/ KC-209"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCC 401\n{VPS}/ CSE-27/ KC-304"
+      }
+    }
+  },
+  "SR": {
+    "name": "Dr. Shweta Roy",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 3,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "09:40-10:30": "BCS 403\n{SR}/ CSE-23/ KC-209",
+        "10:40-11:30": "DOMAIN TRAINING",
+        "03:40-04:30": "BCS 403\n{SR}/ CSE-23/ KC-209"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "\"BCS 452\n{SR,SL} /CSE-21/ KC-207\"",
+        "10:40-11:30": "BCS 403\n{SR}/ CSE-23/ KC-209",
+        "02:50-03:40": "\"BCS 452\n{SR,ATD} /CSE-23/ KC-209\""
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "Dr.",
+        "11:30-12:20": "BCS 403\n{SR}/ CSE-23/ KC-209",
+        "12:20-01:10": "BCS 403\n{SR}/ CSE-23/ KC-209"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCS 403\n{SR}/ CSE-21/ KC-207",
+        "10:40-11:30": "BCS 403\n{SR}/ CSE-21/ KC-207"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "BCS 403\n{SR}/ CSE-21/ KC-207",
+        "03:40-04:30": "BCS 403\n{SR}/ CSE-21/ KC-207"
+      }
+    }
+  },
+  "AAG": {
+    "name": "Ms. Ashi Aggarwal(AAG)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 6,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "02:00-02:50": "BCS 601/CSE-A\n{AAG}",
+        "03:40-04:30": "DSA TRAINING/ CSE14/KC 105\n{AAG, VV}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "02:50-03:40": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "10:40-11:30": "PLS TELL ANKITA MAM TO TAKE THIS SLOT",
+        "12:20-01:10": "BCS 601/CSE-A\n{AAG}",
+        "02:00-02:50": "BCS 601/CSE-A\n{AAG}",
+        "02:50-03:40": "BCS 601/CS-C\n{AAG}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "02:00-02:50": "BCS 601/CS-C\n{AAG}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "02:00-02:50": "BCS 601/CS-C\n{AAG}"
+      }
+    }
+  },
+  "DKM": {
+    "name": "Mr. Devendra Kumar Mishra(DKM)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "02:00-02:50": "BCC 401 \n{DKM}/ CSE-11/ KC-101",
+        "03:40-04:30": "BCC401\n{DKM}/ CSE-13/ KC-104"
+      },
+      "TUESDAY": {
+        "11:30-12:20": "BCS 453\n{DKM, BS}/CSE-11/ KC-101",
+        "02:50-03:40": "BCC 401 \n{DKM}/ CSE-11/ KC-101"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 453\n{DKM, AY}/CSE-13/ KC-104",
+        "02:00-02:50": "BCS 453/CSE-16\n{NR,DKM}/KC-108"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCC 401 \n{DKM}/ CSE-13/ KC-104",
+        "02:00-02:50": "BCC 401 \n{DKM}/ CSE-13/ KC-104",
+        "02:50-03:40": "BCC 401 \n{DKM}/ CSE-13/ KC-104"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 453\n{AR, DKM}/CSE-14/ KC-105",
+        "02:50-03:40": "BCS 453\n{DKM, RR}/CSE-17/ KC-202"
+      }
+    }
+  },
+  "MG": {
+    "name": "Ms. Malvika Gupta (MG)",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 6,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)",
+        "02:00-02:50": "BCS 402/CSE-28\n{MG}/KC-305",
+        "02:50-03:40": "BCS 402/CSE-26\n{MG}/KC-302"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "10:40-11:30": "BCS 402/CSE-26\n{MG}/KC-305",
+        "11:30-12:20": "BCS 402/CSE-28\n{MG}/KC-305",
+        "02:00-02:50": "BCS 402/CSE-26\n{MG}/KC-302",
+        "03:40-04:30": "BCS 402/CSE-28\n{MG}/KC-305"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)",
+        "02:00-02:50": "BCS 402/CSE-28\n{MG}/KC-305",
+        "02:50-03:40": "BCS 402/CSE-26\n{MG}/KC-302"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)",
+        "02:00-02:50": "BCS 402/CSE-26\n{MG}/KC-302",
+        "03:40-04:30": "BCS 402/CSE-28\n{MG}/KC-305"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 402/CSE-28\n{MG}/KC-305",
+        "10:40-11:30": "BCS 402/CSE-26\n{MG}/KC-302",
+        "02:50-03:40": "DSA Training { MG,RA/ KC-107} CSE -15"
+      }
+    }
+  },
+  "SSI": {
+    "name": "Ms. Shweta Singh(SSI)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 5,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "09:40-10:30": "BCS 401\n{SSI}/ CSE-21/ KC-207",
+        "10:40-11:30": "Domain Training"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "BCS 401/CSE-15\n{SSI}/KC-107",
+        "12:20-01:10": "BCS 401\n{SSI}/ CSE-21/ KC-207",
+        "02:50-03:40": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 401/CSE-15\n{SSI}/KC-107",
+        "02:50-03:40": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 401/CSE-15\n{SSI}/KC-107",
+        "02:50-03:40": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107"
+      },
+      "FRIDAY": {
+        "12:20-01:10": "BCS 401\n{SSI}/ CSE-21/ KC-207",
+        "02:00-02:50": "BCS 401/CSE-15\n{SSI}/KC-107",
+        "02:50-03:40": "BCS 401\n{SSI}/ CSE-21/ KC-207"
+      }
+    }
+  },
+  "AAR": {
+    "name": "Ms. Aditi Arora (AAR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 11,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 401\n{AAR}/ CSE-12/ KC-102",
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 451\n{AAR, NS}/CSE-12/ KC-102"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}",
+        "03:40-04:30": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
+      },
+      "WEDNESDAY": {},
+      "THURSDAY": {
+        "08:50-09:40": "BCS 401\n{AAR}/ CSE-12/ KC-102",
+        "10:40-11:30": "AIML+DS/CS-II nd Yr",
+        "02:50-03:40": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 401\n{AAR}/ CSE-12/ KC-102",
+        "12:20-01:10": "BCS 401\n{AAR}/ CSE-12/ KC-102",
+        "02:50-03:40": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}"
+      }
+    }
+  },
+  "MAG": {
+    "name": "Ms. Madhvi Gaur",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 3,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 452/CSE-16\n{ATD,MAG}/KC-108",
+        "12:20-01:10": "BCS 403/CSE-17\n{MAG}/KC-202",
+        "02:50-03:40": "BCS 403/CSE-17\n{MAG}/KC-202"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 452\n{JS,MAG} /CSE-15/ KC-107",
+        "10:40-11:30": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}",
+        "02:00-02:50": "BCS 452/CSE-17\n{MAG,VM}/KC-202"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "\"BCS 452\n{JS,MAG} /CSE-24/ KC-210\"",
+        "10:40-11:30": "BCS 403/CSE-17\n{MAG}/KC-202"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 452\n{VM,MAG}/ CSE-14/ KC-105",
+        "02:00-02:50": "BCS 403/CSE-17\n{MAG}/KC-202"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "BCS 403/CSE-17\n{MAG}/KC-202",
+        "02:50-03:40": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}"
+      }
+    }
+  },
+  "ST": {
+    "name": "Ms. Shivani Trivedi (ST)",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 8,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "Domain Training",
+        "02:50-03:40": "BOE 410\n{ST}/ CSE-13/ KC-104"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BOE 410\n{ST}/ CSE-12/ KC-102",
+        "10:40-11:30": "BOE 410\n{ST}/ CSE-13/ KC-104",
+        "11:30-12:20": "BOE 410\n{ST}/ CSE-13/ KC-104",
+        "03:40-04:30": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
+      },
+      "WEDNESDAY": {
+        "02:50-03:40": "BOE 410\n{ST}/ CSE-12/ KC-102",
+        "03:40-04:30": "BOE 410\n{ST}/ CSE-12/ KC-102"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BOE 410\n{ST}/ CSE-12/ KC-102",
+        "10:40-11:30": "BOE 410\n{ST}/ CSE-12/ KC-102",
+        "02:50-03:40": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BOE 410\n{ST}/ CSE-13/ KC-104",
+        "10:40-11:30": "BOE 410\n{ST}/ CSE-12/ KC-102",
+        "02:00-02:50": "BOE 410\n{ST}/ CSE-13/ KC-104",
+        "03:40-04:30": "BOE 410\n{ST}/ CSE-13/ KC-104"
+      }
+    }
+  },
+  "BS": {
+    "name": "Ms. Bharati Shukla(BS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 12,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 401/CSE-11\n{BS}/KC-101",
+        "10:40-11:30": "DOMAIN TRAINING",
+        "02:50-03:40": "BCS 401/CSE-11\n{BS}/KC-101"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 451\n{JJ,BS} /CSE-26/ KC-302",
+        "11:30-12:20": "BCS 453\n{DKM, BS}/CSE-11/ KC-101",
+        "02:50-03:40": "BCS 451\n{AT, BS}/CSE-13/ KC-104"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS 401/CSE-11\n{BS}/KC-101",
+        "02:50-03:40": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "BCS 401/CSE-11\n{BS}/KC-101"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 453\n{VS, BS}/CSE-15/ KC-107",
+        "11:30-12:20": "BCS 451/KC-101/CSE-11\n{BS,APS}"
+      }
+    }
+  },
+  "AYA": {
+    "name": "Ms. Ayushi agarwal(AYA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 9,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 402\n{AYA}/ CSE-18/ KC-204",
+        "12:20-01:10": "FSD/CSE 14/ KC105\n{AYA, AK}",
+        "02:50-03:40": "BCS 402\n{AYA}/ CSE-25/ KC-301",
+        "03:40-04:30": "BCS 402\n{AYA}/ CSE-25/ KC-301"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BCS 402\n{AYA}/ CSE-25/ KC-301",
+        "10:40-11:30": "BCS 402\n{AYA}/ CSE-18/ KC-204",
+        "11:30-12:20": "BCS 402\n{AYA}/ CSE-18/ KC-204"
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "BCS 402\n{AYA}/ CSE-25/ KC-301",
+        "11:30-12:20": "FSD/CSE 26/KC 302\n{AYA, NN}",
+        "02:00-02:50": "BCS 402\n{AYA}/ CSE-18/ KC-204"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCS 402\n{AYA}/ CSE-25/ KC-301",
+        "11:30-12:20": "BCS 402\n{AYA}/ CSE-25/ KC-301",
+        "12:20-01:10": "BCS 402\n{AYA}/ CSE-18/ KC-204",
+        "02:50-03:40": "FSD/CSE 14/ KC105\n{AYA, AK}"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "FSD/CSE 15/ KC107\n{AYA, YR}",
+        "02:00-02:50": "FSD/CSE 26/KC 302\n{AYA,NN}",
+        "03:40-04:30": "BCS 402\n{AYA}/ CSE-18/ KC-204"
+      }
+    }
+  },
+  "NN": {
+    "name": "Ms. Nainsi (NN)",
+    "department": "Computer Science and Engineering",
+    "lectures": 3,
+    "tutorials": 6,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "FSD/CSE 21/KC 207\n{LS, NN}",
+        "02:50-03:40": "FSD/CSE 25/KC 301\n{SWT, NN}"
+      },
+      "TUESDAY": {
+        "01:10-02:00": "BCC 402/ME/ BH-208"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "FSD/CSE 26/KC 302\n{AYA,NN}",
+        "02:00-02:50": "BCC 402/ME/ BH-208"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCC 402/ME/ BH-208",
+        "11:30-12:20": "FSD/CSE 21/KC 207\n{LS, NN}"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "FSD/CSE 25/KC 301\n{SWT, NN}",
+        "02:00-02:50": "FSD/CSE 26/KC 302\n{AYA,NN}"
+      }
+    }
+  },
+  "VS": {
+    "name": "Dr. Vivek Srivastava(VS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 5,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING",
+        "12:20-01:10": "BCC 401/CSE-15\n{VS}/KC-107",
+        "02:50-03:40": "BCS 401\n{VS}/ CSE-14/ KC-105"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 451\n{APS,VS}/ CSE-16/ KC-108",
+        "11:30-12:20": "BCS 401\n{VS}/ CSE-14/ KC-105",
+        "02:50-03:40": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 401\n{VS}/ CSE-14/ KC-105",
+        "03:40-04:30": "BCC 401/CSE-15\n{VS}/KC-107"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCC 401/CSE-15\n{VS}/KC-107",
+        "10:40-11:30": "BCS 401\n{VS}/ CSE-14/ KC-105"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 453\n{VS, BS}/CSE-15/ KC-107"
+      }
+    }
+  },
+  "VSI": {
+    "name": "Mr. Vinay Singh (VSI)",
+    "department": "Computer Science and Engineering",
+    "lectures": 12,
+    "tutorials": 2,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "BCS 602/CS-C\n{VSI}/KC-408",
+        "12:20-01:10": "BCS 602/CSE-A\n{VSI}/KC-209",
+        "02:00-02:50": "BCS 602/CS-C\n{VSI}/KC-408"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BCS 602/CS-C\n{VSI}/KC-408",
+        "02:00-02:50": "BCS 602/CSE-A\n{VSI}/KC-209",
+        "03:40-04:30": "BCS 602/CSE-C\n{VSI}/KC-402"
+      },
+      "WEDNESDAY": {
+        "02:00-02:50": "BCS 602/CSE-C\n{VSI}/KC-402",
+        "03:40-04:30": "BCS 602/CS-C\n{VSI}/KC-408"
+      },
+      "THURSDAY": {
+        "02:50-03:40": "BCS 602/CSE-C\n{VSI}/KC-402"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 602/CSE-C\n{VSI}/KC-402",
+        "12:20-01:10": "BCS 602/CS-C\n{VSI}/KC-408",
+        "02:00-02:50": "BCS 602/CSE-C\n{VSI}/KC-402",
+        "03:40-04:30": "BCS 602/CSE-A\n{VSI}/KC-209"
+      }
+    }
+  },
+  "HD": {
+    "name": "Ms. Harsiddhi (HD)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 453\n{HD,NR}/CSE-19/ KC-205"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCC 401\n{HD}/ CSE-22/ KC-208",
+        "02:50-03:40": "BCS 453\n{HD,RA}/CSE-24/ KC-210"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 453\n{NR, HD}/ CSE-12/ KC-102",
+        "10:40-11:30": "BCC 401\n{HD}/ CSE-19/ KC-205",
+        "02:50-03:40": "BCC 401\n{HD}/ CSE-24/ KC-210"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCC 401\n{HD}/ CSE-24/ KC-210",
+        "11:30-12:20": "BCC 401\n{HD}/ CSE-19/ KC-205",
+        "12:20-01:10": "BCC 401\n{HD}/ CSE-22/ KC-208"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 453\n{DM,HD}/CSE-28/ KC-305",
+        "02:50-03:40": "BCS 453\n{HD,GV}/CSE-22/ KC-208"
+      }
+    }
+  },
+  "AK": {
+    "name": "Mr. Arvind Kumar(AK)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 9,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "12:20-01:10": "FSD/CSE 14/ KC105\n{AYA, AK}",
+        "03:40-04:30": "FSD/CSE17/KC 202\n{AK, ANS}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 403/CSE-18\n{AK}/KC-204",
+        "09:40-10:30": "BCS 403/CSE-18\n{AK}/KC-204",
+        "11:30-12:20": "FSD/CSE19/KC 205\n{AK, YR}"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS 403/CSE-18\n{AK}/KC-204",
+        "12:20-01:10": "BCS 403/CSE-18\n{AK}/KC-204",
+        "02:50-03:40": "FSD/CSE17/KC 202\n{AK, ANS}"
+      },
+      "THURSDAY": {
+        "12:20-01:10": "FSD/CSE19/KC 205\n{AK, YR}",
+        "02:50-03:40": "FSD/CSE 14/ KC105\n{AYA, AK}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 452/CSE-18\n{AK,SP}/KC-204",
+        "12:20-01:10": "BCS 403/CSE-18\n{AK}/KC-204"
+      }
+    }
+  },
+  "SYA": {
+    "name": "Ms. Sarita Yadav (SYA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 6,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "09:40-10:30": "BCS 602/CSE-D\n{SYA}/KC-404",
+        "10:40-11:30": "BCS 602/CS-A\n{SYA}/KC-405",
+        "12:20-01:10": "BCS 602/CS-A\n{SYA}/KC-405"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 652/KC-404/CSE-D\n{SYA, KO}",
+        "12:20-01:10": "BCS 602/CS-A\n{SYA}/KC-405",
+        "02:00-02:50": "FSD/CSE 18/KC 204\n{SYA, SAG}",
+        "03:40-04:30": "BCS 602/CSE-D\n{SYA}/KC-404"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "FSD/CSE 18/KC 204\n{SYA, SAG}",
+        "11:30-12:20": "FSD/CSE 16/KC 108\n{SAG,SYA}"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 602/CSE-D\n{SYA}/KC-404",
+        "02:50-03:40": "BCS 602/CS-A\n{SYA}/KC-405"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 602/CS-A\n{SYA}/KC-405",
+        "02:50-03:40": "BCS 602/CSE-D\n{SYA}/KC-404"
+      }
+    }
+  },
+  "SAG": {
+    "name": "Mr. Sumit Agarwal",
+    "department": "Computer Science and Engineering",
+    "lectures": 9,
+    "tutorials": 9,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "Domain Training"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BOE064/CSE-D\n{SAG}",
+        "03:40-04:30": "BOE064/CSE-A\n{SAG}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "FSD/CSE 18/KC 204\n{SYA, SAG}",
+        "11:30-12:20": "FSD/CSE 16/KC 108\n{SAG,SYA}",
+        "02:00-02:50": "BOE064/CS-A\n{SAG}"
+      },
+      "THURSDAY": {
+        "02:00-02:50": "BOE064/CSE-A\n{SAG}",
+        "03:40-04:30": "BOE064/CSE-D\n{SAG}"
+      },
+      "FRIDAY": {
+        "02:50-03:40": "BOE064/CSE-A\n{SAG}",
+        "03:40-04:30": "BOE064/CSE-D\n{SAG}"
+      }
+    }
+  },
+  "YR": {
+    "name": "Ms. Yashi Rastogi (YR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 9,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BOE 410\n{YR}/ CSE-14/ KC-105",
+        "09:40-10:30": "BOE 410\n{YR}/ CSE-18/ KC-204",
+        "12:20-01:10": "BOE 410\n{YR}/ CSE-14/ KC-105",
+        "02:00-02:50": "BOE 410\n{YR}/ CSE-14/ KC-105",
+        "02:50-03:40": "FSD/CSE 15/ KC107\n{AYA, YR}"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
+        "11:30-12:20": "FSD/CSE19/KC 205\n{AK, YR}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BOE 410\n{YR}/ CSE-14/ KC-105",
+        "09:40-10:30": "BOE 410\n{YR}/ CSE-14/ KC-105",
+        "10:40-11:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
+        "02:50-03:40": "BOE 410\n{YR}/ CSE-18/ KC-204"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BOE 410\n{YR}/ CSE-18/ KC-204",
+        "12:20-01:10": "FSD/CSE19/KC 205\n{AK, YR}",
+        "02:50-03:40": "BOE 410\n{YR}/ CSE-18/ KC-204"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "FSD/CSE 15/ KC107\n{AYA, YR}",
+        "02:00-02:50": "BOE 410\n{YR}/ CSE-14/ KC-105",
+        "02:50-03:40": "BOE 410\n{YR}/ CSE-18/ KC-204"
+      }
+    }
+  },
+  "JS": {
+    "name": "Ms. Jyoti Sharma (JS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 15,
+    "tutorials": null,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 402\n{JS}/ CSE-21/ KC-207",
+        "12:20-01:10": "BCS 403/CSE-15\n{JS}/KC-107",
+        "02:00-02:50": "BCS 403\n{JS}/ CSE-24/ KC-210",
+        "02:50-03:40": "BCS 403/CSE-15\n{JS}/KC-107"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 452\n{JS,MAG} /CSE-15/ KC-107",
+        "11:30-12:20": "BCS 403/CSE-15\n{JS}/KC-107",
+        "02:00-02:50": "BCS 402\n{JS}/ CSE-21/ KC-207",
+        "02:50-03:40": "BCS 402\n{JS}/ CSE-21/ KC-207"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "\"BCS 452\n{JS,MAG} /CSE-24/ KC-210\"",
+        "11:30-12:20": "BCS 402\n{JS}/ CSE-21/ KC-207",
+        "12:20-01:10": "BCS 402\n{JS}/ CSE-21/ KC-207"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "\"BCS 452\n{JS, Ayush } /CSE-27/ KC-304\"",
+        "11:30-12:20": "BCS 403\n{JS}/ CSE-24/ KC-210",
+        "12:20-01:10": "BCS 403/CSE-15\n{JS}/KC-107",
+        "02:00-02:50": "BCS 403\n{JS}/ CSE-24/ KC-210",
+        "02:50-03:40": "BCS 402\n{JS}/ CSE-21/ KC-207"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 403/CSE-15\n{JS}/KC-107",
+        "02:50-03:40": "BCS 403\n{JS}/ CSE-24/ KC-210",
+        "03:40-04:30": "BCS 403\n{JS}/ CSE-24/ KC-210"
+      }
+    }
+  },
+  "DKA": {
+    "name": "Mr. Deepak Kanojia (DKA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 5,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING",
+        "12:20-01:10": "BCS603/CS-B\n{DKA}/KC-407",
+        "02:00-02:50": "BCS603/CS-B\n{DKA}/KC-407",
+        "03:40-04:30": "BCS603/CSE-B\n{DKA}/KC-401"
+      },
+      "TUESDAY": {
+        "02:00-02:50": "BCS603/CS-B\n{DKA}/KC-407",
+        "02:50-03:40": "BCS603/CS-B\n{DKA}/KC-407"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS603/CSE-B\n{DKA}/KC-401",
+        "12:20-01:10": "BCS603/CSE-B\n{DKA}/KC-401",
+        "02:00-02:50": "BCS603/CS-B\n{DKA}/KC-407"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS603/CS-B\n{DKA}/KC-407",
+        "12:20-01:10": "BCS603/CSE-B\n{DKA}/KC-401",
+        "03:40-04:30": "BCS603/CSE-B\n{DKA}/KC-401"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "CISCO TRAINING-ECE-VI-C/BH-110",
+        "02:00-02:50": "BCS603/CSE-B\n{DKA}/KC-401",
+        "02:50-03:40": "BCS603/CSE-B\n{DKA}/KC-401"
+      }
+    }
+  },
+  "ATD": {
+    "name": "Mr. Aditya Tandon",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 0,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 452/CSE-16\n{ATD,MAG}/KC-108",
+        "11:30-12:20": "BCS 403\n{ATD}/ CSE-13/ KC-104",
+        "02:00-02:50": "BCS 403\n{ATD}/ CSE-16/ KC-108"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 452\n{RS,ATD}/ CSE-19/ KC-205",
+        "12:20-01:10": "BCS 403\n{ATD}/ CSE-13/ KC-104",
+        "02:50-03:40": "BCS 452\n{SR,ATD} /CSE-23/ KC-209"
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "BCS 403\n{ATD}/ CSE-16/ KC-108",
+        "10:40-11:30": "BCS 403\n{ATD}/ CSE-16/ KC-108",
+        "02:00-02:50": "BCS 403\n{ATD}/ CSE-13/ KC-104"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 452\n{ATD, SL} /CSE-13/ KC-104",
+        "02:50-03:40": "BCS 403\n{ATD}/ CSE-13/ KC-104",
+        "03:40-04:30": "BCS 403\n{ATD}/ CSE-13/ KC-104"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 403\n{ATD}/ CSE-16/ KC-108",
+        "09:40-10:30": "BCS 403\n{ATD}/ CSE-16/ KC-108",
+        "11:30-12:20": "\"BCS 452\n{BSA,ATD} /CSE-29/ KC-307\""
+      }
+    }
+  },
+  "AG": {
+    "name": "Mr. Anurag Gupta (AG)",
+    "department": "Computer Science and Engineering",
+    "lectures": 10,
+    "tutorials": 4,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
+        "09:40-10:30": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
+        "02:00-02:50": "HACKWITH INFY"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
+        "09:40-10:30": "ME APPLIED AI {AG, TS }",
+        "02:00-02:50": "BCS 402\n\n{AG}/ CSE-13/ KC-104"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
+        "10:40-11:30": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
+        "11:30-12:20": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
+        "02:00-02:50": "HACKWITH INFY"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "AIML-C  APPLIED AI {AG, DM }",
+        "11:30-12:20": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
+        "12:20-01:10": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
+        "02:00-02:50": "HACKWITH INFY"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
+        "11:30-12:20": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
+        "12:20-01:10": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
+        "02:00-02:50": "HACKWITH INFY"
+      }
+    }
+  },
+  "AR": {
+    "name": "Ms. Anita Rani (AR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 6,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "Domain Training"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "BCC 401\n{AR}/ CSE-14/ KC-105",
+        "02:00-02:50": "BCS 401\n{AR}/ CSE-19/ KC-205",
+        "03:40-04:30": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 401\n{AR}/ CSE-19/ KC-205",
+        "02:50-03:40": "BCS 451\n{AR,KA}/CSE-19/ KC-205"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 401\n{AR}/ CSE-19/ KC-205"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 453\n{AR,DKM}/ CSE-14/ KC-105",
+        "11:30-12:20": "BCS 401\n{AR}/ CSE-19/ KC-205",
+        "12:20-01:10": "BCC 401\n{AR}/ CSE-14/ KC-105",
+        "02:50-03:40": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
+      }
+    }
+  },
+  "TS": {
+    "name": "Ms. Tanvishree(TS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 4,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 603/CSE-D\n{TS}/KC-404"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "ME APPLIED AI {AG, TS }",
+        "03:40-04:30": "DSA TRAINING/ CSE21/KC 207\n{PSG,TS}"
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "BCS 603/CSE-D\n{TS}/KC-404",
+        "11:30-12:20": "BCS 603/CSE-D\n{TS}/KC-404",
+        "12:20-01:10": "BCS 603/CSE-D\n{TS}/KC-404"
+      },
+      "THURSDAY": {},
+      "FRIDAY": {
+        "08:50-09:40": "BCS 653/KC-404/CSE-D\n{TS,NB}",
+        "12:20-01:10": "BCS 603/CSE-D\n{TS}/KC-404",
+        "02:50-03:40": "CSDS-C  APPLIED AI {TS, VIC }"
+      }
+    }
+  },
+  "APS": {
+    "name": "Ms. Apoorva Singh(APS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 8,
+    "schedule": {
+      "MONDAY": {},
+      "TUESDAY": {
+        "08:50-09:40": "BCS 451\n{APS,VS}/ CSE-16/ KC-108",
+        "12:20-01:10": "BCS 401\n{APS}/ CSE-16/ KC-108",
+        "02:50-03:40": "BCS 451\n{SW,APS}/ CSE-22/ KC-208"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 451\n{NG,APS}/ CSE-17/ KC-202",
+        "11:30-12:20": "DSA TRAINING/ CSE18/KC 204\n{APS, Vishu (TAT)}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}",
+        "10:40-11:30": "BCS 401\n{APS}/ CSE-16/ KC-108",
+        "02:50-03:40": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "BCS 451/KC-101/CSE-11\n{BS,APS}",
+        "02:50-03:40": "BCS 401\n{APS}/ CSE-16/ KC-108",
+        "03:40-04:30": "BCS 401\n{APS}/ CSE-16/ KC-108"
+      }
+    }
+  },
+  "VM": {
+    "name": "Mr. Vikas Maurya (VM)",
     "department": "Computer Science and Engineering",
     "lectures": 5,
     "tutorials": 9,
     "practicals": 4,
     "schedule": {
       "MONDAY": {
-        "09:40-10:30": "FSD/CSE27/KC 304\n{HIJ, LS}",
-        "12:20-01:10": "FSD/CSE  24/KC 210\n{mno, HIJ}",
-        "02:00-02:50": "FSD/CSE11/KC 101\n{HIJ,mno}"
+        "09:40-10:30": "FSD/CSE27/KC 304\n{VM, LS}",
+        "12:20-01:10": "FSD/CSE  24/KC 210\n{ANS, VM}",
+        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}",
+        "03:40-04:30": "BCS 403\n{VM}/ CSE-14/ KC-105"
       },
       "TUESDAY": {
-        "08:50-09:40": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
-        "09:40-10:30": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
-        "02:50-03:40": "BCS 452/CSE-17\n{MAG,HIJ}/KC-202"
+        "08:50-09:40": "BCS 403\n{VM}/ CSE-14/ KC-105",
+        "09:40-10:30": "BCS 403\n{VM}/ CSE-14/ KC-105",
+        "12:20-01:10": "BCS 403\n{VM}/ CSE-14/ KC-105",
+        "02:00-02:50": "BCS 452/CSE-17\n{MAG,VM}/KC-202"
       },
       "WEDNESDAY": {
-        "10:40-11:30": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
-        "12:20-01:10": "BCS 403\n{HIJ}/ CSE-14/ KC-105",
-        "02:50-03:40": "FSD/CSE27/KC 304\n{HIJ, LS}"
+        "10:40-11:30": "BCS 403\n{VM}/ CSE-14/ KC-105",
+        "12:20-01:10": "BCS 403\n{VM}/ CSE-14/ KC-105",
+        "02:50-03:40": "FSD/CSE27/KC 304\n{VM, LS}"
       },
       "THURSDAY": {
-        "08:50-09:40": "BCS 452\n{HIJ,MAG}/ CSE-14/ KC-105",
-        "02:50-03:40": "FSD/CSE11/KC 101\n{HIJ,mno}"
+        "08:50-09:40": "BCS 452\n{VM,MAG}/ CSE-14/ KC-105",
+        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}"
       },
       "FRIDAY": {
-        "11:30-12:20": "FSD/CSE  24/KC 210\n{mno, HIJ}",
-        "03:40-04:30": "BCS 403\n{HIJ}/ CSE-14/ KC-105"
+        "11:30-12:20": "FSD/CSE  24/KC 210\n{ANS, VM}"
       }
     }
   },
-  "KLM": {
-    "name": "klm",
+  "SL": {
+    "name": "Ms. Sonia Lamba",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 8,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING",
+        "12:20-01:10": "BCS 603/CS-C\n{SL}/KC-408",
+        "02:50-03:40": "BCS 603/CS-C\n{SL}/KC-408",
+        "03:40-04:30": "BCS 603/CS-C\n{SL}/KC-408"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "\"BCS 452\n{SR,SL} /CSE-21/ KC-207\"",
+        "02:50-03:40": "BCS 603/CS-C\n{SL}/KC-408"
+      },
+      "WEDNESDAY": {
+        "12:20-01:10": "BCS 603/CS-C\n{SL}/KC-408",
+        "02:50-03:40": "BCS 452/KC-101/CSE-11\n{SA,SL}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 452\n{ATD, SL} /CSE-13/ KC-104",
+        "10:40-11:30": "DOMAIN TRAINING"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "\"BCS 452\n{SWT,SL} /CSE-26/ KC-302\"",
+        "10:40-11:30": "BCS 603/CS-C\n{SL}/KC-408"
+      }
+    }
+  },
+  "LS": {
+    "name": "Ms. Laxmi Saraswat",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 12,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "FSD/CSE 21/KC 207\n{LS, NN}",
+        "09:40-10:30": "FSD/CSE27/KC 304\n{VM, LS}",
+        "12:20-01:10": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT)}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 401\n\n{LS}/ CSE-23/ KC-209",
+        "09:40-10:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
+        "11:30-12:20": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
+        "02:50-03:40": "FSD/CSE27/KC 304\n{VM, LS}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 401\n\n{LS}/ CSE-23/ KC-209",
+        "11:30-12:20": "FSD/CSE 21/KC 207\n{LS, NN}",
+        "03:40-04:30": "BCS 401\n\n{LS}/ CSE-23/ KC-209"
+      },
+      "FRIDAY": {
+        "09:40-10:30": "BCS 401\n\n{LS}/ CSE-23/ KC-209",
+        "02:50-03:40": "BCS 451\n{LS,NS}/ CSE-23/ KC-209"
+      }
+    }
+  },
+  "MM": {
+    "name": "Ms. Mansi Mahendru",
+    "department": "Computer Science and Engineering",
+    "lectures": 15,
+    "tutorials": 2,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "ECE-B APPLIED AI {MM, PKS /BH-108}",
+        "12:20-01:10": "BOE 410/CSE-19\n{MM}/KC-205",
+        "02:00-02:50": "BOE 410/CSE-15\n{MM}/KC-107",
+        "03:40-04:30": "BOE 410/CSE-19\n{MM}/KC-205"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BOE 410/CSE-11\n{MM}/KC-101",
+        "10:40-11:30": "BOE 410/CSE-19\n{MM}/KC-205",
+        "03:40-04:30": "BOE 410/CSE-15\n{MM}/KC-107"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BOE 410/CSE-19\n{MM}/KC-205",
+        "09:40-10:30": "BOE 310/CSE-11\n{MM}/KC-101",
+        "02:00-02:50": "BOE 410/CSE-15\n{MM}/KC-107",
+        "02:50-03:40": "BOE 410/CSE-15\n{MM}/KC-107"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BOE 410/CSE-11\n{MM}/KC-101",
+        "09:40-10:30": "BOE 410/CSE-15\n{MM}/KC-107",
+        "10:40-11:30": "BOE 410/CSE-11\n{MM}/KC-101",
+        "12:20-01:10": "BOE 310/CSE-11\n{MM}/KC-101",
+        "02:00-02:50": "BOE 410/CSE-15\n{MM}/KC-107"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BOE 410/CSE-11\n{MM}/KC-101",
+        "10:40-11:30": "BOE 410/CSE-19\n{MM}/KC-205",
+        "02:00-02:50": "BOE 410/CSE-19\n{MM}/KC-205"
+      }
+    }
+  },
+  "AV": {
+    "name": "Ms. Abhilasha Varshney(AV)",
+    "department": "Computer Science and Engineering",
+    "lectures": 15,
+    "tutorials": 2,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "ECE-C/APPLIED AI {AV, AT }",
+        "12:20-01:10": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "01:10-02:00": "LUNCH",
+        "02:00-02:50": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "02:50-03:40": "BCS 402\n{AV}/ CSE-19/ KC-205",
+        "03:40-04:30": "BCS 402\n{AV}/ CSE-17/ KC-202"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "10:40-11:30": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "03:40-04:30": "BCS 402\n{AV}/ CSE-17/ KC-202"
+      },
+      "WEDNESDAY": {
+        "12:20-01:10": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "02:00-02:50": "BCS 402\n{AV}/ CSE-17/ KC-202"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "BCS 402\n{AV}/ CSE-19/ KC-205",
+        "09:40-10:30": "BCS 402\n{AV}/ CSE-19/ KC-205",
+        "11:30-12:20": "BCS 402\n{AV}/ CSE-17/ KC-202",
+        "02:50-03:40": "BCS 402\n{AV}/ CSE-19/ KC-205"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 402\n{AV}/ CSE-17/ KC-202",
+        "10:40-11:30": "BCS 402\n{AV}/ CSE-19/ KC-205",
+        "11:30-12:20": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "12:20-01:10": "BCS 402\n{AV}/ CSE-19/ KC-205"
+      }
+    }
+  },
+  "DMP": {
+    "name": "Dr. Disha Mohini Pathak(DMP)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 5,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "Domain Training(2nd Year) AIML+DS{MG, DMP}"
+      },
+      "TUESDAY": {
+        "02:00-02:50": "BCS 061/CS-C\n{DMP}/KC-408"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS 061/CS-C\n{DMP}/KC-408",
+        "12:20-01:10": "BCS 061/CS-B\n{DMP}/KC-407"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "AIML+DS/CS-II nd Yr",
+        "12:20-01:10": "BCS 061/CS-C\n{DMP}/KC-408",
+        "03:40-04:30": "BCS 061/CS-A\n{DMP}/KC-405"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "EN APPLIED AI {DMP, VIC }",
+        "12:20-01:10": "BCS 061/CS-B\n{DMP}/KC-407",
+        "02:50-03:40": "BCS 061/CS-A\n{DMP}/KC-405",
+        "03:40-04:30": "BCS 061/CS-A\n{DMP}/KC-405"
+      }
+    }
+  },
+  "GV": {
+    "name": "Mr. Gaurav Vats (GV)",
+    "department": "Computer Science and Engineering",
+    "lectures": null,
+    "tutorials": null,
+    "practicals": null,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "10:40-11:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "02:00-02:50": "BCC 401/CSE-18\n{GV}/KC-204"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "03:40-04:30": "BCC 401/CSE-26\n{GV}/KC-302"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
+        "12:20-01:10": "BCC 401/CSE-26\n{GV}/KC-302",
+        "03:40-04:30": "BCC 401/CSE-18\n{GV}/KC-204"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "10:40-11:30": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
+        "02:50-03:40": "BCS 453\n{HD,GV}/CSE-22/ KC-208"
+      }
+    }
+  },
+  "SJ": {
+    "name": "Ms. Sapna Jain(SJ)",
+    "department": "Computer Science and Engineering",
+    "lectures": 3,
+    "tutorials": 5,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 651/KC-404/CSE-D\n{SHA, SJ}"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "BCS 601/CS-D\n{SJ}/KC-610",
+        "12:20-01:10": "BCS 601/CS-D\n{SJ}/KC-610"
+      },
+      "WEDNESDAY": {},
+      "THURSDAY": {
+        "10:40-11:30": "AIML+DS/CS-II nd Yr",
+        "03:40-04:30": "BCS 601/CS-D\n{SJ}/KC-610"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "BCS 651/KC-610/CS-D\n{SJ, NY}"
+      }
+    }
+  },
+  "VR": {
+    "name": "Mr. Vaibhav Ranjan(VR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 20,
+    "practicals": null,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "BCS 602\n{VR}\nCS-B",
+        "12:20-01:10": "BCS 602\n{VR}\nCSE-B"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BCS 602\n{VR}\nCS-B"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS 602\n{VR}\nCS-B",
+        "02:00-02:50": "BCS 602\n{VR}\nCSE-B"
+      },
+      "THURSDAY": {
+        "02:50-03:40": "BCS 602\n{VR}\nCSE-B"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "BCS 602\n{VR}\nCS-B",
+        "12:20-01:10": "BCS 602\n{VR}\nCSE-B",
+        "02:00-02:50": "BCS 602\n{VR}\nCS-B",
+        "03:40-04:30": "BCS 602\n{VR}\nCSE-B"
+      }
+    }
+  },
+  "SWT": {
+    "name": "Ms. Satwik Teotia (SWT)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 12,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "09:40-10:30": "BCS403/CSE-26\n{SWT}/KC-302",
+        "12:20-01:10": "FSD/CSE12/KC 102\n{RS, SWT}",
+        "02:50-03:40": "FSD/CSE 25/KC 301\n{SWT, NN}",
+        "03:40-04:30": "BCS403/CSE-26\n{SWT}/KC-302"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "FSD/CSE 28/KC 305\n{SWT,Viswajeet}",
+        "11:30-12:20": "FSD/CSE12/KC 102\n{RS, SWT}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS403/CSE-26\n{SWT}/KC-302",
+        "10:40-11:30": "BCS403/CSE-26\n{SWT}/KC-302",
+        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, RS}"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCS403/CSE-26\n{SWT}/KC-302",
+        "11:30-12:20": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "\"BCS 452\n{SWT,SL} /CSE-26/ KC-302\"",
+        "11:30-12:20": "FSD/CSE 25/KC 301\n{SWT, NN}",
+        "03:40-04:30": "FSD/CSE13/KC 104\n{RS, SWT}"
+      }
+    }
+  },
+  "PKR": {
+    "name": "Mr. Praveen Kumar (PKR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 6,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
+        "03:40-04:30": "BCS 401\n{PKR}/ CSE-29/ KC-307"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}",
+        "11:30-12:20": "BCS 401\n{PKR}/ CSE-25/ KC-301",
+        "02:50-03:40": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\""
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 401\n{PKR}/ CSE-25/ KC-301",
+        "12:20-01:10": "BCS 401\n{PKR}/ CSE-29/ KC-307",
+        "02:50-03:40": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\""
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 401\n{PKR}/ CSE-25/ KC-301",
+        "12:20-01:10": "BCS 401\n{PKR}/ CSE-25/ KC-301",
+        "02:00-02:50": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 401\n{PKR}/ CSE-29/ KC-307",
+        "02:00-02:50": "BCS 401\n{PKR}/ CSE-29/ KC-307"
+      }
+    }
+  },
+  "NS": {
+    "name": "Ms. Neepali Singla",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 3,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)",
+        "02:50-03:40": "BCS 451\n{AAR, NS}/CSE-12/ KC-102"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
+        "02:50-03:40": "BCS 451\n{KA, NS}/CSE-18/ KC-204"
+      },
+      "WEDNESDAY": {},
+      "THURSDAY": {
+        "10:40-11:30": "AIML+DS/CS-II nd Yr\n(Nepali/ Ayush)",
+        "11:30-12:20": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
+        "02:50-03:40": "BCS 451\n{AA, NS}/CSE-24/ KC-210"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
+        "11:30-12:20": "BCS 451\n{NS,ACH} /CSE-27/ KC-304",
+        "02:50-03:40": "BCS 451\n{LS,NS}/ CSE-23/ KC-209"
+      }
+    }
+  },
+  "VSA": {
+    "name": "Ms. Vandana Sharma(VSA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 14,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "02:00-02:50": "BOE064/CS-D\n{VSA}/KC-610",
+        "03:40-04:30": "BOE064/CS-B\n{VSA}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "DSA TRAINING/ CSE24/KC 210\n{VSA, KO}",
+        "02:50-03:40": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "10:40-11:30": "BOE064/CS-D\n{VSA}/KC-610",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "12:20-01:10": "BOE064/CS-B\n{VSA}",
+        "02:00-02:50": "BOE064/CS-B\n{VSA}",
+        "02:50-03:40": "BOE064/CS-D\n{VSA}/KC-610"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "02:00-02:50": "BOE064/CS-D\n{VSA}/KC-610",
+        "03:40-04:30": "BOE064/CS-B\n{VSA}"
+      }
+    }
+  },
+  "VK": {
+    "name": "Mr. Vivek Kumar (VK)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 6,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "12:20-01:10": "BCS 402\n{VK}/ CSE-24/ KC-210",
+        "02:50-03:40": "BCS 402\n{VK}/ CSE-24/ KC-210"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 402\n{VK}/ CSE-24/ KC-210",
+        "10:40-11:30": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}",
+        "12:20-01:10": "DSA TRAINING/CSE25/KC 301\n{VK, SPG}"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 402\n{VK}/ CSE-24/ KC-210"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCS 402\n{VK}/ CSE-24/ KC-210",
+        "02:50-03:40": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 402\n{VK}/ CSE-24/ KC-210",
+        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{VK.AY}"
+      }
+    }
+  },
+  "PSG": {
+    "name": "Ms. Pooja Singhal(PSG)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 8,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "02:00-02:50": "BCS603/CS-D\n{PSG}/KC-610",
+        "02:50-03:40": "BCS603/CS-D\n{PSG}/KC-610"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "10:40-11:30": "HWI TRAINING   (PSG)/ CS-C",
+        "03:40-04:30": "DSA TRAINING/ CSE21/KC 207\n{PSG,TS}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "10:40-11:30": "CISCO TRAINING-ECE-VI-B/AB-107"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "10:40-11:30": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "02:00-02:50": "\"\n\nBCS603/CS-D\n{PSG}/KC-610\""
+      },
+      "FRIDAY": {
+        "08:50-09:40": "DSA TRAINING\n{PSG,Yash(TAT)} / CSE -21",
+        "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "02:50-03:40": "BCS 653/KC-610/CS-D\n{PSG,BK}"
+      }
+    }
+  },
+  "VV": {
+    "name": "Mr. Varun Kumar (VV)",
+    "department": "Computer Science and Engineering",
+    "lectures": 12,
+    "tutorials": 6,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "BOE064/CSE-C\n{VV}/KC-402",
+        "12:20-01:10": "BOE064/CSE-C\n{VV}/KC-402",
+        "02:00-02:50": "BOE064/CSE-B\n{VV}/KC-401",
+        "03:40-04:30": "DSA TRAINING/ CSE14/KC 105\n{AAG, VV}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}",
+        "02:00-02:50": "BOE064/CSE-B\n{VV}/KC-401",
+        "03:40-04:30": "BOE064/CS-C\n{VV}/KC-408"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BOE 068 / ELCE / {VV} /AB-308",
+        "02:00-02:50": "BOE064/CS-C\n{VV}/KC-408"
+      },
+      "THURSDAY": {
+        "11:30-12:20": "BOE 068 / ELCE / {VV} /AB-308",
+        "02:00-02:50": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE14/KC 105\n{VV, KO}",
+        "02:00-02:50": "BOE 068 / ELCE / {VV} /AB-308",
+        "02:50-03:40": "BOE064/CSE-C\n{VV}/KC-402"
+      }
+    }
+  },
+  "NR": {
+    "name": "Ms. Neha Gaur (NR)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 10,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCS 453\n{HD,NR}/CSE-19/ KC-205",
+        "12:20-01:10": "BCC 401\n{NR}/ CSE-25/ KC-301",
+        "02:50-03:40": "BCS 453\n{NR,AY}/CSE-18/ KC-302"
+      },
+      "TUESDAY": {},
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 453\n{NR, HD}/CSE-12/ KC-102",
+        "12:20-01:10": "BCC 401\n{NR}/ CSE-25/ KC-301",
+        "02:00-02:50": "BCS 453/CSE-16\n{NR,DKM}/KC-108"
+      },
+      "THURSDAY": {
+        "09:40-10:30": "BCC 401\n{NR}/ CSE-16/ KC-108",
+        "02:00-02:50": "BCC 401\n{NR}/ CSE-12/ KC-102"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 453\n{NR,SW}/CSE-25/ KC-301",
+        "10:40-11:30": "BCC 401\n{NR}/ CSE-16/ KC-108",
+        "02:00-02:50": "BCC 401\n{NR}/ CSE-16/ KC-108",
+        "02:50-03:40": "BCC 401\n{NR}/ CSE-12/ KC-102"
+      }
+    }
+  },
+  "ASG": {
+    "name": "Ms. Aastha Goyal(ASG)",
+    "department": "Computer Science and Engineering",
+    "lectures": 5,
+    "tutorials": 9,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208",
+        "02:50-03:40": "BCS 403\n\n{ASG}/ CSE-22/ KC-208"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:50-03:40": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\""
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208",
+        "03:40-04:30": "DSA TRAINING/CSE22/KC 208\n{ASG, SHA }"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208"
+      }
+    }
+  },
+  "DM": {
+    "name": "Ms. Divya Maheshwari(DM)",
+    "department": "Computer Science and Engineering",
+    "lectures": 8,
+    "tutorials": 8,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "ELCE APPLIED AI {DM, DMP }",
+        "02:50-03:40": "BCC-401\n{DM}/CSE-29/ KC-307"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCC-401\n{DM}/ ELCE 1/ AB-309",
+        "10:40-11:30": "BCS 453\n{DM,VPS}/CSE-29/ KC-307"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCC-401\n{DM}/CSE-28/ KC-305",
+        "11:30-12:20": "BCC-401\n{DM}/ ELCE 2/ AB-310"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "AIML-C  APPLIED AI {AG, DM }",
+        "03:40-04:30": "BCC-401\n{DM}/CSE-29/ KC-307"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCC-401\n{DM}/ ELCE 2/ AB-310",
+        "10:40-11:30": "BCS 453\n{DM,HD}/CSE-28/ KC-305",
+        "02:00-02:50": "BCC-401\n{DM}/CSE-28/ KC-305",
+        "02:50-03:40": "BCC-401\n{DM}/ ELCE 1/ AB-309"
+      }
+    }
+  },
+  "NB": {
+    "name": "Ms. Neetu Bansla(NB)",
+    "department": "Computer Science and Engineering",
+    "lectures": 4,
+    "tutorials": 5,
+    "practicals": 8,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING{2nd year /BCA}",
+        "02:00-02:50": "BCS 603/CSE-C\n{NB}/KC-402"
+      },
+      "TUESDAY": {
+        "12:20-01:10": "BCS 603/CSE-C\n{NB}/KC-402",
+        "02:00-02:50": "BCS 603/CSE-C\n{NB}/KC-402"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "BCS 603/CSE-C\n{NB}/KC-402",
+        "02:00-02:50": "BCS 452\n{ RA, NB} /CSE-25/ KC-301"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "BCS 603/CSE-C\n{NB}/KC-402",
+        "03:40-04:30": "BCS 603/CSE-C\n{NB}/KC-402"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 653/KC-404/CSE-D\n{TS,NB}",
+        "12:20-01:10": "BCS 603/CSE-C\n{NB}/KC-402"
+      }
+    }
+  },
+  "NY": {
+    "name": "Ms. Nidhi Yadav(NY)",
+    "department": "Computer Science and Engineering",
+    "lectures": 2,
+    "tutorials": 20,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI Training",
+        "03:40-04:30": "BCS 601/CS-A\n{NY}/KC-405"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI Training"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI Training",
+        "12:20-01:10": "BCS 601/CS-A\n{NY}/KC-405"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI Training"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI Training",
+        "02:00-02:50": "BCS 601/CS-A\n{NY}/KC-405"
+      }
+    }
+  },
+  "ACH": {
+    "name": "Mr. Abhishek Chaudhary (ACH)",
+    "department": "Computer Science and Engineering",
+    "lectures": 12,
+    "tutorials": 0,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "01:10-02:00": "BOE067\nECE-VI-A\nBH-209"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BOE067\nECE-VI-C\nBH-110",
+        "11:30-12:20": "BOE067\nECE-VI-B\nAB-107",
+        "01:10-02:00": "BOE067\nECE-VI-A\nBH-209",
+        "02:50-03:40": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\""
+      },
+      "WEDNESDAY": {
+        "01:10-02:00": "BOE 067\n{ACH}/ EN / AB-307",
+        "02:50-03:40": "BOE067\nECE-VI-C\nBH-110"
+      },
+      "THURSDAY": {
+        "01:10-02:00": "BOE 067\n{ACH}/ EN / AB-307",
+        "02:00-02:50": "BOE067\nECE-VI-C\nBH-110",
+        "03:40-04:30": "BOE067\nECE-VI-B\nAB-107"
+      },
+      "FRIDAY": {
+        "11:30-12:20": "BCS 451\n{NS,ACH} /CSE-27/ KC-304",
+        "01:10-02:00": "BOE 067\n{ACH}/ EN / AB-307",
+        "02:00-02:50": "BOE067\nECE-VI-B\nAB-107",
+        "03:40-04:30": "BOE067\nECE-VI-A\nBH-209"
+      }
+    }
+  },
+  "ANS": {
+    "name": "Ms. Anshika Chaudhary(ANS)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 12,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}",
+        "12:20-01:10": "FSD/CSE  24/KC 210\n{VM, ANS}",
+        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}",
+        "03:40-04:30": "FSD/CSE17/KC 202\n{AK, ANS}"
+      },
+      "TUESDAY": {
+        "02:00-02:50": "BEEZ 061/ELCE/\n{ANS}/AB-308",
+        "02:50-03:40": "BCS 601/CSE-C\n{ANS}/KC-402"
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}",
+        "12:20-01:10": "BCS 601/CSE-C\n{ANS}/KC-402",
+        "02:50-03:40": "FSD/CSE17/KC 202\n{AK, ANS}"
+      },
+      "THURSDAY": {
+        "11:30-12:20": "BEEZ 061/ELCE/\n{ANS}/AB-308",
+        "12:20-01:10": "BCS 601/CSE-C\n{ANS}/KC-402",
+        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BEEZ 061/ELCE/\n{ANS}/AB-308",
+        "11:30-12:20": "FSD/CSE  24/KC 210\n{VM, ANS}"
+      }
+    }
+  },
+  "SW": {
+    "name": "Ms. Swati Sheoran(SW)",
+    "department": "Computer Science and Engineering",
+    "lectures": 13,
+    "tutorials": null,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "BCC401\nECE-IV-A\nBH-107",
+        "10:40-11:30": "BCC401\nECE-IV-B\nBH-108",
+        "12:20-01:10": "BCS 401\n{SW}/ CSE-22/ KC-208",
+        "01:10-02:00": "BCC401\nECE-IV-C\nBH-109",
+        "03:40-04:30": "BCS 401\n{SW}/ CSE-22/ KC-208"
+      },
+      "TUESDAY": {
+        "09:40-10:30": "BCC401\nECE-IV-B\nBH-108",
+        "11:30-12:20": "BCC401\nECE-IV-C\nBH-109",
+        "02:50-03:40": "BCS 451\n{SW,APS}/ CSE-22/ KC-208"
+      },
+      "WEDNESDAY": {
+        "01:10-02:00": "BCC401\nECE-IV-A\nBH-107",
+        "02:50-03:40": "BCS 453\n{VPS,SW}/CSE-23/ KC-209"
+      },
+      "THURSDAY": {
+        "11:30-12:20": "BCS 401\n{SW}/ CSE-22/ KC-208",
+        "02:50-03:40": "BCS 401\n{SW}/ CSE-22/ KC-208"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 453\n{NR,SW}/CSE-25/ KC-301"
+      }
+    }
+  },
+  "SHA": {
+    "name": "Ms. Shruti Aggarwal(SA)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 6,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 601/CSE-D\n{SHA}/KC-404",
+        "02:50-03:40": "BCS 601/CS-B\n{SHA}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "03:40-04:30": "BCS 601/CS-B\n{SHA}"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA )",
+        "02:50-03:40": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 601/CSE-D\n{SHA}/KC-404",
+        "03:40-04:30": "DSA TRAINING/CSE22/KC 208\n{ASG, SHA }"
+      },
+      "FRIDAY": {
+        "09:40-10:30": "DSA TRAINING/CSE28/KC 305\n{SHA, Yash }",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:00-02:50": "BCS 601/CSE-D\n{SHA}/KC-404",
+        "02:50-03:40": "BCS 601/CS-B\n{SHA}"
+      }
+    }
+  },
+  "VIC": {
+    "name": "Mr. Vikky (VIC)",
+    "department": "Computer Science and Engineering",
+    "lectures": null,
+    "tutorials": 11,
+    "practicals": 2,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "ELCE APPLIED AI {DM,VIC}",
+        "03:40-04:30": "DSA TRAINING/ CSE24/KC 210\n{VSA, Vikky}"
+      },
+      "TUESDAY": {
+        "02:50-03:40": "BCS 453\n{AA,VIC}/CSE-26/ KC-302"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "ECE-A APPLIED AI {PKS, VIC }"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "EN APPLIED AI {DMP, VIC }",
+        "02:50-03:40": "CSDS-C  APPLIED AI {TS, VIC }"
+      }
+    }
+  },
+  "RS": {
+    "name": "Mr. Ravi Sikka(RS)",
     "department": "Computer Science and Engineering",
     "lectures": 11,
     "tutorials": 6,
     "practicals": 2,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "BCS 061/CSE-C\n{klm}/KC-402",
-        "12:20-01:10": "FSD/CSE12/KC 102\n{klm, SWT}",
-        "02:00-02:50": "BCS 402/CSE-19\n{klm}/KC-205"
+        "10:40-11:30": "BCS 061/CSE-D\n{RS}/KC-404",
+        "12:20-01:10": "FSD/CSE12/KC 102\n{RS, SWT}",
+        "02:00-02:50": "BCS 403/CSE-19\n{RS}/KC-205"
       },
       "TUESDAY": {
-        "08:50-09:40": "BCS 452\n{klm,ATD}/ CSE-19/ KC-205",
-        "11:30-12:20": "FSD/CSE12/KC 102\n{klm, SWT}",
-        "03:40-04:30": "BCS 402/CSE-19\n{klm}/KC-205"
+        "08:50-09:40": "BCS 452\n{RS,ATD}/ CSE-19/ KC-205",
+        "11:30-12:20": "FSD/CSE12/KC 102\n{RS, SWT}",
+        "02:50-03:40": "BCS 403/CSE-19\n{RS}/KC-205",
+        "03:40-04:30": "BCS 403/CSE-19\n{RS}/KC-205"
       },
       "WEDNESDAY": {
-        "08:50-09:40": "BCS 061/CSE-D\n{klm}/KC-404",
-        "09:40-10:30": "BCS 061/CSE-C\n{klm}/KC-402",
-        "12:20-01:10": "BCS 402/CSE-19\n{klm}/KC-205",
-        "02:00-02:50": "BCS 061/CSE-D\n{klm}/KC-404",
-        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, klm}"
+        "08:50-09:40": "BCS 061/CSE-D\n{RS}/KC-404",
+        "10:40-11:30": "BCS 061/CSE-D\n{RS}/KC-404",
+        "12:20-01:10": "BCS 403/CSE-19\n{RS}/KC-205",
+        "02:00-02:50": "BCS 061/CSE-D\n{RS}/KC-404",
+        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, RS}"
       },
       "THURSDAY": {
-        "02:50-03:40": "BCS 402/CSE-19\n{klm}/KC-205"
+        "12:20-01:10": "BCS 403/CSE-19\n{RS}/KC-205",
+        "02:00-02:50": "BCS 061/CSE-C\n{RS}/KC-402"
       },
       "FRIDAY": {
-        "10:40-11:30": "BCS 061/CSE-C\n{klm}/KC-402",
-        "11:30-12:20": "BCS 402/CSE-19\n{klm}/KC-205",
-        "02:00-02:50": "BCS 061/CSE-D\n{klm}/KC-404",
-        "03:40-04:30": "FSD/CSE13/KC 104\n{klm, SWT}"
+        "08:50-09:40": "BCS 403/CSE-19\n{RS}/KC-205",
+        "03:40-04:30": "BCS 061/CSE-C\n{RS}/KC-402"
       }
+    }
+  },
+  "AY": {
+    "name": "Mr. Abhishek Yadav(AY)",
+    "department": "Computer Science and Engineering",
+    "lectures": 0,
+    "tutorials": 7,
+    "practicals": 6,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 453\n{NR,AY}/CSE-18/ KC-302"
+      },
+      "TUESDAY": {
+        "02:50-03:40": "BCS 652/KC-610/CS-D\n{SS,AY}"
+      },
+      "WEDNESDAY": {
+        "11:30-12:20": "BCS 453\n{DKM,AY}/CSE-13/ KC-104",
+        "02:50-03:40": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr"
+      },
+      "FRIDAY": {
+        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{VK.AY}"
+      }
+    }
+  },
+  "SPG": {
+    "name": "Mr. Sanghpriya Gautam",
+    "department": "Computer Science and Engineering",
+    "lectures": 0,
+    "tutorials": 4,
+    "practicals": 8,
+    "schedule": {
+      "MONDAY": {},
+      "TUESDAY": {
+        "10:40-11:30": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}",
+        "12:20-01:10": "DSA TRAINING/CSE25/KC 301\n{VK, SPG}",
+        "02:50-03:40": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 452\n{SPG,BK}/ KC-305"
+      },
+      "THURSDAY": {
+        "02:50-03:40": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 452/CSE-18\n{AK,SP}/KC-204",
+        "02:50-03:40": "BCS 653/KC-610/CS-D\n{BK,SPG}"
+      }
+    }
+  },
+  "KO": {
+    "name": "Ms. Komal(KO)",
+    "department": "Computer Science and Engineering",
+    "lectures": 0,
+    "tutorials": 9,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "03:40-04:30": "DSA TRAINING/ CSE13/KC 104\n {JJ, KO}"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "BCS 652/KC-404/CSE-D\n{SYA, KO}",
+        "11:30-12:20": "DSA TRAINING/ CSE24/KC 210\n{VSA, KO}",
+        "02:50-03:40": "DSA Training { MG, KO/KC-107}",
+        "03:40-04:30": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
+      },
+      "WEDNESDAY": {
+        "02:50-03:40": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\""
+      },
+      "THURSDAY": {},
+      "FRIDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE14/KC 105\n{VV, KO}",
+        "02:50-03:40": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
+      }
+    }
+  },
+  "RA": {
+    "name": "Mr. Rahul",
+    "department": "Computer Science and Engineering",
+    "lectures": 0,
+    "tutorials": 8,
+    "practicals": 4,
+    "schedule": {
+      "MONDAY": {
+        "10:40-11:30": "DOMAIN TRAINING (AIML+DS) Training"
+      },
+      "TUESDAY": {
+        "02:50-03:40": "BCS 453\n{HD,RA}"
+      },
+      "WEDNESDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}",
+        "02:00-02:50": "BCS 452\n{ RA, NB} /CSE-25/ KC-301"
+      },
+      "THURSDAY": {
+        "10:40-11:30": "DOMAIN TRAINING  (AIML+DS Training)",
+        "02:50-03:40": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
+      },
+      "FRIDAY": {
+        "02:50-03:40": "DSA Training { MG,RA/ KC-107} CSE -15"
+      }
+    }
+  },
+  "Shreshth": {
+    "name": "Shresth",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+      }
+    }
+  },
+  "Gargi": {
+    "name": "Ms. Gragi",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "10:40-11:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "10:40-11:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+      }
+    }
+  },
+  "Meenakshi": {
+    "name": "Ms. Meenakshi",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "10:40-11:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "10:40-11:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+      }
+    }
+  },
+  "Shyam": {
+    "name": "Shyam Sharma",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "10:40-11:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "10:40-11:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+      }
+    }
+  },
+  "Vishvajeet": {
+    "name": "Vishvajeet",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}",
+        "12:20-01:10": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
+      },
+      "TUESDAY": {
+        "10:40-11:30": "FSD/CSE 28/KC 305\n{SWT,Viswajeet (TAT}",
+        "11:30-12:20": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
+      },
+      "WEDNESDAY": {
+        "09:40-10:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}"
+      },
+      "THURSDAY": {
+        "11:30-12:20": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}"
+      },
+      "FRIDAY": {}
+    }
+  },
+  "Ayush": {
+    "name": "Ms. Ayush",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)\n(KC-208)"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "\"BCS 452\n{JS, Ayush } /CSE-27/ KC-304\"",
+        "10:40-11:30": "AIML+DS/CS-II nd Yr\n(Nepali/ Ayush)\n(KC-208)"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      }
+    }
+  },
+  "Vishu": {
+    "name": "Ms. Vishu",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {},
+      "TUESDAY": {},
+      "WEDNESDAY": {
+        "11:30-12:20": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}",
+        "11:30-12:20": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
+        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{ VK, Vishu (TAT)}"
+      }
+    }
+  },
+  "Manish": {
+    "name": "Ms. Manish",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {},
+      "TUESDAY": {},
+      "WEDNESDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE12/KC 102\n{KA, Manish (TAT)}"
+      },
+      "THURSDAY": {
+        "11:30-12:20": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))"
+      },
+      "FRIDAY": {
+        "10:40-11:30": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}"
+      }
+    }
+  },
+  "Yash": {
+    "name": "Yash (M.Tech Stduent)",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "DSA TRAINING/ CSE21/KC 207\n{PSG, Yash}",
+        "10:40-11:30": "DSA TRAINING/CSE28/KC 305\n{SHA, Yash }",
+        "11:30-12:20": "HWI TRAINING (ASG+ SHA +Yash)"
+      }
+    }
+  },
+  "Anshuli": {
+    "name": "Ms. Anshuli",
+    "department": "Computer Science and Engineering",
+    "lectures": 6,
+    "tutorials": 0,
+    "practicals": 0,
+    "schedule": {
+      "MONDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      },
+      "TUESDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      },
+      "WEDNESDAY": {
+        "08:50-09:40": "BCS 452\n{SPG,BK}\nKC-305",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      },
+      "THURSDAY": {
+        "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      },
+      "FRIDAY": {
+        "08:50-09:40": "BCS 452\n{SWT,SL, Anshuli(TAC)}\nKC302",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+      }
+    }
+  },
+  "Sheet1": {
+    "name": "Sheet1",
+    "department": "",
+    "lectures": null,
+    "tutorials": null,
+    "practicals": null,
+    "schedule": {
+      "MONDAY": {},
+      "TUESDAY": {},
+      "WEDNESDAY": {},
+      "THURSDAY": {},
+      "FRIDAY": {}
     }
   }
 }

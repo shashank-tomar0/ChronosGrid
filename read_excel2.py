@@ -1,7 +1,7 @@
 import openpyxl
 import json
 
-wb = openpyxl.load_workbook(r'Individual TT Format.xlsx', data_only=True)
+wb = openpyxl.load_workbook(r'TM-08 (HACKWITHINFY).xlsx', data_only=True)
 print(f"Total sheets: {len(wb.sheetnames)}")
 print(f"Sheet names: {wb.sheetnames}")
 print("="*80)
@@ -30,7 +30,17 @@ for sheet_name in wb.sheetnames:
     ws = wb[sheet_name]
     
     # Get faculty name from A7
-    faculty_name = str(ws['A7'].value or '').replace('Name of the Faculty:', '').strip()
+    faculty_raw = str(ws['A7'].value or '').replace('Name of the Faculty:', '').strip()
+    
+    # Handle cases like "Ms." or "Mr." or empty by using sheet name
+    if faculty_raw.lower() in ['ms.', 'mr.', 'dr.', ''] or len(faculty_raw) <= 3:
+        faculty_name = f"{faculty_raw} {sheet_name}".strip()
+    else:
+        faculty_name = faculty_raw
+    
+    # Clean up name (e.g., remove common parenthetical student info if it clutters the name)
+    # But for now, just ensure it's not JUST a title.
+    
     dept = str(ws['A8'].value or '').replace('Department:', '').strip()
     
     # Get L/T/P counts
@@ -44,9 +54,17 @@ for sheet_name in wb.sheetnames:
     for day_row, day_name in days.items():
         day_schedule = {}
         for idx, col in enumerate(col_letters):
-            cell_val = ws[f'{col}{day_row}'].value
-            if cell_val and str(cell_val).strip():
-                day_schedule[time_slots[idx]] = str(cell_val).strip()
+            # Concatenate non-empty values from all 4 rows in the day's block
+            cell_values = []
+            for r in range(day_row, day_row + 4):
+                val = ws[f'{col}{r}'].value
+                if val and str(val).strip() and str(val).strip() != '':
+                    cell_values.append(str(val).strip())
+            
+            if cell_values:
+                # Join with newline to maintain structure, or space if preferred
+                day_schedule[time_slots[idx]] = "\n".join(cell_values)
+        
         teacher_schedule[day_name] = day_schedule
         
         # Print schedule
@@ -69,7 +87,17 @@ for sheet_name in wb.sheetnames:
     }
 
 # Save as JSON for later use
+# Save as JSON for later use
 with open('timetable_data.json', 'w') as f:
     json.dump(all_teachers, f, indent=2)
 
-print(f"\n\nSaved data for {len(all_teachers)} teachers to timetable_data.json")
+# Also save to the Next.js project directory
+try:
+    with open('time-table-next/src/lib/timetable_data.json', 'w') as f:
+        json.dump(all_teachers, f, indent=2)
+    print("Also synced to time-table-next/src/lib/timetable_data.json")
+except Exception as e:
+    print(f"Warning: Could not sync to Next.js directory: {e}")
+
+print(f"\n\nSaved data for {len(all_teachers)} teachers.")
+
