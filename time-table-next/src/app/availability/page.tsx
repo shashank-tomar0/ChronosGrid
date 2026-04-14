@@ -20,8 +20,8 @@ export default function AvailabilityPage() {
 
   const detectNow = () => {
     const now = new Date();
-    const days: Day[] = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'] as any;
-    let currentDayLabel = days[now.getDay()];
+    const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+    const currentDayLabel = days[now.getDay()];
 
     if (currentDayLabel === 'SATURDAY' || currentDayLabel === 'SUNDAY') {
       setSelectedDay('MONDAY');
@@ -29,7 +29,7 @@ export default function AvailabilityPage() {
       return;
     }
 
-    setSelectedDay(currentDayLabel);
+    setSelectedDay(currentDayLabel as Day);
 
     const currentTimeMinutes = now.getHours() * 60 + now.getMinutes();
 

@@ -36,8 +36,8 @@ export default function Home() {
   // Detect current day and time slot
   const detectNow = () => {
     const now = new Date();
-    const days: Day[] = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'] as any;
-    let currentDay = days[now.getDay()];
+    const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+    const currentDay = days[now.getDay()];
 
     if (currentDay === 'SATURDAY' || currentDay === 'SUNDAY') {
       setSelectedDay('MONDAY');
@@ -45,7 +45,7 @@ export default function Home() {
       return;
     }
 
-    setSelectedDay(currentDay);
+    setSelectedDay(currentDay as Day);
 
     const currentTimeMinutes = now.getHours() * 60 + now.getMinutes();
 
