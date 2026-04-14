@@ -2692,19 +2692,5 @@
         "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       }
     }
-  },
-  "Sheet1": {
-    "name": "Sheet1",
-    "department": "",
-    "lectures": null,
-    "tutorials": null,
-    "practicals": null,
-    "schedule": {
-      "MONDAY": {},
-      "TUESDAY": {},
-      "WEDNESDAY": {},
-      "THURSDAY": {},
-      "FRIDAY": {}
-    }
   }
 }

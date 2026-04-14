@@ -27,10 +27,17 @@ col_letters = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 all_teachers = {}
 
 for sheet_name in wb.sheetnames:
+    if sheet_name == 'Sheet1':
+        continue
+        
     ws = wb[sheet_name]
     
     # Get faculty name from A7
     faculty_raw = str(ws['A7'].value or '').replace('Name of the Faculty:', '').strip()
+    
+    # If faculty_raw is empty and sheet_name is Sheet1-like, skip it
+    if not faculty_raw and (sheet_name.startswith('Sheet') or len(sheet_name) < 2):
+        continue
     
     # Handle cases like "Ms." or "Mr." or empty by using sheet name
     if faculty_raw.lower() in ['ms.', 'mr.', 'dr.', ''] or len(faculty_raw) <= 3:

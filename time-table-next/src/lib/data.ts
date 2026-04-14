@@ -95,8 +95,8 @@ export function getWorkloadScore(teacherId: string): number {
 
 export function getLoadStatus(teacherId: string): { label: string; color: string } {
   const score = getWorkloadScore(teacherId);
-  if (score > 16) return { label: 'HEAVY DUTY', color: 'text-copper' };
-  if (score > 12) return { label: 'OPTIMAL', color: 'text-cream' };
+  if (score > 16) return { label: 'HIGH LOAD', color: 'text-copper' };
+  if (score > 12) return { label: 'BUSY', color: 'text-cream' };
   return { label: 'LIGHT', color: 'text-muted' };
 }
 

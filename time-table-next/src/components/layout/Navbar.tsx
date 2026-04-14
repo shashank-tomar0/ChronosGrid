@@ -26,11 +26,11 @@ export function Navbar() {
         </div>
         
         <div className="flex-1 hidden md:block text-center text-sm font-sans max-w-sm leading-tight text-muted">
-          Advanced cybersecurity-scale load distribution and timeline intelligence.
+          Efficient faculty scheduling and availability tracking assistant.
         </div>
         
         <div className="flex-1 right-nav hidden md:block text-center text-xs font-sans text-muted leading-tight uppercase tracking-widest">
-          v2.0.0 — System Online<br/>
+          v2.0.0 — Ready<br/>
           ABES.AC.IN
         </div>
         
@@ -103,7 +103,7 @@ export function Navbar() {
               </Link>
               <Link onClick={() => setMenuOpen(false)} href="/faculty" className="text-huge font-display font-black text-transparent bg-clip-text bg-gradient-to-r hover:from-copper hover:to-magenta from-cream to-cream transition-all tracking-tighter uppercase relative group">
                 <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-copper to-magenta transition-all duration-300 group-hover:w-full"></span>
-                Faculty Matrix
+                Faculty Schedule
               </Link>
             </div>
 

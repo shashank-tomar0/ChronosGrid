@@ -140,7 +140,7 @@ export default function Home() {
 
           <div className="overflow-hidden mb-4 border border-copper/30 bg-copper/5 px-6 py-2 rounded-full shadow-[0_0_15px_rgba(50,95,232,0.2)]">
             <motion.div variants={itemReveal} className="text-xs font-sans uppercase tracking-[0.3em] font-bold text-copper flex items-center gap-3">
-              <span className="w-2 h-2 bg-copper animate-ping rounded-full inline-block" /> SECURITY & LOAD DISTRIBUTION
+              <span className="w-2 h-2 bg-copper animate-ping rounded-full inline-block" /> FACULTY MANAGEMENT SYSTEM
             </motion.div>
           </div>
           
@@ -151,23 +151,27 @@ export default function Home() {
           </div>
           <div className="overflow-hidden">
             <motion.h1 variants={itemReveal} className="text-[clamp(3rem,8vw,8rem)] font-display uppercase font-black tracking-tighter whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-copper via-cream to-magenta leading-[0.8] drop-shadow-[0_0_20px_rgba(50,95,232,0.4)]">
-              INTELLIGENCE
+              ASSISTANT
             </motion.h1>
           </div>
           
           <motion.div variants={itemReveal} className="mt-8 max-w-2xl mx-auto">
             <p className="text-muted font-sans text-lg lg:text-xl font-medium tracking-wide">
-              Advanced resource allocation and real-time mapping engine. <br/> Stop scheduling manually, start deploying securely.
+              Quickly find available teachers and manage schedules. <br/> Save time with automated faculty tracking.
             </p>
           </motion.div>
 
           <motion.div variants={itemReveal} className="mt-12 flex gap-6">
-            <button className="bg-copper text-ink font-bold font-sans uppercase tracking-[0.2em] px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(50,95,232,0.5)] hover:shadow-[0_0_35px_rgba(50,95,232,0.8)] hover:bg-white transition-all transform hover:-translate-y-1">
-              Initialize Matrix
-            </button>
-            <button className="text-muted border border-grid bg-surface/50 font-bold font-sans uppercase tracking-[0.2em] px-8 py-4 rounded-xl hover:border-magenta hover:text-magenta transition-all drop-shadow-lg">
-              View Analytics
-            </button>
+            <Link href="/dashboard">
+              <button className="bg-copper text-white font-bold font-sans uppercase tracking-[0.2em] px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(50,95,232,0.3)] hover:bg-copper-dim hover:shadow-[0_0_35px_rgba(50,95,232,0.5)] transition-all transform hover:-translate-y-1">
+                Open Dashboard
+              </button>
+            </Link>
+            <Link href="/faculty">
+              <button className="text-cream border border-grid bg-surface/50 font-bold font-sans uppercase tracking-[0.2em] px-8 py-4 rounded-xl hover:bg-surface2 transition-all drop-shadow-lg">
+                Faculty Schedule
+              </button>
+            </Link>
           </motion.div>
 
         </motion.div>
@@ -179,7 +183,7 @@ export default function Home() {
           className="absolute bottom-12 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-widest font-bold flex flex-col items-center gap-2 z-10 text-copper/60 hover:text-copper transition-colors"
         >
           <ArrowDown className="w-5 h-5 animate-bounce" />
-          SYSTEM SCAN ACTIVE
+          SYSTEM READY
         </motion.div>
       </section>
 
@@ -195,8 +199,8 @@ export default function Home() {
           <div className="relative">
             <div className="absolute -left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-copper to-magenta rounded-full"></div>
             <h2 className="text-4xl md:text-6xl font-display font-black uppercase tracking-tighter leading-none whitespace-normal break-words pl-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cream to-muted">Identify vulnerabilities in</span><br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-copper to-magenta">resource distribution.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cream to-muted">Monitor and manage</span><br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-copper to-magenta">faculty availability.</span>
             </h2>
           </div>
         </motion.div>
@@ -209,8 +213,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10">
             {/* 1. Visual Day Switcher */}
             <div className="flex flex-col gap-3 w-full lg:w-auto">
-              <span className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.3em]">Temporal Scope</span>
               <div className="flex bg-surface p-1 border border-grid rounded-xl w-full lg:w-fit shadow-inner">
+                <div className="flex-1 flex flex-col items-center justify-center px-4 py-2 border-r border-grid/30 bg-copper/5">
+                  <span className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.2em]">Select Day</span>
+                </div>
                 {DAYS.map(day => (
                   <button
                     key={day}
@@ -231,7 +237,7 @@ export default function Home() {
             <div className="flex items-center gap-10 bg-surface/50 backdrop-blur-md p-6 border border-grid/80 rounded-2xl w-full lg:w-auto shadow-cyan relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-copper to-magenta" />
               <div className="flex flex-col">
-                <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mb-1">Nodes Online</span>
+                <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mb-1">Teachers Available</span>
                 <div className="flex items-center gap-3">
                   <span className="text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-copper to-copper-dim">{freeTeachers.length}</span>
                   <div className="flex flex-col">
@@ -242,12 +248,12 @@ export default function Home() {
               </div>
               <div className="w-[1px] h-12 bg-grid" />
               <div className="flex flex-col">
-                <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mb-1">System Load</span>
+                <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mb-1">Occupancy Rate</span>
                 <div className="flex items-center gap-3">
                   <span className="text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-b from-magenta to-red-500">{((1 - (freeTeachers.length / Object.keys(TEACHERS).length)) * 100).toFixed(0)}%</span>
                   <div className="flex flex-col">
                     <div className="w-8 h-[3px] bg-gradient-to-r from-magenta to-transparent rounded-full" />
-                    <span className="text-[10px] font-sans text-muted uppercase tracking-[0.2em] mt-1">Consumed</span>
+                    <span className="text-[10px] font-sans text-muted uppercase tracking-[0.2em] mt-1">Occupied</span>
                   </div>
                 </div>
               </div>
@@ -257,7 +263,7 @@ export default function Home() {
           {/* 2. Horizontal Time Strip */}
           <div className="flex flex-col gap-4 w-full border-t border-grid/30 pt-8">
              <div className="flex justify-between items-end mb-1">
-                <span className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.3em]">Network Slot Index</span>
+                <span className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.3em]">Select Time Period</span>
                 <button 
                   onClick={detectNow}
                   className="text-[10px] font-sans font-bold text-copper uppercase tracking-[0.2em] border border-copper/30 bg-copper/5 px-4 py-2 rounded-full hover:bg-copper hover:text-ink transition-all flex items-center gap-2 group shadow-sm hover:shadow-cyan"
@@ -292,9 +298,9 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
           {freeTeachers.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-40 border border-grid/60 bg-surface/30 backdrop-blur-sm rounded-3xl mt-12 shadow-[0_0_50px_rgba(226,31,135,0.05)]">
-              <div className="text-muted/10 font-display font-black text-6xl uppercase tracking-tighter mb-4">Offline</div>
+              <div className="text-muted/10 font-display font-black text-6xl uppercase tracking-tighter mb-4">No Teachers</div>
               <span className="text-[10px] font-sans font-bold text-magenta uppercase tracking-[0.4em] flex items-center gap-3">
-                <span className="w-2 h-2 bg-magenta rounded-full animate-pulse blur-[1px]"></span> NO ENTITIES AVAILABLE
+                <span className="w-2 h-2 bg-magenta rounded-full animate-pulse blur-[1px]"></span> NO TEACHERS AVAILABLE
               </span>
             </div>
           ) : (
@@ -324,10 +330,10 @@ export default function Home() {
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="bg-surface2/60 border-b border-grid text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em]">
-                          <th className="px-8 py-5">Node Identity</th>
-                          <th className="px-8 py-5 text-center">Protocol History</th>
-                          <th className="px-8 py-5 text-center">System State</th>
-                          <th className="px-8 py-5 text-right">Action Override</th>
+                          <th className="px-8 py-5">Faculty Name</th>
+                          <th className="px-8 py-5 text-center">Duty Records</th>
+                          <th className="px-8 py-5 text-center">Status</th>
+                          <th className="px-8 py-5 text-right">Manual Assign</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-grid/40">
@@ -372,17 +378,17 @@ export default function Home() {
                                 <div className={`text-2xl font-display font-black ${historyCount > 3 ? 'text-copper drop-shadow-[0_0_5px_rgba(50,95,232,0.8)]' : 'text-muted'}`}>
                                   {historyCount.toString().padStart(2, '0')}
                                 </div>
-                                <div className="text-[9px] font-sans font-bold text-muted uppercase tracking-[0.2em] mt-1">Executions</div>
+                                <div className="text-[9px] font-sans font-bold text-muted uppercase tracking-[0.2em] mt-1">Duties</div>
                               </td>
                               <td className="px-8 py-6 text-center">
                                 <span className="inline-flex items-center gap-2 px-4 py-2 bg-copper/5 border border-copper/30 text-[10px] font-sans font-bold text-copper uppercase tracking-[0.2em] rounded shadow-[0_0_10px_rgba(50,95,232,0.1)]">
                                   <span className="w-1.5 h-1.5 bg-copper rounded-sm animate-pulse shadow-[0_0_5px_rgba(50,95,232,0.8)]" />
-                                  Online
+                                  Available
                                 </span>
                               </td>
                               <td className="px-8 py-6 text-right">
                                 <button className="bg-copper/10 border border-copper text-copper text-[10px] font-bold uppercase tracking-[0.2em] py-3 px-6 rounded-lg hover:bg-copper hover:text-ink transition-all shadow-[0_0_10px_rgba(50,95,232,0.2)] hover:shadow-[0_0_20px_rgba(50,95,232,0.6)]">
-                                  Execute Task
+                                  Assign Now
                                 </button>
                               </td>
                             </motion.tr>
@@ -406,10 +412,10 @@ export default function Home() {
             <div className="md:col-span-4 p-8 md:p-10 border-r border-grid">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-2 h-2 bg-copper shadow-[0_0_10px_rgba(50,95,232,0.8)] rounded-sm animate-pulse" />
-                <h3 className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-copper">Activity Feed</h3>
+                <h3 className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-copper">Recent Duties</h3>
               </div>
               <p className="text-[10px] font-sans text-muted uppercase tracking-[0.2em] leading-relaxed mb-6">
-                System tracking records and deployment history.
+                Recent duty history for all teachers.
               </p>
               {logWeekDuties.length > 0 && (
                 <button
@@ -417,7 +423,7 @@ export default function Home() {
                   className="text-[9px] font-sans font-bold text-muted hover:text-magenta uppercase tracking-[0.2em] flex items-center gap-2 border border-grid hover:border-magenta/50 px-4 py-2 transition-all rounded shadow-sm hover:bg-magenta/5"
                 >
                   <Trash2 size={12} />
-                  Purge Data ({logWeekDuties.length})
+                  Clear History ({logWeekDuties.length})
                 </button>
               )}
             </div>
@@ -435,7 +441,7 @@ export default function Home() {
                 <CalendarDays size={16} className="text-copper" />
                 <span className="text-sm font-display font-bold uppercase tracking-[0.1em] text-cream">{logWeekLabel}</span>
                 {isLogCurrentWeek ? (
-                  <span className="text-[8px] font-sans font-bold text-copper uppercase tracking-[0.2em] bg-copper/10 border border-copper/30 px-3 py-1 rounded shadow-[0_0_10px_rgba(50,95,232,0.1)]">Active Epoch</span>
+                  <span className="text-[8px] font-sans font-bold text-copper uppercase tracking-[0.2em] bg-copper/10 border border-copper/30 px-3 py-1 rounded shadow-[0_0_10px_rgba(50,95,232,0.1)]">Current Week</span>
                 ) : (
                   <button
                     onClick={() => setLogMonday(logTodayMonday)}
@@ -497,7 +503,7 @@ export default function Home() {
 
                       <div className="flex items-center gap-6 px-8 pb-6 md:pb-0">
                         <div className="hidden lg:block text-right pr-6 border-r border-grid/50">
-                          <span className="text-[9px] font-sans font-bold text-muted uppercase tracking-[0.2em] block mb-1">Execution Code</span>
+                          <span className="text-[9px] font-sans font-bold text-muted uppercase tracking-[0.2em] block mb-1">Assignment Reason</span>
                           <span className="text-sm font-sans font-medium text-cream">{duty.reason}</span>
                         </div>
                         <button
