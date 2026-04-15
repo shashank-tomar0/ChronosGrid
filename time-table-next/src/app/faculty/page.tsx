@@ -3,7 +3,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { TEACHERS, getTeachersWithOverrides, TIME_SLOTS, DAYS, Day, TimeSlot, parseSubject, getTotalFreeSlots } from "@/lib/data";
+import { TEACHERS, getTeachersWithOverrides, TIME_SLOTS, DAYS, Day, TimeSlot, parseSubject, getTotalFreeSlots, Teacher } from "@/lib/data";
 import { useDuties, getMonday, getWeekKey, getDateForDay } from "@/hooks/useDuties";
 import { DutyModal } from "@/components/DutyModal";
 import { ChevronLeft, ChevronRight, CalendarDays, Trash2, XCircle } from "lucide-react";

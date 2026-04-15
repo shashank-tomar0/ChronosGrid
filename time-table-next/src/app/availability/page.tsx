@@ -200,24 +200,6 @@ export default function AvailabilityPage() {
           </div>
         </motion.div>
 
-        {/* Results Grid */}
-        <motion.div variants={itemVariants} className="relative">
-          <div className="flex items-center justify-between mb-12 px-4">
-            <h3 className="text-2xl font-display font-black text-ink uppercase tracking-tight">Available Personnel</h3>
-            <div className="flex items-center gap-4 text-[10px] font-sans font-bold text-muted/40 uppercase tracking-[0.2em]">
-              <div className="w-2 h-2 rounded-full bg-copper shadow-copper" />
-              Live Stream Active
-            </div>
-          </div>
-
-          {freeTeachers.length === 0 ? (
-            <div className="py-40 flex flex-col items-center justify-center glass-card rounded-[3rem] border-dashed border-2 border-black/5 text-center">
-               <div className="w-20 h-20 bg-red-500/5 rounded-full flex items-center justify-center mb-6">
-                  <Search size={32} className="text-red-500/40" />
-               </div>
-               <h3 className="text-[12px] font-sans font-black text-red-500 uppercase tracking-[0.5em]">Critical Load: Zero Nodes Available</h3>
-            </div>
-          ) : (
         {/* Results Grid - Redesigned as Premium Structured List */}
         <motion.div variants={itemVariants} className="relative">
           <div className="flex items-center justify-between mb-12 px-4">
