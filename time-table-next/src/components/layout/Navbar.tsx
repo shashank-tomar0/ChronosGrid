@@ -39,6 +39,7 @@ export function Navbar() {
             <Link href="/" className="hover:text-copper hover:shadow-[0_0_10px_rgba(50,95,232,0.4)] transition-all">Availability</Link>
             <Link href="/dashboard" className="hover:text-copper hover:shadow-[0_0_10px_rgba(50,95,232,0.4)] transition-all">Dashboard</Link>
             <Link href="/faculty" className="hover:text-copper hover:shadow-[0_0_10px_rgba(50,95,232,0.4)] transition-all">Faculty</Link>
+            <Link href="/adjustments" className="hover:text-copper hover:shadow-[0_0_10px_rgba(50,95,232,0.4)] transition-all text-magenta">Adjustments</Link>
           </div>
           <div className="w-[1px] h-4 bg-grid hidden lg:block" />
           
@@ -104,6 +105,10 @@ export function Navbar() {
               <Link onClick={() => setMenuOpen(false)} href="/faculty" className="text-huge font-display font-black text-transparent bg-clip-text bg-gradient-to-r hover:from-copper hover:to-magenta from-cream to-cream transition-all tracking-tighter uppercase relative group">
                 <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-copper to-magenta transition-all duration-300 group-hover:w-full"></span>
                 Faculty Schedule
+              </Link>
+              <Link onClick={() => setMenuOpen(false)} href="/adjustments" className="text-huge font-display font-black text-transparent bg-clip-text bg-gradient-to-r hover:from-copper hover:to-magenta from-cream to-cream transition-all tracking-tighter uppercase relative group">
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-copper to-magenta transition-all duration-300 group-hover:w-full"></span>
+                Adjustments
               </Link>
             </div>
 

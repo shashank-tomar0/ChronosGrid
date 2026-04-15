@@ -57,6 +57,13 @@ for sheet_name in wb.sheetnames:
     
     print(f"\nTeacher: {faculty_name} | Dept: {dept} | L={l_count}, T={t_count}, P={p_count}")
     
+    def get_cell_value(cell):
+        for merged_range in ws.merged_cells.ranges:
+            if cell.coordinate in merged_range:
+                # Return the top-left cell value of the merged range
+                return ws.cell(row=merged_range.min_row, column=merged_range.min_col).value
+        return cell.value
+
     teacher_schedule = {}
     for day_row, day_name in days.items():
         day_schedule = {}
@@ -64,13 +71,18 @@ for sheet_name in wb.sheetnames:
             # Concatenate non-empty values from all 4 rows in the day's block
             cell_values = []
             for r in range(day_row, day_row + 4):
-                val = ws[f'{col}{r}'].value
+                cell = ws[f'{col}{r}']
+                val = get_cell_value(cell)
                 if val and str(val).strip() and str(val).strip() != '':
                     cell_values.append(str(val).strip())
             
             if cell_values:
-                # Join with newline to maintain structure, or space if preferred
-                day_schedule[time_slots[idx]] = "\n".join(cell_values)
+                # Deduplicate consecutive identical lines (often happens in merged rows too)
+                unique_values = []
+                for v in cell_values:
+                    if not unique_values or v != unique_values[-1]:
+                        unique_values.append(v)
+                day_schedule[time_slots[idx]] = "\n".join(unique_values)
         
         teacher_schedule[day_name] = day_schedule
         

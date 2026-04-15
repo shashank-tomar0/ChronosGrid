@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-import { TEACHERS, TIME_SLOTS, DAYS, parseSubject, getLoadStatus, getTotalClasses, Day, TimeSlot, Teacher } from "@/lib/data";
+import { TEACHERS, getTeachersWithOverrides, TIME_SLOTS, DAYS, parseSubject, getLoadStatus, getTotalClasses, Day, TimeSlot, Teacher } from "@/lib/data";
 import { ArrowLeft, Clock, ChevronLeft, ChevronRight, CalendarDays } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDuties, getMonday, getWeekKey, getDateForDay } from "@/hooks/useDuties";
@@ -11,8 +11,10 @@ export default function FacultyDetailPage() {
   const params = useParams();
   const router = useRouter();
   const id = params.id as string;
-  const teacher = TEACHERS[id];
+  
   const [mounted, setMounted] = useState(false);
+  const [teachers, setTeachers] = useState<Record<string, Teacher>>(TEACHERS);
+  const teacher = teachers[id];
 
   // Week navigation state
   const [currentMonday, setCurrentMonday] = useState<Date>(getMonday(new Date()));
@@ -27,8 +29,8 @@ export default function FacultyDetailPage() {
   const [activeTeacher, setActiveTeacher] = useState<Teacher | null>(teacher || null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setMounted(true), 0);
-    return () => clearTimeout(timer);
+    setMounted(true);
+    setTeachers(getTeachersWithOverrides());
   }, []);
 
   if (!mounted || !teacher || !activeTeacher) return null;

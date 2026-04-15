@@ -3,14 +3,18 @@
 import { useEffect, useState } from "react";
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { TEACHERS, TIME_SLOTS, getFreeTeachers, getTotalClasses, getFreeSlotCountByDay, parseSubject, getWorkloadScore, getLoadStatus, Day, TimeSlot, Teacher } from "@/lib/data";
+import { TEACHERS, TIME_SLOTS, getFreeTeachers, getTeachersWithOverrides, getTotalClasses, getFreeSlotCountByDay, parseSubject, getWorkloadScore, getLoadStatus, Day, TimeSlot, Teacher } from "@/lib/data";
 import { useDuties, getWeekKey } from "@/hooks/useDuties";
+import { ChevronRight } from "lucide-react";
 import { DutyModal } from "@/components/DutyModal";
 
 export default function DashboardPage() {
   const [mounted, setMounted] = useState(false);
   const { duties, assignDuty } = useDuties();
   
+  // Use dynamic teachers list to support manual overrides
+  const [teachers, setTeachers] = useState<Record<string, Teacher>>(TEACHERS);
+
   // Dynamically calculate today's day and date
   const today = new Date();
   const dayIndex = today.getDay();
@@ -30,7 +34,6 @@ export default function DashboardPage() {
   });
   
   const currentWeekKey = getWeekKey(today);
-
   const currentSlot = TIME_SLOTS[0];
   
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,13 +41,13 @@ export default function DashboardPage() {
   const [modalSlot, setModalSlot] = useState<TimeSlot>(TIME_SLOTS[0]);
 
   useEffect(() => {
-    const timer = setTimeout(() => setMounted(true), 0);
-    return () => clearTimeout(timer);
+    setMounted(true);
+    setTeachers(getTeachersWithOverrides());
   }, []);
 
   if (!mounted) return null;
 
-  const teacherIds = Object.keys(TEACHERS);
+  const teacherIds = Object.keys(teachers);
   const totalFaculty = teacherIds.length;
   const freeNow = getFreeTeachers(currentDay, currentSlot).length;
   const totalFreeToday = teacherIds.reduce((sum, id) => sum + getFreeSlotCountByDay(id, currentDay), 0);
@@ -155,7 +158,7 @@ export default function DashboardPage() {
               </thead>
               <tbody>
                 {teacherIds.map(id => {
-                  const teacher = TEACHERS[id];
+                  const teacher = teachers[id];
                   return (
                     <tr key={id} className="border-b border-grid last:border-0 hover:bg-surface2 transition-colors group">
                       <td className="w-40 p-4 border-r border-grid sticky left-0 z-10 bg-surface/95 backdrop-blur-xl group-hover:bg-surface2/80 transition-colors relative">
@@ -224,23 +227,60 @@ export default function DashboardPage() {
             <h2 className="text-lg font-display font-black uppercase tracking-tight text-cream p-6 border-b border-grid bg-surface/80 flex items-center gap-3">
               <span className="w-2 h-2 bg-copper rounded-sm" /> Faculty Registry Directory
             </h2>
-            <div className="divide-y divide-grid/60 flex-1 overflow-y-auto max-h-[500px] bg-surface/30">
-              {teacherIds.map(id => {
-                const t = TEACHERS[id];
+            <div className="divide-y divide-grid/40 flex-1 overflow-y-auto max-h-[600px] bg-surface/30">
+              {teacherIds.sort((a,b) => teachers[a].name.localeCompare(teachers[b].name)).map(id => {
+                const t = teachers[id];
                 const status = getLoadStatus(id);
+                const dutyCount = getDutyCount(id);
+                const cleanName = t.name.replace(/^(Dr\.|Mr\.|Ms\.|Mrs\.)\s+/i, '').trim();
+                const initial = cleanName.charAt(0).toUpperCase();
+
                 return (
-                  <Link key={id} href={`/faculty/${id}`} className="p-6 flex justify-between items-center hover:bg-surface2/80 transition-colors group relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-1 h-full bg-grid group-hover:bg-copper transition-colors" />
-                    <div className="pl-2">
-                      <div className="text-xl font-display font-bold uppercase tracking-tight text-cream group-hover:text-copper transition-colors">{t.name}</div>
-                      <div className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mt-1">{t.department}</div>
-                    </div>
-                    <div className="text-right flex flex-col items-end">
-                      <div className={`text-[9px] font-sans font-bold uppercase tracking-[0.3em] px-3 py-1 bg-ink border border-grid rounded mb-2 ${status.color}`}>
-                        {status.label}
+                  <Link key={id} href={`/faculty/${id}`} className="group p-6 flex flex-col md:flex-row justify-between items-center hover:bg-white/5 transition-all duration-300 relative overflow-hidden border-b border-grid/20 last:border-0">
+                    <div className="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-copper transition-all duration-300" />
+                    
+                    <div className="flex items-center gap-6 w-full md:w-auto">
+                      {/* Avatar */}
+                      <div className="w-12 h-12 rounded-xl bg-ink text-white flex items-center justify-center font-display font-black text-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        {initial}
                       </div>
-                      <div className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em]">
-                        {getTotalClasses(id)} Blocks/Wk
+                      
+                      <div className="flex flex-col">
+                        <div className="text-lg font-display font-black uppercase tracking-tight text-cream group-hover:text-copper transition-colors">{t.name}</div>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-[9px] font-sans font-black text-muted uppercase tracking-[0.2em]">{t.id}</span>
+                          <span className="w-1 h-1 rounded-full bg-grid" />
+                          <span className="text-[9px] font-sans font-bold text-muted/60 uppercase tracking-[0.1em]">{t.department}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-10 mt-4 md:mt-0 w-full md:w-auto justify-between md:justify-end">
+                      <div className="flex flex-col items-center md:items-end">
+                        <span className="text-[8px] font-sans font-black text-muted/40 uppercase tracking-[0.2em] mb-1">Weekly Volume</span>
+                        <div className="flex items-baseline gap-1">
+                          <span className="text-xl font-display font-black text-cream">{String(getTotalClasses(id)).padStart(2, '0')}</span>
+                          <span className="text-[7px] font-sans font-bold text-muted/40 uppercase">Blocks</span>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-center md:items-end min-w-[100px]">
+                        <span className="text-[8px] font-sans font-black text-muted/40 uppercase tracking-[0.2em] mb-1">Load Status</span>
+                        <div className={`px-3 py-1 rounded border ${status.color.replace('text-', 'border-').replace('text-', 'bg-').split(' ')[0]}/10 ${status.color} text-[8px] font-sans font-black uppercase tracking-[0.1em]`}>
+                          {status.label}
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-center md:items-end">
+                        <span className="text-[8px] font-sans font-black text-muted/40 uppercase tracking-[0.2em] mb-1">Live Logs</span>
+                        <div className="flex items-baseline gap-1">
+                          <span className={`${dutyCount > 0 ? 'text-magenta' : 'text-muted'} text-xl font-display font-black`}>{String(dutyCount).padStart(2, '0')}</span>
+                          <span className="text-[7px] font-sans font-bold text-muted/40 uppercase">Tasks</span>
+                        </div>
+                      </div>
+
+                      <div className="p-2 bg-white/5 rounded-lg group-hover:bg-copper group-hover:text-white transition-colors">
+                        <ChevronRight size={14} className="text-muted group-hover:text-white transition-colors" />
                       </div>
                     </div>
                   </Link>
@@ -263,7 +303,7 @@ export default function DashboardPage() {
                 return (
                   <div key={id} className="w-full">
                     <div className="flex justify-between text-[10px] font-sans font-bold text-muted mb-2 uppercase tracking-[0.2em]">
-                      <span>{TEACHERS[id].name}</span>
+                      <span>{teachers[id].name}</span>
                       <span className={isBusy ? 'text-copper drop-shadow-[0_0_5px_rgba(50,95,232,0.5)]' : ''}>
                         {isBusy ? 'ACTIVE TASK' : 'Standby'} — {dutyCount} Logs
                       </span>

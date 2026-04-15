@@ -3,7 +3,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { TEACHERS, TIME_SLOTS, DAYS, Day, TimeSlot, parseSubject, getTotalFreeSlots } from "@/lib/data";
+import { TEACHERS, getTeachersWithOverrides, TIME_SLOTS, DAYS, Day, TimeSlot, parseSubject, getTotalFreeSlots } from "@/lib/data";
 import { useDuties, getMonday, getWeekKey, getDateForDay } from "@/hooks/useDuties";
 import { DutyModal } from "@/components/DutyModal";
 import { ChevronLeft, ChevronRight, CalendarDays, Trash2, XCircle } from "lucide-react";
@@ -14,8 +14,22 @@ function FacultyPageContent() {
   const idParam = searchParams.get("id");
   
   const { duties, assignDuty, removeDuty, getDutiesForWeek, clearAllDuties, clearWeekDuties } = useDuties();
-  const teacherIds = Object.keys(TEACHERS);
-  const [selectedTeacherId, setSelectedTeacherId] = useState<string>(idParam && TEACHERS[idParam] ? idParam : teacherIds[0]);
+  
+  // Use dynamic teachers list to support manual overrides
+  const [teachers, setTeachers] = useState<Record<string, Teacher>>(TEACHERS);
+  
+  useEffect(() => {
+    setMounted(true);
+    setTeachers(getTeachersWithOverrides());
+  }, []);
+
+  const teacherIds = Object.keys(teachers).sort((a, b) => 
+    teachers[a].name.localeCompare(teachers[b].name)
+  );
+  
+  const [selectedTeacherId, setSelectedTeacherId] = useState<string>(
+    idParam && teachers[idParam] ? idParam : teacherIds[0]
+  );
 
   // Week navigation state
   const [currentMonday, setCurrentMonday] = useState<Date>(getMonday(new Date()));
@@ -35,14 +49,14 @@ function FacultyPageContent() {
   }, []);
 
   useEffect(() => {
-    if (idParam && TEACHERS[idParam]) {
+    if (idParam && teachers[idParam]) {
       setSelectedTeacherId(idParam);
     }
-  }, [idParam]);
+  }, [idParam, teachers]);
 
   if (!mounted) return null;
 
-  const teacher = TEACHERS[selectedTeacherId];
+  const teacher = teachers[selectedTeacherId];
   const teacherWeekDuties = weekDuties.filter(d => d.teacherId === selectedTeacherId);
   const teacherAllDuties = duties
     .filter(d => d.teacherId === selectedTeacherId)
@@ -176,31 +190,52 @@ function FacultyPageContent() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-magenta to-transparent" />
               Node Index List
             </div>
-            <div className="flex flex-col flex-1 overflow-y-auto custom-scrollbar bg-surface/30">
+            <div className="flex flex-col flex-1 overflow-y-auto custom-scrollbar bg-surface/30 px-3 py-4 gap-2">
               {teacherIds.map(id => {
                 const isActive = id === selectedTeacherId;
-                const t = TEACHERS[id];
+                const t = teachers[id];
                 const dutyCount = weekDuties.filter(d => d.teacherId === id).length;
+                
+                const cleanName = t.name.replace(/^(Dr\.|Mr\.|Ms\.|Mrs\.)\s+/i, '').trim();
+                const initial = cleanName.charAt(0).toUpperCase();
+
                 return (
                   <button
                     key={id}
                     onClick={() => { setSelectedTeacherId(id); setConfirmDeleteId(null); }}
-                    className={`text-left p-4 border-b border-grid/50 last:border-0 transition-colors relative group ${
-                      isActive ? 'bg-copper/10 text-white shadow-inner' : 'hover:bg-surface2/80 text-cream'
+                    className={`text-left p-4 rounded-xl transition-all duration-300 relative group flex items-center gap-4 ${
+                      isActive 
+                        ? 'bg-ink text-white shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-copper/30' 
+                        : 'hover:bg-white/5 text-cream border border-transparent'
                     }`}
                   >
-                    <div className={`absolute top-0 left-0 w-1 h-full transition-colors ${isActive ? 'bg-copper shadow-[0_0_10px_rgba(50,95,232,0.8)]' : 'bg-transparent group-hover:bg-grid'}`} />
-                    <div className="flex justify-between items-center pl-2">
-                      <div>
-                        <div className={`font-display uppercase tracking-tight text-sm font-bold ${isActive ? 'text-copper' : 'group-hover:text-copper transition-colors'}`}>{t.name}</div>
-                        <div className={`text-[9px] font-sans mt-0.5 tracking-[0.3em] font-bold uppercase ${isActive ? 'text-white/80' : 'text-muted'}`}>{t.shortDept}</div>
-                      </div>
-                      {dutyCount > 0 && (
-                        <span className={`text-[9px] font-sans font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded shadow-sm ${isActive ? 'bg-magenta text-ink shadow-[0_0_10px_rgba(226,31,135,0.4)]' : 'bg-magenta/10 text-magenta border border-magenta/20'}`}>
-                          {dutyCount} {dutyCount === 1 ? 'Log' : 'Logs'}
-                        </span>
-                      )}
+                    {/* Avatar Pin */}
+                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-display font-black text-xs transition-all duration-300 ${
+                      isActive ? 'bg-copper text-white shadow-[0_0_15px_rgba(50,95,232,0.5)]' : 'bg-surface2 text-muted group-hover:bg-ink group-hover:text-copper'
+                    }`}>
+                      {initial}
                     </div>
+
+                    <div className="flex flex-col flex-1 overflow-hidden">
+                      <div className={`font-display uppercase tracking-tight text-[11px] font-black truncate ${isActive ? 'text-copper' : 'group-hover:text-copper transition-colors'}`}>
+                        {t.name}
+                      </div>
+                      <div className="flex items-center gap-2 mt-0.5">
+                        <span className={`text-[8px] font-sans font-black tracking-[0.1em] uppercase ${isActive ? 'text-white/40' : 'text-muted/60'}`}>
+                          {t.id}
+                        </span>
+                        {dutyCount > 0 && (
+                          <div className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span className="w-1 h-1 rounded-full bg-magenta animate-pulse shadow-[0_0_5px_rgba(226,31,135,0.8)]" />
+                            <span className="text-[8px] font-sans font-black text-magenta uppercase">{dutyCount}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {isActive && (
+                      <div className="w-1.5 h-1.5 rounded-full bg-copper shadow-copper animate-pulse" />
+                    )}
                   </button>
                 );
               })}

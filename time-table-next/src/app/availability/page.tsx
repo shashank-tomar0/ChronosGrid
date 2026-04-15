@@ -3,7 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { ChevronLeft, ChevronRight, CalendarDays, Search, Users, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
-import { TEACHERS, getFreeTeachers, TIME_SLOTS, DAYS, Day, TimeSlot, Teacher } from "@/lib/data";
+import { TEACHERS, getFreeTeachers, getTeachersWithOverrides, TIME_SLOTS, DAYS, Day, TimeSlot, Teacher } from "@/lib/data";
 import { useDuties } from "@/hooks/useDuties";
 import { DutyModal } from "@/components/DutyModal";
 
@@ -13,6 +13,9 @@ export default function AvailabilityPage() {
   const [selectedSlot, setSelectedSlot] = useState<TimeSlot>('10:40-11:30');
   
   const { duties, assignDuty } = useDuties();
+
+  // Use dynamic teachers list to support manual overrides
+  const [teachers, setTeachers] = useState<Record<string, Teacher>>(TEACHERS);
 
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -59,6 +62,7 @@ export default function AvailabilityPage() {
   useEffect(() => {
     detectNow();
     setMounted(true);
+    setTeachers(getTeachersWithOverrides());
   }, []);
 
   if (!mounted) return null;
@@ -214,49 +218,83 @@ export default function AvailabilityPage() {
                <h3 className="text-[12px] font-sans font-black text-red-500 uppercase tracking-[0.5em]">Critical Load: Zero Nodes Available</h3>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {/* Results Grid - Redesigned as Premium Structured List */}
+        <motion.div variants={itemVariants} className="relative">
+          <div className="flex items-center justify-between mb-12 px-4">
+            <h3 className="text-2xl font-display font-black text-ink uppercase tracking-tight">Active Personnel Inventory</h3>
+            <div className="flex items-center gap-4 text-[10px] font-sans font-bold text-muted/40 uppercase tracking-[0.2em]">
+              <div className="w-2 h-2 rounded-full bg-copper shadow-copper animate-pulse" />
+              Live Stream Active
+            </div>
+          </div>
+
+          {freeTeachers.length === 0 ? (
+            <div className="py-40 flex flex-col items-center justify-center glass-card rounded-[3rem] border-dashed border-2 border-black/5 text-center">
+               <div className="w-20 h-20 bg-red-500/5 rounded-full flex items-center justify-center mb-6">
+                  <Search size={32} className="text-red-500/40" />
+               </div>
+               <h3 className="text-[12px] font-sans font-black text-red-500 uppercase tracking-[0.5em]">Critical Load: Zero Nodes Available</h3>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-px bg-black/5 border border-black/5 rounded-3xl overflow-hidden backdrop-blur-md">
+              {/* Table Headers */}
+              <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-6 px-10 py-6 bg-ink/40 border-b border-black/5">
+                <span className="text-[10px] font-sans font-black text-muted uppercase tracking-[0.3em]">Faculty Name</span>
+                <span className="text-[10px] font-sans font-black text-muted uppercase tracking-[0.3em] text-center hidden md:block">Duty Records</span>
+                <span className="text-[10px] font-sans font-black text-muted uppercase tracking-[0.3em] text-center hidden md:block">Status</span>
+                <span className="text-[10px] font-sans font-black text-muted uppercase tracking-[0.3em] text-right hidden md:block">Manual Assign</span>
+              </div>
+
               {freeTeachers.map((teacher, idx) => {
                 const dutyCount = duties.filter(d => d.teacherId === teacher.id).length;
+                
+                const cleanName = teacher.name.replace(/^(Dr\.|Mr\.|Ms\.|Mrs\.)\s+/i, '').trim();
+                const initial = cleanName.charAt(0).toUpperCase();
+                
                 return (
                   <motion.div
                     key={teacher.id}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.05 }}
+                    transition={{ delay: idx * 0.03 }}
                     onClick={() => { setActiveTeacher(teacher); setIsModalOpen(true); }}
-                    className="glass-card group p-10 rounded-[2.5rem] border-black/5 hover:border-copper/40 transition-all cursor-pointer relative overflow-hidden group/item active:scale-[0.98]"
+                    className="group grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-6 px-10 py-8 bg-white/40 hover:bg-white/80 transition-all duration-300 cursor-pointer items-center"
                   >
-                    <div className="flex flex-col gap-6">
-                      <div className="flex justify-between items-start">
-                        <div className="w-16 h-16 rounded-2xl bg-black/5 border border-black/5 flex items-center justify-center text-3xl font-display font-black text-copper group-hover/item:bg-ink group-hover/item:text-white transition-all">
-                           {teacher.name.charAt(0)}
-                        </div>
-                        <div className="text-right">
-                          <span className="text-[9px] font-sans font-bold text-muted uppercase tracking-[0.1em] block mb-1">Weekly Duties</span>
-                          <span className="text-2xl font-display font-black text-ink">{dutyCount}</span>
-                        </div>
+                    {/* Faculty Name Column */}
+                    <div className="flex items-center gap-6">
+                      <div className="w-14 h-14 rounded-2xl bg-ink text-white flex items-center justify-center font-display font-black text-xl shadow-xl group-hover:scale-110 group-hover:bg-copper transition-all duration-500">
+                        {initial}
                       </div>
-                      
-                      <div>
-                        <h4 className="text-2xl font-display font-black text-ink uppercase tracking-tight group-hover/item:text-copper transition-colors leading-tight mb-2">
+                      <div className="flex flex-col">
+                        <h4 className="text-xl font-display font-black text-ink uppercase tracking-tight leading-none mb-1.5 group-hover:text-copper transition-colors">
                           {teacher.name}
                         </h4>
-                        <div className="flex items-center gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-copper/40" />
-                          <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.4em]">
-                            {teacher.shortDept}
-                          </span>
+                        <div className="flex items-center gap-3">
+                          <span className="px-2 py-0.5 bg-ink text-[9px] font-sans font-bold text-muted uppercase tracking-widest border border-black/5 rounded">ID: {teacher.id}</span>
                         </div>
-                      </div>
-
-                      <div className="mt-4 pt-6 border-t border-black/5 flex justify-between items-center opacity-0 group-hover/item:opacity-100 transition-opacity translate-y-2 group-hover/item:translate-y-0 duration-500">
-                        <span className="text-[10px] font-sans font-black text-copper uppercase tracking-[0.2em]">Deploy Now</span>
-                        <ChevronRight size={16} className="text-copper" />
                       </div>
                     </div>
 
-                    {/* Accent Overlay */}
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-copper/5 to-transparent rounded-bl-full pointer-events-none" />
+                    {/* Duty Records Column */}
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="text-3xl font-display font-black text-ink leading-none">{String(dutyCount).padStart(2, '0')}</div>
+                      <span className="text-[8px] font-sans font-bold text-muted/60 uppercase tracking-widest mt-1">Duties</span>
+                    </div>
+
+                    {/* Status Column */}
+                    <div className="flex items-center justify-center">
+                      <div className="px-5 py-2 rounded-xl bg-green-500/5 border border-green-500/20 flex items-center gap-3 group-hover:bg-green-500/10 transition-colors">
+                        <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                        <span className="text-[10px] font-sans font-black text-green-600 uppercase tracking-[0.2em]">Available</span>
+                      </div>
+                    </div>
+
+                    {/* Manual Assign Column */}
+                    <div className="flex justify-end">
+                      <button className="px-10 py-4 border border-ink bg-ink text-white text-[10px] font-sans font-black uppercase tracking-[0.3em] rounded-2xl hover:bg-copper hover:border-copper hover:shadow-[0_10px_20px_rgba(50,95,232,0.2)] transition-all active:scale-95">
+                        Assign Now
+                      </button>
+                    </div>
                   </motion.div>
                 );
               })}

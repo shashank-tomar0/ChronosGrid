@@ -41,7 +41,7 @@ export interface Teacher {
 }
 
 // Map the JSON data to the Teacher interface
-export const TEACHERS: Record<string, Teacher> = Object.entries(typedRawData).reduce((acc, [id, data]) => {
+const BASE_TEACHERS: Record<string, Teacher> = Object.entries(typedRawData).reduce((acc, [id, data]) => {
   acc[id] = {
     id,
     name: data.name,
@@ -55,12 +55,45 @@ export const TEACHERS: Record<string, Teacher> = Object.entries(typedRawData).re
   return acc;
 }, {} as Record<string, Teacher>);
 
+// Function to get teachers with active overrides from localStorage
+export function getTeachersWithOverrides(): Record<string, Teacher> {
+  if (typeof window === 'undefined') return BASE_TEACHERS;
+  
+  try {
+    const overridesRaw = localStorage.getItem('timetable_overrides');
+    if (!overridesRaw) return BASE_TEACHERS;
+    
+    const overrides = JSON.parse(overridesRaw);
+    const updatedTeachers = { ...BASE_TEACHERS };
+    
+    Object.keys(overrides).forEach(id => {
+      if (updatedTeachers[id]) {
+        updatedTeachers[id] = {
+          ...updatedTeachers[id],
+          schedule: overrides[id].schedule
+        };
+      }
+    });
+    
+    return updatedTeachers;
+  } catch (e) {
+    console.error("Failed to parse overrides", e);
+    return BASE_TEACHERS;
+  }
+}
+
+// Global TEACHERS exported for static access, but functions will use dynamic version
+export const TEACHERS = BASE_TEACHERS;
+
 export function getFreeTeachers(day: Day, slot: TimeSlot): Teacher[] {
-  return Object.values(TEACHERS).filter(teacher => !teacher.schedule[day]?.[slot]);
+  const teachers = getTeachersWithOverrides();
+  return Object.values(teachers).filter(teacher => !teacher.schedule[day]?.[slot]);
 }
 
 export function getTotalClasses(teacherId: string): number {
-  const teacher = TEACHERS[teacherId];
+  const teachers = getTeachersWithOverrides();
+  const teacher = teachers[teacherId];
+  if (!teacher) return 0;
   let count = 0;
   Object.values(teacher.schedule).forEach(day => {
     count += Object.keys(day || {}).length;
@@ -68,12 +101,33 @@ export function getTotalClasses(teacherId: string): number {
   return count;
 }
 
+export function matchTeacherByName(name: string): string | null {
+  const teachers = getTeachersWithOverrides();
+  const clean = (n: string) => n.replace(/^(Dr\.|Mr\.|Ms\.|Mrs\.)\s+/i, '').trim().toLowerCase();
+  
+  const searchName = clean(name);
+  
+  // Try exact match first
+  for (const [id, t] of Object.entries(teachers)) {
+    if (clean(t.name) === searchName) return id;
+  }
+  
+  // Try partial match if no exact match
+  for (const [id, t] of Object.entries(teachers)) {
+    if (clean(t.name).includes(searchName) || searchName.includes(clean(t.name))) return id;
+  }
+  
+  return null;
+}
+
 export function getTotalFreeSlots(teacherId: string): number {
   return (DAYS.length * TIME_SLOTS.length) - getTotalClasses(teacherId);
 }
 
 export function getFreeSlotCountByDay(teacherId: string, day: Day): number {
-  const teacher = TEACHERS[teacherId];
+  const teachers = getTeachersWithOverrides();
+  const teacher = teachers[teacherId];
+  if (!teacher) return TIME_SLOTS.length;
   const busy = Object.keys(teacher.schedule[day] || {}).length;
   return TIME_SLOTS.length - busy;
 }
@@ -88,7 +142,9 @@ export function parseSubject(subjectStr: string): { short: string; full: string 
 }
 
 export function getWorkloadScore(teacherId: string): number {
-  const t = TEACHERS[teacherId];
+  const teachers = getTeachersWithOverrides();
+  const t = teachers[teacherId];
+  if (!t) return 0;
   // Simple heuristic: Lectures weight 1, Tutorials 0.8, Practicals 0.5
   return (t.lectures * 1) + (t.tutorials * 0.8) + (t.practicals * 0.5);
 }

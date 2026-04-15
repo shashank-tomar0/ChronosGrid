@@ -8,14 +8,22 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "ECE-B APPLIED AI {MM, PKS }",
+        "09:40-10:30": "ECE-B APPLIED AI {MM, PKS }",
         "01:10-02:00": "LUNCH"
       },
-      "TUESDAY": {},
-      "WEDNESDAY": {},
-      "THURSDAY": {
-        "12:20-01:10": "BCS 061/CSE-A\n{PKS}\n(KC-209)"
+      "TUESDAY": {
+        "01:10-02:00": "LUNCH"
       },
-      "FRIDAY": {}
+      "WEDNESDAY": {
+        "01:10-02:00": "LUNCH"
+      },
+      "THURSDAY": {
+        "12:20-01:10": "BCS 061/CSE-A\n{PKS}\n(KC-209)",
+        "01:10-02:00": "LUNCH"
+      },
+      "FRIDAY": {
+        "01:10-02:00": "LUNCH"
+      }
     }
   },
   "BK": {
@@ -26,7 +34,8 @@
     "practicals": 2,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "DOMAIN TRAINING"
+        "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING"
       },
       "TUESDAY": {
         "12:20-01:10": "BCS 603/CSE-A\n{BK}/KC-209",
@@ -34,6 +43,7 @@
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 452\n{SPG,BK}/ KC-305",
+        "09:40-10:30": "BCS 452\n{SPG,BK}/ KC-305",
         "02:50-03:40": "BCS 603/CSE-A\n{BK}/KC-209",
         "03:40-04:30": "BCS 603/CSE-A\n{BK}/KC-209"
       },
@@ -43,7 +53,8 @@
       "FRIDAY": {
         "12:20-01:10": "BCS 603/CSE-A\n{BK}/KC-209",
         "02:00-02:50": "BCS 603/CSE-A\n{BK}/KC-209",
-        "02:50-03:40": "BCS 653/KC-610/CS-D\n{PSG,BK}"
+        "02:50-03:40": "BCS 653/KC-610/CS-D\n{PSG,BK}",
+        "03:40-04:30": "BCS 653/KC-610/CS-D\n{PSG,BK}"
       }
     }
   },
@@ -57,20 +68,25 @@
       "MONDAY": {
         "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401",
         "01:10-02:00": "LUNCH",
-        "02:50-03:40": "BCS 651/KC-404/CSE-D\n{ SJ, MS }"
+        "02:50-03:40": "BCS 651/KC-404/CSE-D\n{ SJ, MS }",
+        "03:40-04:30": "BCS 651/KC-404/CSE-D\n{ SJ, MS }"
       },
       "TUESDAY": {
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "25MCS 042         {MS}",
         "02:50-03:40": "25MCS 042         {MS}"
       },
       "WEDNESDAY": {
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "25MCS 042         {MS}"
       },
       "THURSDAY": {
-        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401"
+        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401",
+        "01:10-02:00": "LUNCH"
       },
       "FRIDAY": {
-        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401"
+        "10:40-11:30": "BCS 601/CSE-B\n{MS}/KC-401",
+        "01:10-02:00": "LUNCH"
       }
     }
   },
@@ -83,6 +99,7 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr",
         "01:10-02:00": "LUNCH",
         "02:50-03:40": "BCS 061/CSE-B\n{AKD}/KC-401",
         "03:40-04:30": "BCS 061/CS-D\n{AKD}/KC-610"
@@ -101,7 +118,8 @@
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 061/CS-D\n{AKD}/KC-610",
-        "01:10-02:00": "25MCS 031         {AKD}"
+        "01:10-02:00": "25MCS 031         {AKD}",
+        "02:00-02:50": "25MCS 031         {AKD}"
       }
     }
   },
@@ -114,23 +132,30 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "12:20-01:10": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "02:00-02:50": "BCS 403/CSE-25\n{CHM}/KC-301",
         "02:50-03:40": "BCS 403/CSE-28\n{CHM}/KC-305"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "10:40-11:30": "BCS 403/CSE-28\n{CHM}/KC-305",
         "02:00-02:50": "BCS 403/CSE-25\n{CHM}/KC-301"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "12:20-01:10": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "03:40-04:30": "BCS 403/CSE-25\n{CHM}/KC-301"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "10:40-11:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "01:10-02:00": "Dr",
         "02:00-02:50": "BCS 403/CSE-28\n{CHM}/KC-305",
         "02:50-03:40": "BCS 403/CSE-28\n{CHM}/KC-305",
@@ -138,7 +163,9 @@
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "12:20-01:10": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "02:00-02:50": "BCS 403/CSE-25\n{CHM}/KC-301",
         "03:40-04:30": "BCS 403/CSE-28\n{CHM}/KC-305"
       }
@@ -153,6 +180,7 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "02:50-03:40": "BCS603/CS-A\n{SG}/KC-405"
       },
       "TUESDAY": {
@@ -162,7 +190,8 @@
       "WEDNESDAY": {
         "10:40-11:30": "BCS603/CS-A\n{SG}/KC-405",
         "01:10-02:00": "25MCS 202         {SG}",
-        "02:50-03:40": "25MCS 251 {SG}"
+        "02:50-03:40": "25MCS 251 {SG}",
+        "03:40-04:30": "25MCS 251 {SG}"
       },
       "THURSDAY": {
         "12:20-01:10": "BCS603/CS-A\n{SG}/KC-405",
@@ -183,27 +212,37 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
-        "11:30-12:20": "HWI TRAINING   (DK,PSG)/ CS-B"
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "12:20-01:10": "HWI TRAINING   (DK,PSG)/ CS-B"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
         "10:40-11:30": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK,PSG)/ CS-B",
         "02:00-02:50": "BCS 403\n{DK}/ CSE-12/ KC-102"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
         "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "12:20-01:10": "HWI TRAINING   (DK+ PSG)/ CS-B",
         "02:00-02:50": "BCS 403\n{DK}/ CSE-12/ KC-102"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
         "10:40-11:30": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
         "02:50-03:40": "BCS 403\n{DK}/ CSE-12/ KC-102",
         "03:40-04:30": "BCS 403\n{DK}/ CSE-12/ KC-102"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (DK)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK)/ CS-B",
         "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "12:20-01:10": "HWI TRAINING   (DK+ PSG)/ CS-B",
         "03:40-04:30": "BCS 403\n{DK}/ CSE-12/ KC-102"
       }
     }
@@ -217,23 +256,30 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "12:20-01:10": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "02:50-03:40": "\"BCS 403/CSE-27\n{SK}/KC-304\"",
         "03:40-04:30": "\"BCS 403/CSE-27\n{SK}/KC-304\""
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "10:40-11:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "02:50-03:40": "\"BCS 403/CSE-27\n{SK}/KC-304\""
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "12:20-01:10": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "02:50-03:40": "BCS 402\n{SK}/ CSE-14/ KC-105",
         "03:40-04:30": "BCS 402\n{SK}/ CSE-14/ KC-105"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "10:40-11:30": "\"BCS 403/CSE-27\n{SK}/KC-304\"",
         "12:20-01:10": "BCS 402\n{SK}/ CSE-14/ KC-105",
         "02:00-02:50": "BCS 402\n{SK}/ CSE-14/ KC-105",
@@ -241,7 +287,9 @@
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "12:20-01:10": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "02:50-03:40": "BCS 402\n{SK}/ CSE-14/ KC-105",
         "03:40-04:30": "BCS 402\n{SK}/ CSE-14/ KC-105"
       }
@@ -256,19 +304,27 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "01:10-02:00": "LUNCH",
-        "02:50-03:40": "BCS 453\n{AA, RR}/CSE-21/ KC-207"
+        "02:50-03:40": "BCS 453\n{AA, RR}/CSE-21/ KC-207",
+        "03:40-04:30": "BCS 453\n{AA, RR}/CSE-21/ KC-207"
       },
       "TUESDAY": {
-        "10:40-11:30": "BCC 401 \n{RR}/ CSE-17/ KC-202"
+        "10:40-11:30": "BCC 401 \n{RR}/ CSE-17/ KC-202",
+        "01:10-02:00": "LUNCH"
       },
-      "WEDNESDAY": {},
+      "WEDNESDAY": {
+        "01:10-02:00": "LUNCH"
+      },
       "THURSDAY": {
         "08:50-09:40": "Ms.",
-        "10:40-11:30": "DOMAIN TRAINING"
+        "10:40-11:30": "DOMAIN TRAINING",
+        "01:10-02:00": "LUNCH"
       },
       "FRIDAY": {
-        "02:50-03:40": "BCS 453\n{DKM, RR}/CSE-17/ KC-202"
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 453\n{DKM, RR}/CSE-17/ KC-202",
+        "03:40-04:30": "BCS 453\n{DKM, RR}/CSE-17/ KC-202"
       }
     }
   },
@@ -281,25 +337,30 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING / KC-305",
+        "11:30-12:20": "DOMAIN TRAINING / KC-305",
         "01:10-02:00": "LUNCH",
         "02:50-03:40": "25MCS 201         {RRN}",
         "03:40-04:30": "25MCS 201         {RRN}"
       },
       "TUESDAY": {
+        "01:10-02:00": "LUNCH",
         "03:40-04:30": "25MCS 201         {RRN}"
       },
       "WEDNESDAY": {
         "11:30-12:20": "BCS 402/CSE-11\n{RRN}/KC-101",
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "BCS 402/CSE-11\n{RRN}/KC-101"
       },
       "THURSDAY": {
         "09:40-10:30": "BCS 402/CSE-11\n{RRN}/KC-101",
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "BCS 402/CSE-11\n{RRN}/KC-101"
       },
       "FRIDAY": {
         "09:40-10:30": "BCS 402/CSE-11\n{RRN}/KC-101",
         "10:40-11:30": "BCS 402/CSE-11\n{RRN}/KC-101",
-        "11:30-12:20": "8"
+        "11:30-12:20": "8",
+        "01:10-02:00": "LUNCH"
       }
     }
   },
@@ -316,18 +377,25 @@
       },
       "TUESDAY": {
         "12:20-01:10": "BCS 401/CSE-18\n{KA}/KC-204",
-        "02:50-03:40": "BCS 451\n{KA, NS}/CSE-18/ KC-204"
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 451\n{KA, NS}/CSE-18/ KC-204",
+        "03:40-04:30": "BCS 451\n{KA, NS}/CSE-18/ KC-204"
       },
       "WEDNESDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE12/KC 102\n{KA, Manish (TAT)}",
         "11:30-12:20": "BCS 401/CSE-18\n{KA}/KC-204",
-        "02:50-03:40": "BCS 451\n{AR,KA}/CSE-19/ KC-205"
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 451\n{AR,KA}/CSE-19/ KC-205",
+        "03:40-04:30": "BCS 451\n{AR,KA}/CSE-19/ KC-205"
       },
       "THURSDAY": {
-        "11:30-12:20": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))"
+        "11:30-12:20": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))",
+        "12:20-01:10": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))",
+        "01:10-02:00": "LUNCH"
       },
       "FRIDAY": {
         "10:40-11:30": "BCS 401/CSE-18\n{KA}/KC-204",
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "BCS 401/CSE-18\n{KA}/KC-204"
       }
     }
@@ -341,20 +409,29 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "ECE-C   APPLIED AI {AV, AT }",
+        "09:40-10:30": "ECE-C   APPLIED AI {AV, AT }",
         "01:10-02:00": "LUNCH"
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 451\n{NG,AT} /CSE-28/ KC-305",
-        "02:50-03:40": "BCS 451\n{AT, BS}/CSE-13/ KC-104"
+        "09:40-10:30": "BCS 451\n{NG,AT} /CSE-28/ KC-305",
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "BCS 451\n{AT, BS}/CSE-13/ KC-104",
+        "03:40-04:30": "BCS 451\n{AT, BS}/CSE-13/ KC-104"
       },
       "WEDNESDAY": {
         "09:40-10:30": "BCS 401\n{AT}/ CSE-13/ KC-104",
         "10:40-11:30": "BCS 401\n{AT}/ CSE-13/ KC-104",
-        "02:50-03:40": "AIML-A  APPLIED AI {AT,DM }"
+        "01:10-02:00": "LUNCH",
+        "02:50-03:40": "AIML-A  APPLIED AI {AT,DM }",
+        "03:40-04:30": "AIML-A  APPLIED AI {AT,DM }"
       },
-      "THURSDAY": {},
+      "THURSDAY": {
+        "01:10-02:00": "LUNCH"
+      },
       "FRIDAY": {
         "12:20-01:10": "BCS 401\n{AT}/ CSE-13/ KC-104",
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "BCS 401\n{AT}/ CSE-13/ KC-104"
       }
     }
@@ -372,7 +449,9 @@
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 451\n{JJ,BS} /CSE-26/ KC-302",
-        "02:50-03:40": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102"
+        "09:40-10:30": "BCS 451\n{JJ,BS} /CSE-26/ KC-302",
+        "02:50-03:40": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102",
+        "03:40-04:30": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102"
       },
       "WEDNESDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
@@ -380,10 +459,12 @@
       "THURSDAY": {
         "08:50-09:40": "BCS 401/CSE-26\n{JJ}/KC-302",
         "10:40-11:30": "BCS 401/CSE-26\n{JJ}/KC-302",
-        "02:50-03:40": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
+        "02:50-03:40": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}",
+        "03:40-04:30": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
       },
       "FRIDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}",
+        "11:30-12:20": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}",
         "03:40-04:30": "BCS 401/CSE-26\n{JJ}/KC-302"
       }
     }
@@ -399,7 +480,8 @@
         "10:40-11:30": "BCS 602/CS-D\n{SS}/KC-610"
       },
       "TUESDAY": {
-        "02:50-03:40": "BCS 652/KC-610/CS-D\n{SS,AY}"
+        "02:50-03:40": "BCS 652/KC-610/CS-D\n{SS,AY}",
+        "03:40-04:30": "BCS 652/KC-610/CS-D\n{SS,AY}"
       },
       "WEDNESDAY": {
         "12:20-01:10": "BCS 602/CS-D\n{SS}/KC-610"
@@ -425,27 +507,36 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "12:20-01:10": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
-        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/ CSE-B"
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "12:20-01:10": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "11:30-12:20": "BCS 402\n\n{AKS}/ CSE-23/ KC-209",
         "12:20-01:10": "BCS 402\n\n{AKS}/ CSE-23/ KC-209",
         "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "11:30-12:20": "HWI TRAINING   (AKS+ MG)/ CSE-B",
+        "12:20-01:10": "HWI TRAINING   (AKS+ MG)/ CSE-B",
         "02:00-02:50": "BCS 402\n\n{AKS}/ CSE-23/ KC-209"
       }
     }
@@ -461,6 +552,7 @@
         "08:50-09:40": "BCS 403/CSE-29\n{SA}/KC-307",
         "09:40-10:30": "BCS 403/CSE-29\n{SA}/KC-307",
         "01:10-02:00": "25MCS252 {Seminar-1}/{SA}",
+        "02:00-02:50": "25MCS252 {Seminar-1}/{SA}",
         "03:40-04:30": "BCS 403/CSE-11\n{SA}/KC-101"
       },
       "TUESDAY": {
@@ -471,7 +563,8 @@
       "WEDNESDAY": {
         "08:50-09:40": "BCS 403/CSE-11\n{SA}/KC-101",
         "12:20-01:10": "BCS 403/CSE-11\n{SA}/KC-101",
-        "02:50-03:40": "BCS 452/KC-101/CSE-11\n{SA,SL}"
+        "02:50-03:40": "BCS 452/KC-101/CSE-11\n{SA,SL}",
+        "03:40-04:30": "BCS 452/KC-101/CSE-11\n{SA,SL}"
       },
       "THURSDAY": {
         "02:00-02:50": "BCS 403/CSE-29\n{SA}/KC-307",
@@ -479,6 +572,7 @@
       },
       "FRIDAY": {
         "11:30-12:20": "\"BCS 452\n{SA,ATD} /CSE-29/ KC-307\"",
+        "12:20-01:10": "\"BCS 452\n{SA,ATD} /CSE-29/ KC-307\"",
         "03:40-04:30": "BCS 403/CSE-29\n{SA}/KC-307"
       }
     }
@@ -504,6 +598,7 @@
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 453\n{VPS,TNU}/CSE-27/ KC-304",
+        "09:40-10:30": "BCS 453\n{VPS,TNU}/CSE-27/ KC-304",
         "11:30-12:20": "BCS 402/CSE-15\n{TNU}/KC-107",
         "12:20-01:10": "BCS 402/CSE-15\n{TNU}/KC-107",
         "02:00-02:50": "BCS 402/CSE-29\n{TNU}/KC-307",
@@ -535,11 +630,14 @@
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 451\n{NG,AT} /CSE-28/ KC-305",
+        "09:40-10:30": "BCS 451\n{NG,AT} /CSE-28/ KC-305",
         "12:20-01:10": "BCS 401/CSE-17\n{NG}/KC-202"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 451\n{NG,APS}/ CSE-17/ KC-202",
-        "02:50-03:40": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\""
+        "09:40-10:30": "BCS 451\n{NG,APS}/ CSE-17/ KC-202",
+        "02:50-03:40": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\"",
+        "03:40-04:30": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\""
       },
       "THURSDAY": {
         "09:40-10:30": "BCS 401/CSE-28\n{NG}/KC-305",
@@ -598,11 +696,14 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "AIML+DS/CSE-II nd Yr",
-        "02:50-03:40": "BCS 453\n{AA, RR}/CSE-21/ KC-207"
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 453\n{AA, RR}/CSE-21/ KC-207",
+        "03:40-04:30": "BCS 453\n{AA, RR}/CSE-21/ KC-207"
       },
       "TUESDAY": {
         "09:40-10:30": "BCS 401\n{AA}/ CSE-24/ KC-210",
-        "02:50-03:40": "BCS 453\n{AA,VIC}/CSE-26/ KC-302"
+        "02:50-03:40": "BCS 453\n{AA,VIC}/CSE-26/ KC-302",
+        "03:40-04:30": "BCS 453\n{AA,VIC}/CSE-26/ KC-302"
       },
       "WEDNESDAY": {
         "10:40-11:30": "BCC 401\n{AA}/ CSE-21/ KC-207",
@@ -611,7 +712,8 @@
       "THURSDAY": {
         "08:50-09:40": "BCC 401\n{AA}/ CSE-21/ KC-207",
         "10:40-11:30": "BCS 401\n{AA}/ CSE-24/ KC-210",
-        "02:50-03:40": "BCS 451\n{AA, NS}/CSE-24/ KC-210"
+        "02:50-03:40": "BCS 451\n{AA, NS}/CSE-24/ KC-210",
+        "03:40-04:30": "BCS 451\n{AA, NS}/CSE-24/ KC-210"
       },
       "FRIDAY": {
         "02:00-02:50": "BCS 401\n{AA}/ CSE-24/ KC-210"
@@ -626,16 +728,20 @@
     "practicals": 6,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "DOMAIN TRAINING"
+        "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING"
       },
       "TUESDAY": {
         "10:40-11:30": "BCS 453\n{DM,VPS}/CSE-29/ KC-307",
+        "11:30-12:20": "BCS 453\n{DM,VPS}/CSE-29/ KC-307",
         "12:20-01:10": "BCC 401\n{VPS}/ CSE-23/ KC-209",
         "02:00-02:50": "BCC 401\n{VPS}/ CSE-27/ KC-304"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 453\n{VPS,TNU}/CSE-27/ KC-304",
-        "02:50-03:40": "BCS 453\n{VPS,SW}/CSE-23/ KC-209"
+        "09:40-10:30": "BCS 453\n{VPS,TNU}/CSE-27/ KC-304",
+        "02:50-03:40": "BCS 453\n{VPS,SW}/CSE-23/ KC-209",
+        "03:40-04:30": "BCS 453\n{VPS,SW}/CSE-23/ KC-209"
       },
       "THURSDAY": {
         "10:40-11:30": "BCC 401\n{VPS}/ CSE-23/ KC-209"
@@ -655,12 +761,15 @@
       "MONDAY": {
         "09:40-10:30": "BCS 403\n{SR}/ CSE-23/ KC-209",
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "03:40-04:30": "BCS 403\n{SR}/ CSE-23/ KC-209"
       },
       "TUESDAY": {
         "08:50-09:40": "\"BCS 452\n{SR,SL} /CSE-21/ KC-207\"",
+        "09:40-10:30": "\"BCS 452\n{SR,SL} /CSE-21/ KC-207\"",
         "10:40-11:30": "BCS 403\n{SR}/ CSE-23/ KC-209",
-        "02:50-03:40": "\"BCS 452\n{SR,ATD} /CSE-23/ KC-209\""
+        "02:50-03:40": "\"BCS 452\n{SR,ATD} /CSE-23/ KC-209\"",
+        "03:40-04:30": "\"BCS 452\n{SR,ATD} /CSE-23/ KC-209\""
       },
       "WEDNESDAY": {
         "09:40-10:30": "Dr.",
@@ -686,30 +795,41 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "09:40-10:30": "HWI TRAINING   (AAG+AB)",
         "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "11:30-12:20": "HWI TRAINING   (AAG+AB)",
         "02:00-02:50": "BCS 601/CSE-A\n{AAG}",
         "03:40-04:30": "DSA TRAINING/ CSE14/KC 105\n{AAG, VV}"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "09:40-10:30": "HWI TRAINING   (AAG+AB)",
         "10:40-11:30": "HWI TRAINING   (AAG+AB)",
-        "02:50-03:40": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}"
+        "11:30-12:20": "HWI TRAINING   (AAG+AB)",
+        "02:50-03:40": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}",
+        "03:40-04:30": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "09:40-10:30": "HWI TRAINING   (AAG+AB)",
         "10:40-11:30": "PLS TELL ANKITA MAM TO TAKE THIS SLOT",
+        "11:30-12:20": "PLS TELL ANKITA MAM TO TAKE THIS SLOT",
         "12:20-01:10": "BCS 601/CSE-A\n{AAG}",
         "02:00-02:50": "BCS 601/CSE-A\n{AAG}",
         "02:50-03:40": "BCS 601/CS-C\n{AAG}"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "09:40-10:30": "HWI TRAINING   (AAG+AB)",
         "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "11:30-12:20": "HWI TRAINING   (AAG+AB)",
         "02:00-02:50": "BCS 601/CS-C\n{AAG}"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+AB)",
+        "09:40-10:30": "HWI TRAINING   (AAG+AB)",
         "10:40-11:30": "HWI TRAINING   (AAG+AB)",
+        "11:30-12:20": "HWI TRAINING   (AAG+AB)",
         "02:00-02:50": "BCS 601/CS-C\n{AAG}"
       }
     }
@@ -723,16 +843,20 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "AIML+DS/CSE-II nd Yr",
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr",
         "02:00-02:50": "BCC 401 \n{DKM}/ CSE-11/ KC-101",
         "03:40-04:30": "BCC401\n{DKM}/ CSE-13/ KC-104"
       },
       "TUESDAY": {
         "11:30-12:20": "BCS 453\n{DKM, BS}/CSE-11/ KC-101",
+        "12:20-01:10": "BCS 453\n{DKM, BS}/CSE-11/ KC-101",
         "02:50-03:40": "BCC 401 \n{DKM}/ CSE-11/ KC-101"
       },
       "WEDNESDAY": {
         "11:30-12:20": "BCS 453\n{DKM, AY}/CSE-13/ KC-104",
-        "02:00-02:50": "BCS 453/CSE-16\n{NR,DKM}/KC-108"
+        "12:20-01:10": "BCS 453\n{DKM, AY}/CSE-13/ KC-104",
+        "02:00-02:50": "BCS 453/CSE-16\n{NR,DKM}/KC-108",
+        "02:50-03:40": "BCS 453/CSE-16\n{NR,DKM}/KC-108"
       },
       "THURSDAY": {
         "10:40-11:30": "BCC 401 \n{DKM}/ CSE-13/ KC-104",
@@ -741,7 +865,9 @@
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 453\n{AR, DKM}/CSE-14/ KC-105",
-        "02:50-03:40": "BCS 453\n{DKM, RR}/CSE-17/ KC-202"
+        "09:40-10:30": "BCS 453\n{AR, DKM}/CSE-14/ KC-105",
+        "02:50-03:40": "BCS 453\n{DKM, RR}/CSE-17/ KC-202",
+        "03:40-04:30": "BCS 453\n{DKM, RR}/CSE-17/ KC-202"
       }
     }
   },
@@ -754,12 +880,15 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)",
         "10:40-11:30": "HWI TRAINING   (AKS+ MG)",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)",
         "02:00-02:50": "BCS 402/CSE-28\n{MG}/KC-305",
         "02:50-03:40": "BCS 402/CSE-26\n{MG}/KC-302"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)",
         "10:40-11:30": "BCS 402/CSE-26\n{MG}/KC-305",
         "11:30-12:20": "BCS 402/CSE-28\n{MG}/KC-305",
         "02:00-02:50": "BCS 402/CSE-26\n{MG}/KC-302",
@@ -767,20 +896,25 @@
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)",
         "10:40-11:30": "HWI TRAINING   (AKS+ MG)",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)",
         "02:00-02:50": "BCS 402/CSE-28\n{MG}/KC-305",
         "02:50-03:40": "BCS 402/CSE-26\n{MG}/KC-302"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)",
         "10:40-11:30": "HWI TRAINING   (AKS+ MG)",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)",
         "02:00-02:50": "BCS 402/CSE-26\n{MG}/KC-302",
         "03:40-04:30": "BCS 402/CSE-28\n{MG}/KC-305"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 402/CSE-28\n{MG}/KC-305",
         "10:40-11:30": "BCS 402/CSE-26\n{MG}/KC-302",
-        "02:50-03:40": "DSA Training { MG,RA/ KC-107} CSE -15"
+        "02:50-03:40": "DSA Training { MG,RA/ KC-107} CSE -15",
+        "03:40-04:30": "DSA Training { MG,RA/ KC-107} CSE -15"
       }
     }
   },
@@ -793,20 +927,24 @@
     "schedule": {
       "MONDAY": {
         "09:40-10:30": "BCS 401\n{SSI}/ CSE-21/ KC-207",
-        "10:40-11:30": "Domain Training"
+        "10:40-11:30": "Domain Training",
+        "11:30-12:20": "Domain Training"
       },
       "TUESDAY": {
         "10:40-11:30": "BCS 401/CSE-15\n{SSI}/KC-107",
         "12:20-01:10": "BCS 401\n{SSI}/ CSE-21/ KC-207",
-        "02:50-03:40": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105"
+        "02:50-03:40": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105",
+        "03:40-04:30": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 401/CSE-15\n{SSI}/KC-107",
-        "02:50-03:40": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207"
+        "02:50-03:40": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207",
+        "03:40-04:30": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207"
       },
       "THURSDAY": {
         "10:40-11:30": "BCS 401/CSE-15\n{SSI}/KC-107",
-        "02:50-03:40": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107"
+        "02:50-03:40": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107",
+        "03:40-04:30": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107"
       },
       "FRIDAY": {
         "12:20-01:10": "BCS 401\n{SSI}/ CSE-21/ KC-207",
@@ -825,7 +963,9 @@
       "MONDAY": {
         "08:50-09:40": "BCS 401\n{AAR}/ CSE-12/ KC-102",
         "10:40-11:30": "AIML+DS/CSE-II nd Yr",
-        "02:50-03:40": "BCS 451\n{AAR, NS}/CSE-12/ KC-102"
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 451\n{AAR, NS}/CSE-12/ KC-102",
+        "03:40-04:30": "BCS 451\n{AAR, NS}/CSE-12/ KC-102"
       },
       "TUESDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}",
@@ -835,12 +975,14 @@
       "THURSDAY": {
         "08:50-09:40": "BCS 401\n{AAR}/ CSE-12/ KC-102",
         "10:40-11:30": "AIML+DS/CS-II nd Yr",
-        "02:50-03:40": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
+        "02:50-03:40": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}",
+        "03:40-04:30": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 401\n{AAR}/ CSE-12/ KC-102",
         "12:20-01:10": "BCS 401\n{AAR}/ CSE-12/ KC-102",
-        "02:50-03:40": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}"
+        "02:50-03:40": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}",
+        "03:40-04:30": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}"
       }
     }
   },
@@ -853,25 +995,32 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "BCS 452/CSE-16\n{ATD,MAG}/KC-108",
+        "09:40-10:30": "BCS 452/CSE-16\n{ATD,MAG}/KC-108",
         "12:20-01:10": "BCS 403/CSE-17\n{MAG}/KC-202",
         "02:50-03:40": "BCS 403/CSE-17\n{MAG}/KC-202"
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 452\n{JS,MAG} /CSE-15/ KC-107",
+        "09:40-10:30": "BCS 452\n{JS,MAG} /CSE-15/ KC-107",
         "10:40-11:30": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}",
-        "02:00-02:50": "BCS 452/CSE-17\n{MAG,VM}/KC-202"
+        "02:00-02:50": "BCS 452/CSE-17\n{MAG,VM}/KC-202",
+        "02:50-03:40": "BCS 452/CSE-17\n{MAG,VM}/KC-202"
       },
       "WEDNESDAY": {
         "08:50-09:40": "\"BCS 452\n{JS,MAG} /CSE-24/ KC-210\"",
+        "09:40-10:30": "\"BCS 452\n{JS,MAG} /CSE-24/ KC-210\"",
         "10:40-11:30": "BCS 403/CSE-17\n{MAG}/KC-202"
       },
       "THURSDAY": {
         "08:50-09:40": "BCS 452\n{VM,MAG}/ CSE-14/ KC-105",
+        "09:40-10:30": "BCS 452\n{VM,MAG}/ CSE-14/ KC-105",
         "02:00-02:50": "BCS 403/CSE-17\n{MAG}/KC-202"
       },
       "FRIDAY": {
         "11:30-12:20": "BCS 403/CSE-17\n{MAG}/KC-202",
-        "02:50-03:40": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}"
+        "12:20-01:10": "BCS 403/CSE-17\n{MAG}/KC-202",
+        "02:50-03:40": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}",
+        "03:40-04:30": "DSA TRAINING/ CSE19/KC 205\n{ AAR, MAG}"
       }
     }
   },
@@ -884,6 +1033,7 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "Domain Training",
+        "11:30-12:20": "Domain Training",
         "02:50-03:40": "BOE 410\n{ST}/ CSE-13/ KC-104"
       },
       "TUESDAY": {
@@ -899,7 +1049,8 @@
       "THURSDAY": {
         "09:40-10:30": "BOE 410\n{ST}/ CSE-12/ KC-102",
         "10:40-11:30": "BOE 410\n{ST}/ CSE-12/ KC-102",
-        "02:50-03:40": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
+        "02:50-03:40": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}",
+        "03:40-04:30": "DSA TRAINING/ CSE16/KC 108\n{AAR, ST}"
       },
       "FRIDAY": {
         "08:50-09:40": "BOE 410\n{ST}/ CSE-13/ KC-104",
@@ -919,16 +1070,21 @@
       "MONDAY": {
         "08:50-09:40": "BCS 401/CSE-11\n{BS}/KC-101",
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "02:50-03:40": "BCS 401/CSE-11\n{BS}/KC-101"
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 451\n{JJ,BS} /CSE-26/ KC-302",
+        "09:40-10:30": "BCS 451\n{JJ,BS} /CSE-26/ KC-302",
         "11:30-12:20": "BCS 453\n{DKM, BS}/CSE-11/ KC-101",
-        "02:50-03:40": "BCS 451\n{AT, BS}/CSE-13/ KC-104"
+        "12:20-01:10": "BCS 453\n{DKM, BS}/CSE-11/ KC-101",
+        "02:50-03:40": "BCS 451\n{AT, BS}/CSE-13/ KC-104",
+        "03:40-04:30": "BCS 451\n{AT, BS}/CSE-13/ KC-104"
       },
       "WEDNESDAY": {
         "10:40-11:30": "BCS 401/CSE-11\n{BS}/KC-101",
-        "02:50-03:40": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207"
+        "02:50-03:40": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207",
+        "03:40-04:30": "BCS 451\n{SSI, BS}/ CSE-21/ KC-207"
       },
       "THURSDAY": {
         "10:40-11:30": "DOMAIN TRAINING",
@@ -936,7 +1092,9 @@
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 453\n{VS, BS}/CSE-15/ KC-107",
-        "11:30-12:20": "BCS 451/KC-101/CSE-11\n{BS,APS}"
+        "09:40-10:30": "BCS 453\n{VS, BS}/CSE-15/ KC-107",
+        "11:30-12:20": "BCS 451/KC-101/CSE-11\n{BS,APS}",
+        "12:20-01:10": "BCS 451/KC-101/CSE-11\n{BS,APS}"
       }
     }
   },
@@ -961,16 +1119,19 @@
       "WEDNESDAY": {
         "09:40-10:30": "BCS 402\n{AYA}/ CSE-25/ KC-301",
         "11:30-12:20": "FSD/CSE 26/KC 302\n{AYA, NN}",
+        "12:20-01:10": "FSD/CSE 26/KC 302\n{AYA, NN}",
         "02:00-02:50": "BCS 402\n{AYA}/ CSE-18/ KC-204"
       },
       "THURSDAY": {
         "09:40-10:30": "BCS 402\n{AYA}/ CSE-25/ KC-301",
         "11:30-12:20": "BCS 402\n{AYA}/ CSE-25/ KC-301",
         "12:20-01:10": "BCS 402\n{AYA}/ CSE-18/ KC-204",
-        "02:50-03:40": "FSD/CSE 14/ KC105\n{AYA, AK}"
+        "02:50-03:40": "FSD/CSE 14/ KC105\n{AYA, AK}",
+        "03:40-04:30": "FSD/CSE 14/ KC105\n{AYA, AK}"
       },
       "FRIDAY": {
         "11:30-12:20": "FSD/CSE 15/ KC107\n{AYA, YR}",
+        "12:20-01:10": "FSD/CSE 15/ KC107\n{AYA, YR}",
         "02:00-02:50": "FSD/CSE 26/KC 302\n{AYA,NN}",
         "03:40-04:30": "BCS 402\n{AYA}/ CSE-18/ KC-204"
       }
@@ -992,14 +1153,17 @@
       },
       "WEDNESDAY": {
         "11:30-12:20": "FSD/CSE 26/KC 302\n{AYA,NN}",
+        "12:20-01:10": "FSD/CSE 26/KC 302\n{AYA,NN}",
         "02:00-02:50": "BCC 402/ME/ BH-208"
       },
       "THURSDAY": {
         "08:50-09:40": "BCC 402/ME/ BH-208",
-        "11:30-12:20": "FSD/CSE 21/KC 207\n{LS, NN}"
+        "11:30-12:20": "FSD/CSE 21/KC 207\n{LS, NN}",
+        "12:20-01:10": "FSD/CSE 21/KC 207\n{LS, NN}"
       },
       "FRIDAY": {
         "11:30-12:20": "FSD/CSE 25/KC 301\n{SWT, NN}",
+        "12:20-01:10": "FSD/CSE 25/KC 301\n{SWT, NN}",
         "02:00-02:50": "FSD/CSE 26/KC 302\n{AYA,NN}"
       }
     }
@@ -1013,13 +1177,16 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "12:20-01:10": "BCC 401/CSE-15\n{VS}/KC-107",
         "02:50-03:40": "BCS 401\n{VS}/ CSE-14/ KC-105"
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 451\n{APS,VS}/ CSE-16/ KC-108",
+        "09:40-10:30": "BCS 451\n{APS,VS}/ CSE-16/ KC-108",
         "11:30-12:20": "BCS 401\n{VS}/ CSE-14/ KC-105",
-        "02:50-03:40": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105"
+        "02:50-03:40": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105",
+        "03:40-04:30": "BCS 451\n{VS, SSI}/ CSE-14/ KC-105"
       },
       "WEDNESDAY": {
         "11:30-12:20": "BCS 401\n{VS}/ CSE-14/ KC-105",
@@ -1030,7 +1197,8 @@
         "10:40-11:30": "BCS 401\n{VS}/ CSE-14/ KC-105"
       },
       "FRIDAY": {
-        "08:50-09:40": "BCS 453\n{VS, BS}/CSE-15/ KC-107"
+        "08:50-09:40": "BCS 453\n{VS, BS}/CSE-15/ KC-107",
+        "09:40-10:30": "BCS 453\n{VS, BS}/CSE-15/ KC-107"
       }
     }
   },
@@ -1074,14 +1242,17 @@
     "practicals": 10,
     "schedule": {
       "MONDAY": {
-        "08:50-09:40": "BCS 453\n{HD,NR}/CSE-19/ KC-205"
+        "08:50-09:40": "BCS 453\n{HD,NR}/CSE-19/ KC-205",
+        "09:40-10:30": "BCS 453\n{HD,NR}/CSE-19/ KC-205"
       },
       "TUESDAY": {
         "08:50-09:40": "BCC 401\n{HD}/ CSE-22/ KC-208",
-        "02:50-03:40": "BCS 453\n{HD,RA}/CSE-24/ KC-210"
+        "02:50-03:40": "BCS 453\n{HD,RA}/CSE-24/ KC-210",
+        "03:40-04:30": "BCS 453\n{HD,RA}/CSE-24/ KC-210"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 453\n{NR, HD}/ CSE-12/ KC-102",
+        "09:40-10:30": "BCS 453\n{NR, HD}/ CSE-12/ KC-102",
         "10:40-11:30": "BCC 401\n{HD}/ CSE-19/ KC-205",
         "02:50-03:40": "BCC 401\n{HD}/ CSE-24/ KC-210"
       },
@@ -1092,7 +1263,9 @@
       },
       "FRIDAY": {
         "10:40-11:30": "BCS 453\n{DM,HD}/CSE-28/ KC-305",
-        "02:50-03:40": "BCS 453\n{HD,GV}/CSE-22/ KC-208"
+        "11:30-12:20": "BCS 453\n{DM,HD}/CSE-28/ KC-305",
+        "02:50-03:40": "BCS 453\n{HD,GV}/CSE-22/ KC-208",
+        "03:40-04:30": "BCS 453\n{HD,GV}/CSE-22/ KC-208"
       }
     }
   },
@@ -1110,19 +1283,23 @@
       "TUESDAY": {
         "08:50-09:40": "BCS 403/CSE-18\n{AK}/KC-204",
         "09:40-10:30": "BCS 403/CSE-18\n{AK}/KC-204",
-        "11:30-12:20": "FSD/CSE19/KC 205\n{AK, YR}"
+        "11:30-12:20": "FSD/CSE19/KC 205\n{AK, YR}",
+        "12:20-01:10": "FSD/CSE19/KC 205\n{AK, YR}"
       },
       "WEDNESDAY": {
         "10:40-11:30": "BCS 403/CSE-18\n{AK}/KC-204",
         "12:20-01:10": "BCS 403/CSE-18\n{AK}/KC-204",
-        "02:50-03:40": "FSD/CSE17/KC 202\n{AK, ANS}"
+        "02:50-03:40": "FSD/CSE17/KC 202\n{AK, ANS}",
+        "03:40-04:30": "FSD/CSE17/KC 202\n{AK, ANS}"
       },
       "THURSDAY": {
         "12:20-01:10": "FSD/CSE19/KC 205\n{AK, YR}",
-        "02:50-03:40": "FSD/CSE 14/ KC105\n{AYA, AK}"
+        "02:50-03:40": "FSD/CSE 14/ KC105\n{AYA, AK}",
+        "03:40-04:30": "FSD/CSE 14/ KC105\n{AYA, AK}"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 452/CSE-18\n{AK,SP}/KC-204",
+        "09:40-10:30": "BCS 452/CSE-18\n{AK,SP}/KC-204",
         "12:20-01:10": "BCS 403/CSE-18\n{AK}/KC-204"
       }
     }
@@ -1141,13 +1318,16 @@
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 652/KC-404/CSE-D\n{SYA, KO}",
+        "09:40-10:30": "BCS 652/KC-404/CSE-D\n{SYA, KO}",
         "12:20-01:10": "BCS 602/CS-A\n{SYA}/KC-405",
         "02:00-02:50": "FSD/CSE 18/KC 204\n{SYA, SAG}",
         "03:40-04:30": "BCS 602/CSE-D\n{SYA}/KC-404"
       },
       "WEDNESDAY": {
         "08:50-09:40": "FSD/CSE 18/KC 204\n{SYA, SAG}",
-        "11:30-12:20": "FSD/CSE 16/KC 108\n{SAG,SYA}"
+        "09:40-10:30": "FSD/CSE 18/KC 204\n{SYA, SAG}",
+        "11:30-12:20": "FSD/CSE 16/KC 108\n{SAG,SYA}",
+        "12:20-01:10": "FSD/CSE 16/KC 108\n{SAG,SYA}"
       },
       "THURSDAY": {
         "10:40-11:30": "BCS 602/CSE-D\n{SYA}/KC-404",
@@ -1167,7 +1347,8 @@
     "practicals": 0,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "Domain Training"
+        "10:40-11:30": "Domain Training",
+        "11:30-12:20": "Domain Training"
       },
       "TUESDAY": {
         "12:20-01:10": "BOE064/CSE-D\n{SAG}",
@@ -1175,7 +1356,9 @@
       },
       "WEDNESDAY": {
         "08:50-09:40": "FSD/CSE 18/KC 204\n{SYA, SAG}",
+        "09:40-10:30": "FSD/CSE 18/KC 204\n{SYA, SAG}",
         "11:30-12:20": "FSD/CSE 16/KC 108\n{SAG,SYA}",
+        "12:20-01:10": "FSD/CSE 16/KC 108\n{SAG,SYA}",
         "02:00-02:50": "BOE064/CS-A\n{SAG}"
       },
       "THURSDAY": {
@@ -1204,13 +1387,16 @@
       },
       "TUESDAY": {
         "09:40-10:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
-        "11:30-12:20": "FSD/CSE19/KC 205\n{AK, YR}"
+        "11:30-12:20": "FSD/CSE19/KC 205\n{AK, YR}",
+        "12:20-01:10": "FSD/CSE19/KC 205\n{AK, YR}"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BOE 410\n{YR}/ CSE-14/ KC-105",
         "09:40-10:30": "BOE 410\n{YR}/ CSE-14/ KC-105",
         "10:40-11:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
-        "02:50-03:40": "BOE 410\n{YR}/ CSE-18/ KC-204"
+        "11:30-12:20": "FSD/CSE 29/ KC307\n{ YR, LS}",
+        "02:50-03:40": "BOE 410\n{YR}/ CSE-18/ KC-204",
+        "03:40-04:30": "BOE 410\n{YR}/ CSE-18/ KC-204"
       },
       "THURSDAY": {
         "10:40-11:30": "BOE 410\n{YR}/ CSE-18/ KC-204",
@@ -1219,6 +1405,7 @@
       },
       "FRIDAY": {
         "11:30-12:20": "FSD/CSE 15/ KC107\n{AYA, YR}",
+        "12:20-01:10": "FSD/CSE 15/ KC107\n{AYA, YR}",
         "02:00-02:50": "BOE 410\n{YR}/ CSE-14/ KC-105",
         "02:50-03:40": "BOE 410\n{YR}/ CSE-18/ KC-204"
       }
@@ -1239,17 +1426,20 @@
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 452\n{JS,MAG} /CSE-15/ KC-107",
+        "09:40-10:30": "BCS 452\n{JS,MAG} /CSE-15/ KC-107",
         "11:30-12:20": "BCS 403/CSE-15\n{JS}/KC-107",
         "02:00-02:50": "BCS 402\n{JS}/ CSE-21/ KC-207",
         "02:50-03:40": "BCS 402\n{JS}/ CSE-21/ KC-207"
       },
       "WEDNESDAY": {
         "08:50-09:40": "\"BCS 452\n{JS,MAG} /CSE-24/ KC-210\"",
+        "09:40-10:30": "\"BCS 452\n{JS,MAG} /CSE-24/ KC-210\"",
         "11:30-12:20": "BCS 402\n{JS}/ CSE-21/ KC-207",
         "12:20-01:10": "BCS 402\n{JS}/ CSE-21/ KC-207"
       },
       "THURSDAY": {
         "08:50-09:40": "\"BCS 452\n{JS, Ayush } /CSE-27/ KC-304\"",
+        "09:40-10:30": "\"BCS 452\n{JS, Ayush } /CSE-27/ KC-304\"",
         "11:30-12:20": "BCS 403\n{JS}/ CSE-24/ KC-210",
         "12:20-01:10": "BCS 403/CSE-15\n{JS}/KC-107",
         "02:00-02:50": "BCS 403\n{JS}/ CSE-24/ KC-210",
@@ -1271,6 +1461,7 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "12:20-01:10": "BCS603/CS-B\n{DKA}/KC-407",
         "02:00-02:50": "BCS603/CS-B\n{DKA}/KC-407",
         "03:40-04:30": "BCS603/CSE-B\n{DKA}/KC-401"
@@ -1291,6 +1482,7 @@
       },
       "FRIDAY": {
         "08:50-09:40": "CISCO TRAINING-ECE-VI-C/BH-110",
+        "09:40-10:30": "CISCO TRAINING-ECE-VI-C/BH-110",
         "02:00-02:50": "BCS603/CSE-B\n{DKA}/KC-401",
         "02:50-03:40": "BCS603/CSE-B\n{DKA}/KC-401"
       }
@@ -1305,13 +1497,16 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "BCS 452/CSE-16\n{ATD,MAG}/KC-108",
+        "09:40-10:30": "BCS 452/CSE-16\n{ATD,MAG}/KC-108",
         "11:30-12:20": "BCS 403\n{ATD}/ CSE-13/ KC-104",
         "02:00-02:50": "BCS 403\n{ATD}/ CSE-16/ KC-108"
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 452\n{RS,ATD}/ CSE-19/ KC-205",
+        "09:40-10:30": "BCS 452\n{RS,ATD}/ CSE-19/ KC-205",
         "12:20-01:10": "BCS 403\n{ATD}/ CSE-13/ KC-104",
-        "02:50-03:40": "BCS 452\n{SR,ATD} /CSE-23/ KC-209"
+        "02:50-03:40": "BCS 452\n{SR,ATD} /CSE-23/ KC-209",
+        "03:40-04:30": "BCS 452\n{SR,ATD} /CSE-23/ KC-209"
       },
       "WEDNESDAY": {
         "09:40-10:30": "BCS 403\n{ATD}/ CSE-16/ KC-108",
@@ -1320,13 +1515,15 @@
       },
       "THURSDAY": {
         "08:50-09:40": "BCS 452\n{ATD, SL} /CSE-13/ KC-104",
+        "09:40-10:30": "BCS 452\n{ATD, SL} /CSE-13/ KC-104",
         "02:50-03:40": "BCS 403\n{ATD}/ CSE-13/ KC-104",
         "03:40-04:30": "BCS 403\n{ATD}/ CSE-13/ KC-104"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 403\n{ATD}/ CSE-16/ KC-108",
         "09:40-10:30": "BCS 403\n{ATD}/ CSE-16/ KC-108",
-        "11:30-12:20": "\"BCS 452\n{BSA,ATD} /CSE-29/ KC-307\""
+        "11:30-12:20": "\"BCS 452\n{BSA,ATD} /CSE-29/ KC-307\"",
+        "12:20-01:10": "\"BCS 452\n{BSA,ATD} /CSE-29/ KC-307\""
       }
     }
   },
@@ -1340,7 +1537,9 @@
       "MONDAY": {
         "08:50-09:40": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
         "09:40-10:30": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
-        "02:00-02:50": "HACKWITH INFY"
+        "02:00-02:50": "HACKWITH INFY",
+        "02:50-03:40": "HACKWITH INFY",
+        "03:40-04:30": "HACKWITH INFY"
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
@@ -1351,19 +1550,26 @@
         "08:50-09:40": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
         "10:40-11:30": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
         "11:30-12:20": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
-        "02:00-02:50": "HACKWITH INFY"
+        "02:00-02:50": "HACKWITH INFY",
+        "02:50-03:40": "HACKWITH INFY",
+        "03:40-04:30": "HACKWITH INFY"
       },
       "THURSDAY": {
         "08:50-09:40": "AIML-C  APPLIED AI {AG, DM }",
+        "09:40-10:30": "AIML-C  APPLIED AI {AG, DM }",
         "11:30-12:20": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
         "12:20-01:10": "BCS 402\n\n{AG}/ CSE-13/ KC-104",
-        "02:00-02:50": "HACKWITH INFY"
+        "02:00-02:50": "HACKWITH INFY",
+        "02:50-03:40": "HACKWITH INFY",
+        "03:40-04:30": "HACKWITH INFY"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
         "11:30-12:20": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
         "12:20-01:10": "BCS 402\n\n{AG}/ CSE-22/ KC-208",
-        "02:00-02:50": "HACKWITH INFY"
+        "02:00-02:50": "HACKWITH INFY",
+        "02:50-03:40": "HACKWITH INFY",
+        "03:40-04:30": "HACKWITH INFY"
       }
     }
   },
@@ -1375,7 +1581,8 @@
     "practicals": 4,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "Domain Training"
+        "10:40-11:30": "Domain Training",
+        "11:30-12:20": "Domain Training"
       },
       "TUESDAY": {
         "10:40-11:30": "BCC 401\n{AR}/ CSE-14/ KC-105",
@@ -1384,16 +1591,19 @@
       },
       "WEDNESDAY": {
         "11:30-12:20": "BCS 401\n{AR}/ CSE-19/ KC-205",
-        "02:50-03:40": "BCS 451\n{AR,KA}/CSE-19/ KC-205"
+        "02:50-03:40": "BCS 451\n{AR,KA}/CSE-19/ KC-205",
+        "03:40-04:30": "BCS 451\n{AR,KA}/CSE-19/ KC-205"
       },
       "THURSDAY": {
         "10:40-11:30": "BCS 401\n{AR}/ CSE-19/ KC-205"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 453\n{AR,DKM}/ CSE-14/ KC-105",
+        "09:40-10:30": "BCS 453\n{AR,DKM}/ CSE-14/ KC-105",
         "11:30-12:20": "BCS 401\n{AR}/ CSE-19/ KC-205",
         "12:20-01:10": "BCC 401\n{AR}/ CSE-14/ KC-105",
-        "02:50-03:40": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
+        "02:50-03:40": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}",
+        "03:40-04:30": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
       }
     }
   },
@@ -1409,6 +1619,7 @@
       },
       "TUESDAY": {
         "08:50-09:40": "ME APPLIED AI {AG, TS }",
+        "09:40-10:30": "ME APPLIED AI {AG, TS }",
         "03:40-04:30": "DSA TRAINING/ CSE21/KC 207\n{PSG,TS}"
       },
       "WEDNESDAY": {
@@ -1419,8 +1630,10 @@
       "THURSDAY": {},
       "FRIDAY": {
         "08:50-09:40": "BCS 653/KC-404/CSE-D\n{TS,NB}",
+        "09:40-10:30": "BCS 653/KC-404/CSE-D\n{TS,NB}",
         "12:20-01:10": "BCS 603/CSE-D\n{TS}/KC-404",
-        "02:50-03:40": "CSDS-C  APPLIED AI {TS, VIC }"
+        "02:50-03:40": "CSDS-C  APPLIED AI {TS, VIC }",
+        "03:40-04:30": "CSDS-C  APPLIED AI {TS, VIC }"
       }
     }
   },
@@ -1434,20 +1647,26 @@
       "MONDAY": {},
       "TUESDAY": {
         "08:50-09:40": "BCS 451\n{APS,VS}/ CSE-16/ KC-108",
+        "09:40-10:30": "BCS 451\n{APS,VS}/ CSE-16/ KC-108",
         "12:20-01:10": "BCS 401\n{APS}/ CSE-16/ KC-108",
-        "02:50-03:40": "BCS 451\n{SW,APS}/ CSE-22/ KC-208"
+        "02:50-03:40": "BCS 451\n{SW,APS}/ CSE-22/ KC-208",
+        "03:40-04:30": "BCS 451\n{SW,APS}/ CSE-22/ KC-208"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 451\n{NG,APS}/ CSE-17/ KC-202",
+        "09:40-10:30": "BCS 451\n{NG,APS}/ CSE-17/ KC-202",
         "11:30-12:20": "DSA TRAINING/ CSE18/KC 204\n{APS, Vishu (TAT)}"
       },
       "THURSDAY": {
         "08:50-09:40": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}",
+        "09:40-10:30": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}",
         "10:40-11:30": "BCS 401\n{APS}/ CSE-16/ KC-108",
-        "02:50-03:40": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107"
+        "02:50-03:40": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107",
+        "03:40-04:30": "BCS 451\n{SSI, APS}/ CSE-15/ KC-107"
       },
       "FRIDAY": {
         "11:30-12:20": "BCS 451/KC-101/CSE-11\n{BS,APS}",
+        "12:20-01:10": "BCS 451/KC-101/CSE-11\n{BS,APS}",
         "02:50-03:40": "BCS 401\n{APS}/ CSE-16/ KC-108",
         "03:40-04:30": "BCS 401\n{APS}/ CSE-16/ KC-108"
       }
@@ -1470,19 +1689,24 @@
         "08:50-09:40": "BCS 403\n{VM}/ CSE-14/ KC-105",
         "09:40-10:30": "BCS 403\n{VM}/ CSE-14/ KC-105",
         "12:20-01:10": "BCS 403\n{VM}/ CSE-14/ KC-105",
-        "02:00-02:50": "BCS 452/CSE-17\n{MAG,VM}/KC-202"
+        "02:00-02:50": "BCS 452/CSE-17\n{MAG,VM}/KC-202",
+        "02:50-03:40": "BCS 452/CSE-17\n{MAG,VM}/KC-202"
       },
       "WEDNESDAY": {
         "10:40-11:30": "BCS 403\n{VM}/ CSE-14/ KC-105",
         "12:20-01:10": "BCS 403\n{VM}/ CSE-14/ KC-105",
-        "02:50-03:40": "FSD/CSE27/KC 304\n{VM, LS}"
+        "02:50-03:40": "FSD/CSE27/KC 304\n{VM, LS}",
+        "03:40-04:30": "FSD/CSE27/KC 304\n{VM, LS}"
       },
       "THURSDAY": {
         "08:50-09:40": "BCS 452\n{VM,MAG}/ CSE-14/ KC-105",
-        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}"
+        "09:40-10:30": "BCS 452\n{VM,MAG}/ CSE-14/ KC-105",
+        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}",
+        "03:40-04:30": "FSD/CSE11/KC 101\n{VM,ANS}"
       },
       "FRIDAY": {
-        "11:30-12:20": "FSD/CSE  24/KC 210\n{ANS, VM}"
+        "11:30-12:20": "FSD/CSE  24/KC 210\n{ANS, VM}",
+        "12:20-01:10": "FSD/CSE  24/KC 210\n{ANS, VM}"
       }
     }
   },
@@ -1495,24 +1719,29 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING",
+        "11:30-12:20": "DOMAIN TRAINING",
         "12:20-01:10": "BCS 603/CS-C\n{SL}/KC-408",
         "02:50-03:40": "BCS 603/CS-C\n{SL}/KC-408",
         "03:40-04:30": "BCS 603/CS-C\n{SL}/KC-408"
       },
       "TUESDAY": {
         "08:50-09:40": "\"BCS 452\n{SR,SL} /CSE-21/ KC-207\"",
+        "09:40-10:30": "\"BCS 452\n{SR,SL} /CSE-21/ KC-207\"",
         "02:50-03:40": "BCS 603/CS-C\n{SL}/KC-408"
       },
       "WEDNESDAY": {
         "12:20-01:10": "BCS 603/CS-C\n{SL}/KC-408",
-        "02:50-03:40": "BCS 452/KC-101/CSE-11\n{SA,SL}"
+        "02:50-03:40": "BCS 452/KC-101/CSE-11\n{SA,SL}",
+        "03:40-04:30": "BCS 452/KC-101/CSE-11\n{SA,SL}"
       },
       "THURSDAY": {
         "08:50-09:40": "BCS 452\n{ATD, SL} /CSE-13/ KC-104",
+        "09:40-10:30": "BCS 452\n{ATD, SL} /CSE-13/ KC-104",
         "10:40-11:30": "DOMAIN TRAINING"
       },
       "FRIDAY": {
         "08:50-09:40": "\"BCS 452\n{SWT,SL} /CSE-26/ KC-302\"",
+        "09:40-10:30": "\"BCS 452\n{SWT,SL} /CSE-26/ KC-302\"",
         "10:40-11:30": "BCS 603/CS-C\n{SL}/KC-408"
       }
     }
@@ -1532,20 +1761,25 @@
       "TUESDAY": {
         "08:50-09:40": "BCS 401\n\n{LS}/ CSE-23/ KC-209",
         "09:40-10:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
-        "11:30-12:20": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
+        "11:30-12:20": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }",
+        "12:20-01:10": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
       },
       "WEDNESDAY": {
         "10:40-11:30": "FSD/CSE 29/ KC307\n{ YR, LS}",
-        "02:50-03:40": "FSD/CSE27/KC 304\n{VM, LS}"
+        "11:30-12:20": "FSD/CSE 29/ KC307\n{ YR, LS}",
+        "02:50-03:40": "FSD/CSE27/KC 304\n{VM, LS}",
+        "03:40-04:30": "FSD/CSE27/KC 304\n{VM, LS}"
       },
       "THURSDAY": {
         "08:50-09:40": "BCS 401\n\n{LS}/ CSE-23/ KC-209",
         "11:30-12:20": "FSD/CSE 21/KC 207\n{LS, NN}",
+        "12:20-01:10": "FSD/CSE 21/KC 207\n{LS, NN}",
         "03:40-04:30": "BCS 401\n\n{LS}/ CSE-23/ KC-209"
       },
       "FRIDAY": {
         "09:40-10:30": "BCS 401\n\n{LS}/ CSE-23/ KC-209",
-        "02:50-03:40": "BCS 451\n{LS,NS}/ CSE-23/ KC-209"
+        "02:50-03:40": "BCS 451\n{LS,NS}/ CSE-23/ KC-209",
+        "03:40-04:30": "BCS 451\n{LS,NS}/ CSE-23/ KC-209"
       }
     }
   },
@@ -1558,6 +1792,7 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "ECE-B APPLIED AI {MM, PKS /BH-108}",
+        "09:40-10:30": "ECE-B APPLIED AI {MM, PKS /BH-108}",
         "12:20-01:10": "BOE 410/CSE-19\n{MM}/KC-205",
         "02:00-02:50": "BOE 410/CSE-15\n{MM}/KC-107",
         "03:40-04:30": "BOE 410/CSE-19\n{MM}/KC-205"
@@ -1596,6 +1831,7 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "ECE-C/APPLIED AI {AV, AT }",
+        "09:40-10:30": "ECE-C/APPLIED AI {AV, AT }",
         "12:20-01:10": "BCS 402\n{AV}/ CSE-12/ KC-102",
         "01:10-02:00": "LUNCH",
         "02:00-02:50": "BCS 402\n{AV}/ CSE-12/ KC-102",
@@ -1605,23 +1841,28 @@
       "TUESDAY": {
         "09:40-10:30": "BCS 402\n{AV}/ CSE-12/ KC-102",
         "10:40-11:30": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "01:10-02:00": "LUNCH",
         "03:40-04:30": "BCS 402\n{AV}/ CSE-17/ KC-202"
       },
       "WEDNESDAY": {
         "12:20-01:10": "BCS 402\n{AV}/ CSE-12/ KC-102",
+        "01:10-02:00": "LUNCH",
         "02:00-02:50": "BCS 402\n{AV}/ CSE-17/ KC-202"
       },
       "THURSDAY": {
         "08:50-09:40": "BCS 402\n{AV}/ CSE-19/ KC-205",
         "09:40-10:30": "BCS 402\n{AV}/ CSE-19/ KC-205",
         "11:30-12:20": "BCS 402\n{AV}/ CSE-17/ KC-202",
+        "12:20-01:10": "BCS 402\n{AV}/ CSE-17/ KC-202",
+        "01:10-02:00": "LUNCH",
         "02:50-03:40": "BCS 402\n{AV}/ CSE-19/ KC-205"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 402\n{AV}/ CSE-17/ KC-202",
         "10:40-11:30": "BCS 402\n{AV}/ CSE-19/ KC-205",
         "11:30-12:20": "BCS 402\n{AV}/ CSE-12/ KC-102",
-        "12:20-01:10": "BCS 402\n{AV}/ CSE-19/ KC-205"
+        "12:20-01:10": "BCS 402\n{AV}/ CSE-19/ KC-205",
+        "01:10-02:00": "LUNCH"
       }
     }
   },
@@ -1633,7 +1874,8 @@
     "practicals": 0,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "Domain Training(2nd Year) AIML+DS{MG, DMP}"
+        "10:40-11:30": "Domain Training(2nd Year) AIML+DS{MG, DMP}",
+        "11:30-12:20": "Domain Training(2nd Year) AIML+DS{MG, DMP}"
       },
       "TUESDAY": {
         "02:00-02:50": "BCS 061/CS-C\n{DMP}/KC-408"
@@ -1649,6 +1891,7 @@
       },
       "FRIDAY": {
         "08:50-09:40": "EN APPLIED AI {DMP, VIC }",
+        "09:40-10:30": "EN APPLIED AI {DMP, VIC }",
         "12:20-01:10": "BCS 061/CS-B\n{DMP}/KC-407",
         "02:50-03:40": "BCS 061/CS-A\n{DMP}/KC-405",
         "03:40-04:30": "BCS 061/CS-A\n{DMP}/KC-405"
@@ -1664,28 +1907,38 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
-        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C"
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "12:20-01:10": "HWI TRAINING   (CHM+ GV)/ CS-C"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "10:40-11:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "02:00-02:50": "BCC 401/CSE-18\n{GV}/KC-204"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "11:30-12:20": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "12:20-01:10": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "03:40-04:30": "BCC 401/CSE-26\n{GV}/KC-302"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "11:30-12:20": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
         "12:20-01:10": "BCC 401/CSE-26\n{GV}/KC-302",
         "03:40-04:30": "BCC 401/CSE-18\n{GV}/KC-204"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+ GV)/ CS-C",
+        "09:40-10:30": "HWI TRAINING   (CHM+ GV)/ CS-C",
         "10:40-11:30": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
-        "02:50-03:40": "BCS 453\n{HD,GV}/CSE-22/ KC-208"
+        "11:30-12:20": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
+        "02:50-03:40": "BCS 453\n{HD,GV}/CSE-22/ KC-208",
+        "03:40-04:30": "BCS 453\n{HD,GV}/CSE-22/ KC-208"
       }
     }
   },
@@ -1698,7 +1951,9 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "AIML+DS/CSE-II nd Yr",
-        "02:50-03:40": "BCS 651/KC-404/CSE-D\n{SHA, SJ}"
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 651/KC-404/CSE-D\n{SHA, SJ}",
+        "03:40-04:30": "BCS 651/KC-404/CSE-D\n{SHA, SJ}"
       },
       "TUESDAY": {
         "10:40-11:30": "BCS 601/CS-D\n{SJ}/KC-610",
@@ -1710,7 +1965,8 @@
         "03:40-04:30": "BCS 601/CS-D\n{SJ}/KC-610"
       },
       "FRIDAY": {
-        "11:30-12:20": "BCS 651/KC-610/CS-D\n{SJ, NY}"
+        "11:30-12:20": "BCS 651/KC-610/CS-D\n{SJ, NY}",
+        "12:20-01:10": "BCS 651/KC-610/CS-D\n{SJ, NY}"
       }
     }
   },
@@ -1758,20 +2014,25 @@
       },
       "TUESDAY": {
         "10:40-11:30": "FSD/CSE 28/KC 305\n{SWT,Viswajeet}",
-        "11:30-12:20": "FSD/CSE12/KC 102\n{RS, SWT}"
+        "11:30-12:20": "FSD/CSE12/KC 102\n{RS, SWT}",
+        "12:20-01:10": "FSD/CSE12/KC 102\n{RS, SWT}"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS403/CSE-26\n{SWT}/KC-302",
         "10:40-11:30": "BCS403/CSE-26\n{SWT}/KC-302",
-        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, RS}"
+        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, RS}",
+        "03:40-04:30": "FSD/CSE13/KC 104\n{SWT, RS}"
       },
       "THURSDAY": {
         "09:40-10:30": "BCS403/CSE-26\n{SWT}/KC-302",
-        "11:30-12:20": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}"
+        "11:30-12:20": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}",
+        "12:20-01:10": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}"
       },
       "FRIDAY": {
         "08:50-09:40": "\"BCS 452\n{SWT,SL} /CSE-26/ KC-302\"",
+        "09:40-10:30": "\"BCS 452\n{SWT,SL} /CSE-26/ KC-302\"",
         "11:30-12:20": "FSD/CSE 25/KC 301\n{SWT, NN}",
+        "12:20-01:10": "FSD/CSE 25/KC 301\n{SWT, NN}",
         "03:40-04:30": "FSD/CSE13/KC 104\n{RS, SWT}"
       }
     }
@@ -1785,22 +2046,26 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
+        "11:30-12:20": "DOMAIN TRAINING (Cloud Computing)/ 2nd year",
         "03:40-04:30": "BCS 401\n{PKR}/ CSE-29/ KC-307"
       },
       "TUESDAY": {
         "08:50-09:40": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}",
         "11:30-12:20": "BCS 401\n{PKR}/ CSE-25/ KC-301",
-        "02:50-03:40": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\""
+        "02:50-03:40": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\"",
+        "03:40-04:30": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\""
       },
       "WEDNESDAY": {
         "11:30-12:20": "BCS 401\n{PKR}/ CSE-25/ KC-301",
         "12:20-01:10": "BCS 401\n{PKR}/ CSE-29/ KC-307",
-        "02:50-03:40": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\""
+        "02:50-03:40": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\"",
+        "03:40-04:30": "\"BCS 451\n{PKR,NG}/CSE-29/ KC-307\""
       },
       "THURSDAY": {
         "10:40-11:30": "BCS 401\n{PKR}/ CSE-25/ KC-301",
         "12:20-01:10": "BCS 401\n{PKR}/ CSE-25/ KC-301",
-        "02:00-02:50": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}"
+        "02:00-02:50": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}",
+        "02:50-03:40": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 401\n{PKR}/ CSE-29/ KC-307",
@@ -1818,22 +2083,28 @@
       "MONDAY": {
         "08:50-09:40": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
         "10:40-11:30": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)",
-        "02:50-03:40": "BCS 451\n{AAR, NS}/CSE-12/ KC-102"
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)",
+        "02:50-03:40": "BCS 451\n{AAR, NS}/CSE-12/ KC-102",
+        "03:40-04:30": "BCS 451\n{AAR, NS}/CSE-12/ KC-102"
       },
       "TUESDAY": {
         "12:20-01:10": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
-        "02:50-03:40": "BCS 451\n{KA, NS}/CSE-18/ KC-204"
+        "02:50-03:40": "BCS 451\n{KA, NS}/CSE-18/ KC-204",
+        "03:40-04:30": "BCS 451\n{KA, NS}/CSE-18/ KC-204"
       },
       "WEDNESDAY": {},
       "THURSDAY": {
         "10:40-11:30": "AIML+DS/CS-II nd Yr\n(Nepali/ Ayush)",
         "11:30-12:20": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
-        "02:50-03:40": "BCS 451\n{AA, NS}/CSE-24/ KC-210"
+        "02:50-03:40": "BCS 451\n{AA, NS}/CSE-24/ KC-210",
+        "03:40-04:30": "BCS 451\n{AA, NS}/CSE-24/ KC-210"
       },
       "FRIDAY": {
         "08:50-09:40": "\"BCS 401/CSE-27\n{NS}/KC-304\"",
         "11:30-12:20": "BCS 451\n{NS,ACH} /CSE-27/ KC-304",
-        "02:50-03:40": "BCS 451\n{LS,NS}/ CSE-23/ KC-209"
+        "12:20-01:10": "BCS 451\n{NS,ACH} /CSE-27/ KC-304",
+        "02:50-03:40": "BCS 451\n{LS,NS}/ CSE-23/ KC-209",
+        "03:40-04:30": "BCS 451\n{LS,NS}/ CSE-23/ KC-209"
       }
     }
   },
@@ -1846,22 +2117,30 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "12:20-01:10": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "02:00-02:50": "BOE064/CS-D\n{VSA}/KC-610",
         "03:40-04:30": "BOE064/CS-B\n{VSA}"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "DSA TRAINING/ CSE24/KC 210\n{VSA, KO}",
-        "02:50-03:40": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}"
+        "12:20-01:10": "DSA TRAINING/ CSE24/KC 210\n{VSA, KO}",
+        "02:50-03:40": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}",
+        "03:40-04:30": "DSA TRAINING/CSE29/KC 307\n{ AAG ,VSA}"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "10:40-11:30": "BOE064/CS-D\n{VSA}/KC-610",
-        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C"
+        "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "12:20-01:10": "HWI TRAINING   (SK,VSA)/ CSE-C"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "12:20-01:10": "BOE064/CS-B\n{VSA}",
         "02:00-02:50": "BOE064/CS-B\n{VSA}",
@@ -1869,6 +2148,7 @@
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (SK,VSA)/ CSE-C",
+        "09:40-10:30": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "11:30-12:20": "HWI TRAINING   (SK,VSA)/ CSE-C",
         "02:00-02:50": "BOE064/CS-D\n{VSA}/KC-610",
         "03:40-04:30": "BOE064/CS-B\n{VSA}"
@@ -1896,11 +2176,13 @@
       },
       "THURSDAY": {
         "09:40-10:30": "BCS 402\n{VK}/ CSE-24/ KC-210",
-        "02:50-03:40": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}"
+        "02:50-03:40": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}",
+        "03:40-04:30": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 402\n{VK}/ CSE-24/ KC-210",
-        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{VK.AY}"
+        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{VK.AY}",
+        "03:40-04:30": "DSA TRAINING/CSE25/KC 301\n{VK.AY}"
       }
     }
   },
@@ -1913,28 +2195,38 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
         "11:30-12:20": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "12:20-01:10": "HWI TRAINING   (DK,PSG)/ CS-B",
         "02:00-02:50": "BCS603/CS-D\n{PSG}/KC-610",
         "02:50-03:40": "BCS603/CS-D\n{PSG}/KC-610"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
         "10:40-11:30": "HWI TRAINING   (PSG)/ CS-C",
+        "11:30-12:20": "HWI TRAINING   (PSG)/ CS-C",
         "03:40-04:30": "DSA TRAINING/ CSE21/KC 207\n{PSG,TS}"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
-        "10:40-11:30": "CISCO TRAINING-ECE-VI-B/AB-107"
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "10:40-11:30": "CISCO TRAINING-ECE-VI-B/AB-107",
+        "11:30-12:20": "CISCO TRAINING-ECE-VI-B/AB-107"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (DK,PSG)/ CS-B",
+        "09:40-10:30": "HWI TRAINING   (DK,PSG)/ CS-B",
         "10:40-11:30": "HWI TRAINING   (DK+ PSG)/ CS-B",
+        "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
         "02:00-02:50": "\"\n\nBCS603/CS-D\n{PSG}/KC-610\""
       },
       "FRIDAY": {
         "08:50-09:40": "DSA TRAINING\n{PSG,Yash(TAT)} / CSE -21",
+        "09:40-10:30": "DSA TRAINING\n{PSG,Yash(TAT)} / CSE -21",
         "11:30-12:20": "HWI TRAINING   (DK+ PSG)/ CS-B",
-        "02:50-03:40": "BCS 653/KC-610/CS-D\n{PSG,BK}"
+        "02:50-03:40": "BCS 653/KC-610/CS-D\n{PSG,BK}",
+        "03:40-04:30": "BCS 653/KC-610/CS-D\n{PSG,BK}"
       }
     }
   },
@@ -1962,10 +2254,12 @@
       },
       "THURSDAY": {
         "11:30-12:20": "BOE 068 / ELCE / {VV} /AB-308",
-        "02:00-02:50": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}"
+        "02:00-02:50": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}",
+        "02:50-03:40": "DSA TRAINING/ CSE27/KC 304\n{PKR, VV}"
       },
       "FRIDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE14/KC 105\n{VV, KO}",
+        "11:30-12:20": "DSA TRAINING/ CSE14/KC 105\n{VV, KO}",
         "02:00-02:50": "BOE 068 / ELCE / {VV} /AB-308",
         "02:50-03:40": "BOE064/CSE-C\n{VV}/KC-402"
       }
@@ -1980,14 +2274,18 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "BCS 453\n{HD,NR}/CSE-19/ KC-205",
+        "09:40-10:30": "BCS 453\n{HD,NR}/CSE-19/ KC-205",
         "12:20-01:10": "BCC 401\n{NR}/ CSE-25/ KC-301",
-        "02:50-03:40": "BCS 453\n{NR,AY}/CSE-18/ KC-302"
+        "02:50-03:40": "BCS 453\n{NR,AY}/CSE-18/ KC-302",
+        "03:40-04:30": "BCS 453\n{NR,AY}/CSE-18/ KC-302"
       },
       "TUESDAY": {},
       "WEDNESDAY": {
         "08:50-09:40": "BCS 453\n{NR, HD}/CSE-12/ KC-102",
+        "09:40-10:30": "BCS 453\n{NR, HD}/CSE-12/ KC-102",
         "12:20-01:10": "BCC 401\n{NR}/ CSE-25/ KC-301",
-        "02:00-02:50": "BCS 453/CSE-16\n{NR,DKM}/KC-108"
+        "02:00-02:50": "BCS 453/CSE-16\n{NR,DKM}/KC-108",
+        "02:50-03:40": "BCS 453/CSE-16\n{NR,DKM}/KC-108"
       },
       "THURSDAY": {
         "09:40-10:30": "BCC 401\n{NR}/ CSE-16/ KC-108",
@@ -1995,6 +2293,7 @@
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 453\n{NR,SW}/CSE-25/ KC-301",
+        "09:40-10:30": "BCS 453\n{NR,SW}/CSE-25/ KC-301",
         "10:40-11:30": "BCC 401\n{NR}/ CSE-16/ KC-108",
         "02:00-02:50": "BCC 401\n{NR}/ CSE-16/ KC-108",
         "02:50-03:40": "BCC 401\n{NR}/ CSE-12/ KC-102"
@@ -2010,29 +2309,40 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208",
         "02:50-03:40": "BCS 403\n\n{ASG}/ CSE-22/ KC-208"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208"
       },
       "WEDNESDAY": {
         "08:50-09:40": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }",
+        "09:40-10:30": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
-        "02:50-03:40": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\""
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "02:50-03:40": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\"",
+        "03:40-04:30": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\""
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208",
         "03:40-04:30": "DSA TRAINING/CSE22/KC 208\n{ASG, SHA }"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 403\n\n{ASG}/ CSE-22/ KC-208"
       }
     }
@@ -2046,11 +2356,13 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "ELCE APPLIED AI {DM, DMP }",
+        "09:40-10:30": "ELCE APPLIED AI {DM, DMP }",
         "02:50-03:40": "BCC-401\n{DM}/CSE-29/ KC-307"
       },
       "TUESDAY": {
         "08:50-09:40": "BCC-401\n{DM}/ ELCE 1/ AB-309",
-        "10:40-11:30": "BCS 453\n{DM,VPS}/CSE-29/ KC-307"
+        "10:40-11:30": "BCS 453\n{DM,VPS}/CSE-29/ KC-307",
+        "11:30-12:20": "BCS 453\n{DM,VPS}/CSE-29/ KC-307"
       },
       "WEDNESDAY": {
         "10:40-11:30": "BCC-401\n{DM}/CSE-28/ KC-305",
@@ -2058,11 +2370,13 @@
       },
       "THURSDAY": {
         "08:50-09:40": "AIML-C  APPLIED AI {AG, DM }",
+        "09:40-10:30": "AIML-C  APPLIED AI {AG, DM }",
         "03:40-04:30": "BCC-401\n{DM}/CSE-29/ KC-307"
       },
       "FRIDAY": {
         "08:50-09:40": "BCC-401\n{DM}/ ELCE 2/ AB-310",
         "10:40-11:30": "BCS 453\n{DM,HD}/CSE-28/ KC-305",
+        "11:30-12:20": "BCS 453\n{DM,HD}/CSE-28/ KC-305",
         "02:00-02:50": "BCC-401\n{DM}/CSE-28/ KC-305",
         "02:50-03:40": "BCC-401\n{DM}/ ELCE 1/ AB-309"
       }
@@ -2077,6 +2391,7 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "DOMAIN TRAINING{2nd year /BCA}",
+        "11:30-12:20": "DOMAIN TRAINING{2nd year /BCA}",
         "02:00-02:50": "BCS 603/CSE-C\n{NB}/KC-402"
       },
       "TUESDAY": {
@@ -2085,7 +2400,8 @@
       },
       "WEDNESDAY": {
         "10:40-11:30": "BCS 603/CSE-C\n{NB}/KC-402",
-        "02:00-02:50": "BCS 452\n{ RA, NB} /CSE-25/ KC-301"
+        "02:00-02:50": "BCS 452\n{ RA, NB} /CSE-25/ KC-301",
+        "02:50-03:40": "BCS 452\n{ RA, NB} /CSE-25/ KC-301"
       },
       "THURSDAY": {
         "10:40-11:30": "BCS 603/CSE-C\n{NB}/KC-402",
@@ -2093,6 +2409,7 @@
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 653/KC-404/CSE-D\n{TS,NB}",
+        "09:40-10:30": "BCS 653/KC-404/CSE-D\n{TS,NB}",
         "12:20-01:10": "BCS 603/CSE-C\n{NB}/KC-402"
       }
     }
@@ -2106,20 +2423,35 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI Training",
+        "09:40-10:30": "HWI Training",
+        "10:40-11:30": "HWI Training",
+        "11:30-12:20": "HWI Training",
         "03:40-04:30": "BCS 601/CS-A\n{NY}/KC-405"
       },
       "TUESDAY": {
-        "08:50-09:40": "HWI Training"
+        "08:50-09:40": "HWI Training",
+        "09:40-10:30": "HWI Training",
+        "10:40-11:30": "HWI Training",
+        "11:30-12:20": "HWI Training"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI Training",
+        "09:40-10:30": "HWI Training",
+        "10:40-11:30": "HWI Training",
+        "11:30-12:20": "HWI Training",
         "12:20-01:10": "BCS 601/CS-A\n{NY}/KC-405"
       },
       "THURSDAY": {
-        "08:50-09:40": "HWI Training"
+        "08:50-09:40": "HWI Training",
+        "09:40-10:30": "HWI Training",
+        "10:40-11:30": "HWI Training",
+        "11:30-12:20": "HWI Training"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI Training",
+        "09:40-10:30": "HWI Training",
+        "10:40-11:30": "HWI Training",
+        "11:30-12:20": "HWI Training",
         "02:00-02:50": "BCS 601/CS-A\n{NY}/KC-405"
       }
     }
@@ -2138,7 +2470,8 @@
         "08:50-09:40": "BOE067\nECE-VI-C\nBH-110",
         "11:30-12:20": "BOE067\nECE-VI-B\nAB-107",
         "01:10-02:00": "BOE067\nECE-VI-A\nBH-209",
-        "02:50-03:40": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\""
+        "02:50-03:40": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\"",
+        "03:40-04:30": "\"BCS 451\n{PKR,ACH}/CSE-25/ KC-301\""
       },
       "WEDNESDAY": {
         "01:10-02:00": "BOE 067\n{ACH}/ EN / AB-307",
@@ -2151,6 +2484,7 @@
       },
       "FRIDAY": {
         "11:30-12:20": "BCS 451\n{NS,ACH} /CSE-27/ KC-304",
+        "12:20-01:10": "BCS 451\n{NS,ACH} /CSE-27/ KC-304",
         "01:10-02:00": "BOE 067\n{ACH}/ EN / AB-307",
         "02:00-02:50": "BOE067\nECE-VI-B\nAB-107",
         "03:40-04:30": "BOE067\nECE-VI-A\nBH-209"
@@ -2176,17 +2510,21 @@
       },
       "WEDNESDAY": {
         "09:40-10:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}",
+        "10:40-11:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}",
         "12:20-01:10": "BCS 601/CSE-C\n{ANS}/KC-402",
-        "02:50-03:40": "FSD/CSE17/KC 202\n{AK, ANS}"
+        "02:50-03:40": "FSD/CSE17/KC 202\n{AK, ANS}",
+        "03:40-04:30": "FSD/CSE17/KC 202\n{AK, ANS}"
       },
       "THURSDAY": {
         "11:30-12:20": "BEEZ 061/ELCE/\n{ANS}/AB-308",
         "12:20-01:10": "BCS 601/CSE-C\n{ANS}/KC-402",
-        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}"
+        "02:50-03:40": "FSD/CSE11/KC 101\n{VM,ANS}",
+        "03:40-04:30": "FSD/CSE11/KC 101\n{VM,ANS}"
       },
       "FRIDAY": {
         "08:50-09:40": "BEEZ 061/ELCE/\n{ANS}/AB-308",
-        "11:30-12:20": "FSD/CSE  24/KC 210\n{VM, ANS}"
+        "11:30-12:20": "FSD/CSE  24/KC 210\n{VM, ANS}",
+        "12:20-01:10": "FSD/CSE  24/KC 210\n{VM, ANS}"
       }
     }
   },
@@ -2207,18 +2545,21 @@
       "TUESDAY": {
         "09:40-10:30": "BCC401\nECE-IV-B\nBH-108",
         "11:30-12:20": "BCC401\nECE-IV-C\nBH-109",
-        "02:50-03:40": "BCS 451\n{SW,APS}/ CSE-22/ KC-208"
+        "02:50-03:40": "BCS 451\n{SW,APS}/ CSE-22/ KC-208",
+        "03:40-04:30": "BCS 451\n{SW,APS}/ CSE-22/ KC-208"
       },
       "WEDNESDAY": {
         "01:10-02:00": "BCC401\nECE-IV-A\nBH-107",
-        "02:50-03:40": "BCS 453\n{VPS,SW}/CSE-23/ KC-209"
+        "02:50-03:40": "BCS 453\n{VPS,SW}/CSE-23/ KC-209",
+        "03:40-04:30": "BCS 453\n{VPS,SW}/CSE-23/ KC-209"
       },
       "THURSDAY": {
         "11:30-12:20": "BCS 401\n{SW}/ CSE-22/ KC-208",
         "02:50-03:40": "BCS 401\n{SW}/ CSE-22/ KC-208"
       },
       "FRIDAY": {
-        "08:50-09:40": "BCS 453\n{NR,SW}/CSE-25/ KC-301"
+        "08:50-09:40": "BCS 453\n{NR,SW}/CSE-25/ KC-301",
+        "09:40-10:30": "BCS 453\n{NR,SW}/CSE-25/ KC-301"
       }
     }
   },
@@ -2231,29 +2572,39 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 601/CSE-D\n{SHA}/KC-404",
         "02:50-03:40": "BCS 601/CS-B\n{SHA}"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "03:40-04:30": "BCS 601/CS-B\n{SHA}"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA )",
-        "02:50-03:40": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }"
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA )",
+        "02:50-03:40": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }",
+        "03:40-04:30": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 601/CSE-D\n{SHA}/KC-404",
         "03:40-04:30": "DSA TRAINING/CSE22/KC 208\n{ASG, SHA }"
       },
       "FRIDAY": {
         "09:40-10:30": "DSA TRAINING/CSE28/KC 305\n{SHA, Yash }",
         "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)",
         "02:00-02:50": "BCS 601/CSE-D\n{SHA}/KC-404",
         "02:50-03:40": "BCS 601/CS-B\n{SHA}"
       }
@@ -2268,20 +2619,26 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "ELCE APPLIED AI {DM,VIC}",
+        "09:40-10:30": "ELCE APPLIED AI {DM,VIC}",
         "03:40-04:30": "DSA TRAINING/ CSE24/KC 210\n{VSA, Vikky}"
       },
       "TUESDAY": {
-        "02:50-03:40": "BCS 453\n{AA,VIC}/CSE-26/ KC-302"
+        "02:50-03:40": "BCS 453\n{AA,VIC}/CSE-26/ KC-302",
+        "03:40-04:30": "BCS 453\n{AA,VIC}/CSE-26/ KC-302"
       },
       "WEDNESDAY": {
-        "08:50-09:40": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }"
+        "08:50-09:40": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }",
+        "09:40-10:30": "DSA TRAINING/CSE22/KC 208\n{ASG, VIC }"
       },
       "THURSDAY": {
-        "08:50-09:40": "ECE-A APPLIED AI {PKS, VIC }"
+        "08:50-09:40": "ECE-A APPLIED AI {PKS, VIC }",
+        "09:40-10:30": "ECE-A APPLIED AI {PKS, VIC }"
       },
       "FRIDAY": {
         "08:50-09:40": "EN APPLIED AI {DMP, VIC }",
-        "02:50-03:40": "CSDS-C  APPLIED AI {TS, VIC }"
+        "09:40-10:30": "EN APPLIED AI {DMP, VIC }",
+        "02:50-03:40": "CSDS-C  APPLIED AI {TS, VIC }",
+        "03:40-04:30": "CSDS-C  APPLIED AI {TS, VIC }"
       }
     }
   },
@@ -2299,7 +2656,9 @@
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 452\n{RS,ATD}/ CSE-19/ KC-205",
+        "09:40-10:30": "BCS 452\n{RS,ATD}/ CSE-19/ KC-205",
         "11:30-12:20": "FSD/CSE12/KC 102\n{RS, SWT}",
+        "12:20-01:10": "FSD/CSE12/KC 102\n{RS, SWT}",
         "02:50-03:40": "BCS 403/CSE-19\n{RS}/KC-205",
         "03:40-04:30": "BCS 403/CSE-19\n{RS}/KC-205"
       },
@@ -2308,7 +2667,8 @@
         "10:40-11:30": "BCS 061/CSE-D\n{RS}/KC-404",
         "12:20-01:10": "BCS 403/CSE-19\n{RS}/KC-205",
         "02:00-02:50": "BCS 061/CSE-D\n{RS}/KC-404",
-        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, RS}"
+        "02:50-03:40": "FSD/CSE13/KC 104\n{SWT, RS}",
+        "03:40-04:30": "FSD/CSE13/KC 104\n{SWT, RS}"
       },
       "THURSDAY": {
         "12:20-01:10": "BCS 403/CSE-19\n{RS}/KC-205",
@@ -2329,20 +2689,26 @@
     "schedule": {
       "MONDAY": {
         "10:40-11:30": "AIML+DS/CSE-II nd Yr",
-        "02:50-03:40": "BCS 453\n{NR,AY}/CSE-18/ KC-302"
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr",
+        "02:50-03:40": "BCS 453\n{NR,AY}/CSE-18/ KC-302",
+        "03:40-04:30": "BCS 453\n{NR,AY}/CSE-18/ KC-302"
       },
       "TUESDAY": {
-        "02:50-03:40": "BCS 652/KC-610/CS-D\n{SS,AY}"
+        "02:50-03:40": "BCS 652/KC-610/CS-D\n{SS,AY}",
+        "03:40-04:30": "BCS 652/KC-610/CS-D\n{SS,AY}"
       },
       "WEDNESDAY": {
         "11:30-12:20": "BCS 453\n{DKM,AY}/CSE-13/ KC-104",
-        "02:50-03:40": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }"
+        "12:20-01:10": "BCS 453\n{DKM,AY}/CSE-13/ KC-104",
+        "02:50-03:40": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }",
+        "03:40-04:30": "DSA TRAINING/CSE28/KC 305\n{SHA, AY }"
       },
       "THURSDAY": {
         "10:40-11:30": "AIML+DS/CSE-II nd Yr"
       },
       "FRIDAY": {
-        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{VK.AY}"
+        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{VK.AY}",
+        "03:40-04:30": "DSA TRAINING/CSE25/KC 301\n{VK.AY}"
       }
     }
   },
@@ -2357,17 +2723,22 @@
       "TUESDAY": {
         "10:40-11:30": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}",
         "12:20-01:10": "DSA TRAINING/CSE25/KC 301\n{VK, SPG}",
-        "02:50-03:40": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102"
+        "02:50-03:40": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102",
+        "03:40-04:30": "BCS 452\n{ JJ,SPG} /CSE-12/ KC-102"
       },
       "WEDNESDAY": {
-        "08:50-09:40": "BCS 452\n{SPG,BK}/ KC-305"
+        "08:50-09:40": "BCS 452\n{SPG,BK}/ KC-305",
+        "09:40-10:30": "BCS 452\n{SPG,BK}/ KC-305"
       },
       "THURSDAY": {
-        "02:50-03:40": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}"
+        "02:50-03:40": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}",
+        "03:40-04:30": "DSA TRAINING/CSE26/KC 302\n{VK, SPG}"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 452/CSE-18\n{AK,SP}/KC-204",
-        "02:50-03:40": "BCS 653/KC-610/CS-D\n{BK,SPG}"
+        "09:40-10:30": "BCS 452/CSE-18\n{AK,SP}/KC-204",
+        "02:50-03:40": "BCS 653/KC-610/CS-D\n{BK,SPG}",
+        "03:40-04:30": "BCS 653/KC-610/CS-D\n{BK,SPG}"
       }
     }
   },
@@ -2383,17 +2754,22 @@
       },
       "TUESDAY": {
         "08:50-09:40": "BCS 652/KC-404/CSE-D\n{SYA, KO}",
+        "09:40-10:30": "BCS 652/KC-404/CSE-D\n{SYA, KO}",
         "11:30-12:20": "DSA TRAINING/ CSE24/KC 210\n{VSA, KO}",
+        "12:20-01:10": "DSA TRAINING/ CSE24/KC 210\n{VSA, KO}",
         "02:50-03:40": "DSA Training { MG, KO/KC-107}",
         "03:40-04:30": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
       },
       "WEDNESDAY": {
-        "02:50-03:40": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\""
+        "02:50-03:40": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\"",
+        "03:40-04:30": "\"BCS 452\n{ASG, KO} /CSE-22/ KC-208\""
       },
       "THURSDAY": {},
       "FRIDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE14/KC 105\n{VV, KO}",
-        "02:50-03:40": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
+        "11:30-12:20": "DSA TRAINING/ CSE14/KC 105\n{VV, KO}",
+        "02:50-03:40": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}",
+        "03:40-04:30": "DSA TRAINING/ CSE11/KC 101\n{AR,KO}"
       }
     }
   },
@@ -2405,21 +2781,26 @@
     "practicals": 4,
     "schedule": {
       "MONDAY": {
-        "10:40-11:30": "DOMAIN TRAINING (AIML+DS) Training"
+        "10:40-11:30": "DOMAIN TRAINING (AIML+DS) Training",
+        "11:30-12:20": "DOMAIN TRAINING (AIML+DS) Training"
       },
       "TUESDAY": {
-        "02:50-03:40": "BCS 453\n{HD,RA}"
+        "02:50-03:40": "BCS 453\n{HD,RA}",
+        "03:40-04:30": "BCS 453\n{HD,RA}"
       },
       "WEDNESDAY": {
         "10:40-11:30": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}",
-        "02:00-02:50": "BCS 452\n{ RA, NB} /CSE-25/ KC-301"
+        "02:00-02:50": "BCS 452\n{ RA, NB} /CSE-25/ KC-301",
+        "02:50-03:40": "BCS 452\n{ RA, NB} /CSE-25/ KC-301"
       },
       "THURSDAY": {
         "10:40-11:30": "DOMAIN TRAINING  (AIML+DS Training)",
-        "02:50-03:40": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
+        "02:50-03:40": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}",
+        "03:40-04:30": "DSA TRAINING/ CSE17/KC 202\n{JJ,RA}"
       },
       "FRIDAY": {
-        "02:50-03:40": "DSA Training { MG,RA/ KC-107} CSE -15"
+        "02:50-03:40": "DSA Training { MG,RA/ KC-107} CSE -15",
+        "03:40-04:30": "DSA Training { MG,RA/ KC-107} CSE -15"
       }
     }
   },
@@ -2432,22 +2813,29 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
         "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
-        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
         "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
-        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "10:40-11:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
+        "09:40-10:30": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401",
         "11:30-12:20": "HWI TRAINING   (AKS+ MG)/CSE-B/ KC-401"
       }
     }
@@ -2461,22 +2849,29 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "09:40-10:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
         "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
-        "10:40-11:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+        "09:40-10:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "10:40-11:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "09:40-10:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
         "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
-        "10:40-11:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
+        "09:40-10:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "10:40-11:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
+        "09:40-10:30": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407",
         "11:30-12:20": "HWI TRAINING   (CHM+PSG)/ CS-C /KC-407"
       }
     }
@@ -2490,22 +2885,29 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "09:40-10:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
         "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
-        "10:40-11:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+        "09:40-10:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "10:40-11:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "09:40-10:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
         "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
-        "10:40-11:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
+        "09:40-10:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "10:40-11:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
+        "09:40-10:30": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402",
         "11:30-12:20": "HWI TRAINING   (SK+ VSA)/ CSE-C/ KC-402"
       }
     }
@@ -2519,22 +2921,29 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "09:40-10:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
         "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
-        "10:40-11:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+        "09:40-10:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "10:40-11:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "09:40-10:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
         "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
-        "10:40-11:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
+        "09:40-10:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "10:40-11:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
+        "09:40-10:30": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405",
         "11:30-12:20": "HWI TRAINING   (DK+ GV)/ CS-B/KC-405"
       }
     }
@@ -2552,13 +2961,16 @@
       },
       "TUESDAY": {
         "10:40-11:30": "FSD/CSE 28/KC 305\n{SWT,Viswajeet (TAT}",
-        "11:30-12:20": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
+        "11:30-12:20": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }",
+        "12:20-01:10": "FSD/CSE 22/KC 208\n{LS, Vishwajeet (TAT) }"
       },
       "WEDNESDAY": {
-        "09:40-10:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}"
+        "09:40-10:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}",
+        "10:40-11:30": "FSD/CSE 23/KC 308\n{ANS, Vishwajeet}"
       },
       "THURSDAY": {
-        "11:30-12:20": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}"
+        "11:30-12:20": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}",
+        "12:20-01:10": "FSD/CSE 28/KC 305\n{SWT, Viswajeet}"
       },
       "FRIDAY": {}
     }
@@ -2572,23 +2984,32 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)\n(KC-208)"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)\n(KC-208)",
+        "11:30-12:20": "AIML+DS/CSE-II nd Yr\n(Nepali/Ayush)\n(KC-208)"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       },
       "THURSDAY": {
         "08:50-09:40": "\"BCS 452\n{JS, Ayush } /CSE-27/ KC-304\"",
+        "09:40-10:30": "\"BCS 452\n{JS, Ayush } /CSE-27/ KC-304\"",
         "10:40-11:30": "AIML+DS/CS-II nd Yr\n(Nepali/ Ayush)\n(KC-208)"
       },
       "FRIDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       }
     }
   },
@@ -2606,11 +3027,14 @@
       },
       "THURSDAY": {
         "08:50-09:40": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}",
+        "09:40-10:30": "DSA TRAINING/ CSE18/KC 204\n{APS,Vishu (TAT)}",
         "11:30-12:20": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}"
       },
       "FRIDAY": {
         "10:40-11:30": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
-        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{ VK, Vishu (TAT)}"
+        "11:30-12:20": "DSA TRAINING/CSE23/KC 209\n{GV, Vishu (TAT)}",
+        "02:50-03:40": "DSA TRAINING/CSE25/KC 301\n{ VK, Vishu (TAT)}",
+        "03:40-04:30": "DSA TRAINING/CSE25/KC 301\n{ VK, Vishu (TAT)}"
       }
     }
   },
@@ -2627,10 +3051,12 @@
         "10:40-11:30": "DSA TRAINING/ CSE12/KC 102\n{KA, Manish (TAT)}"
       },
       "THURSDAY": {
-        "11:30-12:20": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))"
+        "11:30-12:20": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))",
+        "12:20-01:10": "DSA TRAINING/ CSE12/KC 102\n{KA,Manish (TAT))"
       },
       "FRIDAY": {
-        "10:40-11:30": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}"
+        "10:40-11:30": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}",
+        "11:30-12:20": "DSA TRAINING/ CSE13/KC 104\n{ JJ, Manish (TAT)}"
       }
     }
   },
@@ -2643,22 +3069,31 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
-        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
-        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)"
       },
       "WEDNESDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
-        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (ASG+ SHA +Yash)",
-        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)"
+        "09:40-10:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "10:40-11:30": "HWI TRAINING   (ASG+ SHA +Yash)",
+        "11:30-12:20": "HWI TRAINING   (ASG+ SHA +Yash)"
       },
       "FRIDAY": {
         "08:50-09:40": "DSA TRAINING/ CSE21/KC 207\n{PSG, Yash}",
+        "09:40-10:30": "DSA TRAINING/ CSE21/KC 207\n{PSG, Yash}",
         "10:40-11:30": "DSA TRAINING/CSE28/KC 305\n{SHA, Yash }",
         "11:30-12:20": "HWI TRAINING (ASG+ SHA +Yash)"
       }
@@ -2673,23 +3108,33 @@
     "schedule": {
       "MONDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       },
       "TUESDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       },
       "WEDNESDAY": {
         "08:50-09:40": "BCS 452\n{SPG,BK}\nKC-305",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "BCS 452\n{SPG,BK}\nKC-305",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       },
       "THURSDAY": {
         "08:50-09:40": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       },
       "FRIDAY": {
         "08:50-09:40": "BCS 452\n{SWT,SL, Anshuli(TAC)}\nKC302",
-        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
+        "09:40-10:30": "BCS 452\n{SWT,SL, Anshuli(TAC)}\nKC302",
+        "10:40-11:30": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107",
+        "11:30-12:20": "HWI TRAINING   (AAG+ AB)/ ECE-A/BH-107"
       }
     }
   }
