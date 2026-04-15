@@ -1,11 +1,12 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { ChevronLeft, ChevronRight, CalendarDays, Search, Users, Clock } from "lucide-react";
+import { ChevronLeft, ChevronRight, CalendarDays, Search, Users, Clock, Download, FileSpreadsheet, FileText } from "lucide-react";
 import { useState, useEffect } from "react";
 import { TEACHERS, getFreeTeachers, getTeachersWithOverrides, TIME_SLOTS, DAYS, Day, TimeSlot, Teacher } from "@/lib/data";
 import { useDuties } from "@/hooks/useDuties";
 import { DutyModal } from "@/components/DutyModal";
+import * as XLSX from 'xlsx';
 
 export default function AvailabilityPage() {
   const [mounted, setMounted] = useState(false);
@@ -69,6 +70,50 @@ export default function AvailabilityPage() {
 
   const freeTeachers = getFreeTeachers(selectedDay, selectedSlot);
 
+  const downloadExcel = () => {
+    if (freeTeachers.length === 0) return;
+    const data = freeTeachers.map((t, i) => ({
+      '#': i + 1,
+      'Faculty Name': t.name,
+      'Department': t.department,
+      'ID': t.id,
+      'Lectures': t.lectures,
+      'Tutorials': t.tutorials,
+      'Practicals': t.practicals,
+    }));
+    const ws = XLSX.utils.json_to_sheet(data);
+    ws['!cols'] = [{ wch: 5 }, { wch: 30 }, { wch: 35 }, { wch: 10 }, { wch: 10 }, { wch: 10 }, { wch: 10 }];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Available Faculty');
+    XLSX.writeFile(wb, `Available_Faculty_${selectedDay}_${selectedSlot.replace(':', '')}.xlsx`);
+  };
+
+  const downloadPDF = () => {
+    if (freeTeachers.length === 0) return;
+    // Build a printable HTML table and open in a new window for PDF print
+    const rows = freeTeachers.map((t, i) =>
+      `<tr><td style="padding:8px;border:1px solid #ddd;text-align:center">${i + 1}</td><td style="padding:8px;border:1px solid #ddd">${t.name}</td><td style="padding:8px;border:1px solid #ddd">${t.department}</td><td style="padding:8px;border:1px solid #ddd;text-align:center">${t.id}</td></tr>`
+    ).join('');
+    const html = `
+      <html><head><title>Available Faculty - ${selectedDay} ${selectedSlot}</title>
+      <style>body{font-family:Arial,sans-serif;padding:40px}h1{font-size:22px;margin-bottom:4px}h2{font-size:14px;color:#666;margin-bottom:24px;font-weight:normal}table{width:100%;border-collapse:collapse;margin-top:16px}th{background:#1a1a2e;color:white;padding:10px;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:1px}td{font-size:13px}tr:nth-child(even){background:#f8f8f8}.footer{margin-top:30px;font-size:11px;color:#999;border-top:1px solid #eee;padding-top:12px}</style>
+      </head><body>
+      <h1>Available Faculty Report</h1>
+      <h2>${selectedDay} | ${selectedSlot} | ${freeTeachers.length} faculty available</h2>
+      <table>
+        <thead><tr><th>#</th><th>Faculty Name</th><th>Department</th><th>ID</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div class="footer">Generated on ${new Date().toLocaleString()} — ABES GO</div>
+      </body></html>`;
+    const win = window.open('', '_blank');
+    if (win) {
+      win.document.write(html);
+      win.document.close();
+      setTimeout(() => win.print(), 500);
+    }
+  };
+
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
@@ -108,14 +153,14 @@ export default function AvailabilityPage() {
         <motion.div variants={itemVariants} className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-[1px] bg-copper" />
-            <span className="text-[11px] font-sans font-black text-copper uppercase tracking-[0.4em]">Real-time Intelligence</span>
+            <span className="text-[11px] font-sans font-black text-copper uppercase tracking-[0.4em]">Availability Check</span>
           </div>
           <h1 className="text-6xl md:text-8xl font-display font-black text-ink uppercase leading-none tracking-tighter mb-6">
-            Presence <span className="text-copper">Scanner</span>
+            Faculty <span className="text-copper">Scanner</span>
           </h1>
           <p className="text-lg font-sans text-muted max-w-2xl leading-relaxed">
-            Identify and deploy available faculty members across the campus network. 
-            Real-time synchronization with primary schedule databases.
+            Find available faculty members for any day and time slot. 
+            Download the list as Excel or PDF for quick reference.
           </p>
         </motion.div>
 
@@ -127,7 +172,7 @@ export default function AvailabilityPage() {
             <div className="glass-card p-10 rounded-[2.5rem] border-black/5">
               <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div className="flex flex-col gap-4 w-full md:w-auto">
-                   <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] ml-2">Operational Period</span>
+                   <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] ml-2">Select Day</span>
                    <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 bg-black/[0.03] p-2 rounded-2xl">
                      {DAYS.map(day => (
                        <button
@@ -148,19 +193,19 @@ export default function AvailabilityPage() {
                 <div className="w-[1px] h-12 bg-black/5 hidden md:block" />
 
                 <div className="flex flex-col items-center gap-4">
-                  <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em]">Target Synchronization</span>
+                  <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em]">Auto Detect</span>
                   <button 
                     onClick={detectNow}
                     className="group flex items-center gap-3 px-8 py-4 bg-copper/5 border border-copper/20 rounded-2xl text-[10px] font-black font-sans text-copper uppercase tracking-[0.2em] hover:bg-copper hover:text-white transition-all shadow-sm"
                   >
                     <Clock size={14} className="group-hover:rotate-12 transition-transform" />
-                    Sync to System Time
+                    Use Current Time
                   </button>
                 </div>
               </div>
 
               <div className="mt-12">
-                 <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] block mb-6 ml-2">Temporal Index</span>
+                 <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] block mb-6 ml-2">Select Time Slot</span>
                  <div className="flex gap-3 overflow-x-auto custom-scrollbar-light pb-4">
                   {TIME_SLOTS.map(slot => (
                     <button
@@ -185,7 +230,7 @@ export default function AvailabilityPage() {
             <div className="glass-card p-10 rounded-[2.5rem] bg-gradient-to-br from-white to-surface2 border-black/5 flex-1 flex flex-col justify-center items-center text-center">
               <span className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.3em] mb-4">Availability Load</span>
               <div className="text-8xl font-display font-black text-ink mb-4">{freeTeachers.length}</div>
-              <span className="text-[11px] font-sans font-black text-copper uppercase tracking-[0.4em]">Nodes Detected</span>
+              <span className="text-[11px] font-sans font-black text-copper uppercase tracking-[0.4em]">Faculty Available</span>
             </div>
             <div className="glass-card p-8 rounded-[2rem] border-black/5 flex items-center justify-between">
               <div className="flex items-center gap-4">
@@ -202,11 +247,31 @@ export default function AvailabilityPage() {
 
         {/* Results Grid - Redesigned as Premium Structured List */}
         <motion.div variants={itemVariants} className="relative">
-          <div className="flex items-center justify-between mb-12 px-4">
-            <h3 className="text-2xl font-display font-black text-ink uppercase tracking-tight">Active Personnel Inventory</h3>
-            <div className="flex items-center gap-4 text-[10px] font-sans font-bold text-muted/40 uppercase tracking-[0.2em]">
-              <div className="w-2 h-2 rounded-full bg-copper shadow-copper animate-pulse" />
-              Live Stream Active
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 px-4 gap-4">
+            <h3 className="text-2xl font-display font-black text-ink uppercase tracking-tight">Available Faculty</h3>
+            <div className="flex items-center gap-3">
+              {freeTeachers.length > 0 && (
+                <>
+                  <button
+                    onClick={downloadExcel}
+                    className="flex items-center gap-2 px-5 py-3 bg-green-600/10 border border-green-600/20 rounded-xl text-[10px] font-sans font-black text-green-700 uppercase tracking-[0.15em] hover:bg-green-600 hover:text-white transition-all shadow-sm"
+                  >
+                    <FileSpreadsheet size={14} />
+                    Excel
+                  </button>
+                  <button
+                    onClick={downloadPDF}
+                    className="flex items-center gap-2 px-5 py-3 bg-red-500/10 border border-red-500/20 rounded-xl text-[10px] font-sans font-black text-red-600 uppercase tracking-[0.15em] hover:bg-red-500 hover:text-white transition-all shadow-sm"
+                  >
+                    <FileText size={14} />
+                    PDF
+                  </button>
+                </>
+              )}
+              <div className="flex items-center gap-2 text-[10px] font-sans font-bold text-muted/40 uppercase tracking-[0.2em] ml-2">
+                <div className="w-2 h-2 rounded-full bg-copper shadow-copper animate-pulse" />
+                Live
+              </div>
             </div>
           </div>
 
@@ -215,7 +280,7 @@ export default function AvailabilityPage() {
                <div className="w-20 h-20 bg-red-500/5 rounded-full flex items-center justify-center mb-6">
                   <Search size={32} className="text-red-500/40" />
                </div>
-               <h3 className="text-[12px] font-sans font-black text-red-500 uppercase tracking-[0.5em]">Critical Load: Zero Nodes Available</h3>
+               <h3 className="text-[12px] font-sans font-black text-red-500 uppercase tracking-[0.5em]">No Faculty Available for This Slot</h3>
             </div>
           ) : (
             <div className="flex flex-col gap-px bg-black/5 border border-black/5 rounded-3xl overflow-hidden backdrop-blur-md">

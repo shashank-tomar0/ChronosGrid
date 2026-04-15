@@ -1,13 +1,14 @@
 "use client";
 
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
-import { ArrowDown, ChevronLeft, ChevronRight, Trash2, CalendarDays } from "lucide-react";
+import { ArrowDown, ChevronLeft, ChevronRight, Trash2, CalendarDays, FileSpreadsheet, FileText } from "lucide-react";
 import { useState, useEffect } from "react";
 import { TEACHERS, getFreeTeachers, TIME_SLOTS, DAYS, Day, TimeSlot, Teacher } from "@/lib/data";
 import { useDuties, getMonday, getWeekKey } from "@/hooks/useDuties";
 import { DutyModal } from "@/components/DutyModal";
 import Image from "next/image";
 import Link from "next/link";
+import * as XLSX from 'xlsx';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -82,6 +83,42 @@ export default function Home() {
   if (!mounted) return null;
 
   const freeTeachers = getFreeTeachers(selectedDay, selectedSlot);
+
+  const downloadExcel = () => {
+    if (freeTeachers.length === 0) return;
+    const data = freeTeachers.map((t, i) => ({
+      '#': i + 1,
+      'Faculty Name': t.name,
+      'Department': t.department,
+      'ID': t.id,
+      'Lectures': t.lectures,
+      'Tutorials': t.tutorials,
+      'Practicals': t.practicals,
+    }));
+    const ws = XLSX.utils.json_to_sheet(data);
+    ws['!cols'] = [{ wch: 5 }, { wch: 30 }, { wch: 35 }, { wch: 10 }, { wch: 10 }, { wch: 10 }, { wch: 10 }];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Available Faculty');
+    XLSX.writeFile(wb, `Available_Faculty_${selectedDay}_${selectedSlot.replace(':', '')}.xlsx`);
+  };
+
+  const downloadPDF = () => {
+    if (freeTeachers.length === 0) return;
+    const rows = freeTeachers.map((t, i) =>
+      `<tr><td style="padding:8px;border:1px solid #ddd;text-align:center">${i + 1}</td><td style="padding:8px;border:1px solid #ddd">${t.name}</td><td style="padding:8px;border:1px solid #ddd">${t.department}</td><td style="padding:8px;border:1px solid #ddd;text-align:center">${t.id}</td></tr>`
+    ).join('');
+    const html = `<html><head><title>Available Faculty - ${selectedDay} ${selectedSlot}</title>
+      <style>body{font-family:Arial,sans-serif;padding:40px}h1{font-size:22px;margin-bottom:4px}h2{font-size:14px;color:#666;margin-bottom:24px;font-weight:normal}table{width:100%;border-collapse:collapse;margin-top:16px}th{background:#1a1a2e;color:white;padding:10px;text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:1px}td{font-size:13px}tr:nth-child(even){background:#f8f8f8}.footer{margin-top:30px;font-size:11px;color:#999;border-top:1px solid #eee;padding-top:12px}</style>
+      </head><body>
+      <h1>Available Faculty Report</h1>
+      <h2>${selectedDay} | ${selectedSlot} | ${freeTeachers.length} faculty available</h2>
+      <table><thead><tr><th>#</th><th>Faculty Name</th><th>Department</th><th>ID</th></tr></thead>
+      <tbody>${rows}</tbody></table>
+      <div class="footer">Generated on ${new Date().toLocaleString()} — ABES GO</div>
+      </body></html>`;
+    const win = window.open('', '_blank');
+    if (win) { win.document.write(html); win.document.close(); setTimeout(() => win.print(), 500); }
+  };
 
   // Animation variants
   const staggerContainer: Variants = {
@@ -296,6 +333,25 @@ export default function Home() {
       <section className="bg-ink relative min-h-screen pb-24 border-t border-grid">
         <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none mix-blend-screen" />
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+          {/* Download Buttons */}
+          {freeTeachers.length > 0 && (
+            <div className="flex items-center gap-3 pt-10 pb-2 justify-end">
+              <button
+                onClick={downloadExcel}
+                className="flex items-center gap-2 px-5 py-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-[10px] font-sans font-black text-emerald-400 uppercase tracking-[0.15em] hover:bg-emerald-500 hover:text-white transition-all shadow-sm"
+              >
+                <FileSpreadsheet size={14} />
+                Download Excel
+              </button>
+              <button
+                onClick={downloadPDF}
+                className="flex items-center gap-2 px-5 py-3 bg-red-500/10 border border-red-500/30 rounded-xl text-[10px] font-sans font-black text-red-400 uppercase tracking-[0.15em] hover:bg-red-500 hover:text-white transition-all shadow-sm"
+              >
+                <FileText size={14} />
+                Download PDF
+              </button>
+            </div>
+          )}
           {freeTeachers.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-40 border border-grid/60 bg-surface/30 backdrop-blur-sm rounded-3xl mt-12 shadow-[0_0_50px_rgba(226,31,135,0.05)]">
               <div className="text-muted/10 font-display font-black text-6xl uppercase tracking-tighter mb-4">No Teachers</div>

@@ -178,17 +178,17 @@ function FacultyPageContent() {
           <motion.div variants={itemVariants} className="bg-surface/50 backdrop-blur-xl p-6 rounded-xl border border-grid shadow-cyan relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-copper to-magenta" />
             <h1 className="text-3xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-copper to-copper-dim uppercase leading-none tracking-tight mb-3">
-              Network Protocol
+              Faculty Timetable
             </h1>
             <p className="text-muted font-sans font-bold uppercase tracking-[0.2em] text-[10px] leading-relaxed">
-              Individual node tasking logs and deployment tracking index.
+              View and manage individual faculty schedules and duty assignments.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="border border-grid bg-surface/50 backdrop-blur-xl rounded-xl overflow-hidden shadow-cyan flex flex-col max-h-[800px] relative">
             <div className="p-5 border-b border-grid bg-surface/80 text-[10px] text-muted font-sans font-bold uppercase tracking-[0.2em] relative">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-magenta to-transparent" />
-              Node Index List
+              Faculty List
             </div>
             <div className="flex flex-col flex-1 overflow-y-auto custom-scrollbar bg-surface/30 px-3 py-4 gap-2">
               {teacherIds.map(id => {
@@ -244,7 +244,7 @@ function FacultyPageContent() {
 
           <motion.div variants={itemVariants} className="border border-grid p-6 bg-surface/50 backdrop-blur-xl rounded-xl shadow-cyan relative">
             <h3 className="font-display font-black uppercase tracking-tight text-lg mb-5 text-copper flex items-center gap-2">
-               <span className="w-1.5 h-1.5 bg-copper rounded-sm" /> Node Load Metris
+               <span className="w-1.5 h-1.5 bg-copper rounded-sm" /> Faculty Stats
             </h3>
             <div className="flex flex-col gap-3">
               <div className="flex justify-between items-end border-b border-grid/80 pb-2 hover:bg-surface2/30 px-2 transition-colors">
@@ -260,7 +260,7 @@ function FacultyPageContent() {
                 <span className="text-lg font-display font-bold text-cream">{teacher.practicals}</span>
               </div>
               <div className="flex justify-between items-end border-b border-grid/80 pb-2 hover:bg-surface2/30 px-2 transition-colors">
-                <span className="text-[10px] font-bold font-sans uppercase text-muted tracking-[0.2em]">Free Void Cells</span>
+                <span className="text-[10px] font-bold font-sans uppercase text-muted tracking-[0.2em]">Free Slots</span>
                 <span className="text-lg font-display font-black text-copper">{getTotalFreeSlots(teacher.id)}</span>
               </div>
               <div className="flex justify-between items-end pt-1 bg-magenta/5 px-2 rounded mt-2 border border-magenta/10">
@@ -283,7 +283,7 @@ function FacultyPageContent() {
                 className="w-full text-left px-4 py-3 rounded-lg border border-grid hover:border-red-500/80 hover:bg-red-500/10 transition-all text-muted hover:text-red-400 text-[10px] font-sans font-bold uppercase tracking-[0.2em] flex items-center gap-3 disabled:opacity-30 disabled:cursor-not-allowed shadow-sm"
               >
                 <Trash2 size={12} />
-                Purge Active Period ({weekDuties.length})
+                Clear This Week ({weekDuties.length})
               </button>
               <button
                 onClick={() => setShowClearConfirm('all')}
@@ -291,7 +291,7 @@ function FacultyPageContent() {
                 className="w-full text-left px-4 py-3 rounded-lg border border-red-500/30 hover:border-red-500 hover:bg-red-500/20 transition-all text-red-500 hover:text-red-300 text-[10px] font-sans font-bold uppercase tracking-[0.2em] flex items-center gap-3 disabled:opacity-30 disabled:cursor-not-allowed shadow-[0_0_10px_rgba(239,68,68,0.1)]"
               >
                 <XCircle size={12} />
-                Execute Global Purge ({duties.length})
+                Clear All Duties ({duties.length})
               </button>
             </div>
           </motion.div>
@@ -383,7 +383,7 @@ function FacultyPageContent() {
                                 <div className="text-[7px] font-sans font-bold text-muted/40 uppercase tracking-[0.15em] pb-0.5 mb-0.5 w-full flex justify-center items-center gap-1">
                                   SCHEDULED
                                 </div>
-                                <div className="text-[9px] font-sans font-bold text-cream/70 leading-snug overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' as const }}>{parsed?.short}</div>
+                                <div className="text-[9px] font-sans font-bold text-cream/80 leading-snug overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' as const }}>{parsed?.short}</div>
                               </div>
                             </td>
                           );
@@ -449,9 +449,9 @@ function FacultyPageContent() {
                <div className="absolute -left-20 top-0 w-64 h-full bg-copper opacity-10 blur-[80px] pointer-events-none" />
               <h3 className="text-xl font-display font-black uppercase tracking-tight text-copper flex items-center gap-3">
                 <span className="w-2 h-2 bg-copper shadow-[0_0_10px_rgba(50,95,232,0.8)] animate-pulse rounded-sm" /> 
-                Deployment Records — {teacher.name}
+                Duty Records — {teacher.name}
               </h3>
-              <p className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mt-2 ml-5">Chronological index of tasked operations</p>
+              <p className="text-[10px] font-sans font-bold text-muted uppercase tracking-[0.2em] mt-2 ml-5">All assigned duties for this faculty member</p>
             </div>
             <div className="flex flex-col">
               {teacherAllDuties.length === 0 ? (
@@ -484,7 +484,7 @@ function FacultyPageContent() {
                       onClick={() => removeDuty(duty.id)}
                       className="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-magenta hover:text-white flex items-center justify-center gap-2 border border-magenta/30 w-full md:w-auto px-6 py-4 rounded-lg hover:bg-magenta hover:shadow-[0_0_15px_rgba(226,31,135,0.5)] transition-all shrink-0 group/del"
                     >
-                      <Trash2 size={12} className="group-hover/del:animate-bounce" /> PURGE
+                      <Trash2 size={12} className="group-hover/del:animate-bounce" /> Remove
                     </button>
                   </div>
                 ))
@@ -502,7 +502,7 @@ export default function FacultyPage() {
     <Suspense fallback={
       <div className="min-h-screen bg-ink flex items-center justify-center">
         <div className="text-copper font-display font-black text-2xl animate-pulse tracking-widest uppercase">
-          Initializing Protocol...
+          Loading...
         </div>
       </div>
     }>

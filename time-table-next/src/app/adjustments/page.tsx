@@ -170,6 +170,7 @@ export default function AdjustmentsPage() {
 
   const saveMasterOverrides = () => {
     const newOverrides = { ...overrides, ...masterBuffer };
+    localStorage.setItem('timetable_overrides', JSON.stringify(newOverrides));
     setOverrides(newOverrides);
     setUploadStatus("idle");
     setMasterResults([]);
@@ -226,14 +227,14 @@ export default function AdjustmentsPage() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <FileSpreadsheet className="text-copper" size={24} />
-                <span className="text-[10px] font-sans text-copper font-black uppercase tracking-[0.4em]">Protocol Override</span>
+                <span className="text-[10px] font-sans text-copper font-black uppercase tracking-[0.4em]">Update Schedule</span>
               </div>
               <h1 className="text-5xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-cream via-cream to-muted uppercase tracking-tight leading-none mb-4">
                 Timetable Adjustments
               </h1>
               <p className="text-muted font-sans font-bold uppercase tracking-[0.2em] text-xs max-w-xl">
-                Upload individual teacher timetables to override master TM-08 data. 
-                Everything from duty recommendations to availability logs will update immediately.
+                Upload individual faculty schedules to override existing data. 
+                Reports and availability logs will sync immediately.
               </p>
             </div>
             
@@ -261,13 +262,13 @@ export default function AdjustmentsPage() {
                   onClick={() => { setUploadMode('individual'); setUploadStatus('idle'); }}
                   className={`flex items-center gap-3 px-6 py-3 rounded-xl text-[10px] font-sans font-black uppercase tracking-widest transition-all ${uploadMode === 'individual' ? 'bg-copper text-white shadow-lg shadow-copper/20' : 'text-muted hover:text-cream'}`}
                 >
-                  <Users size={14} /> Single Node
+                  <Users size={14} /> Individual
                 </button>
                 <button 
                   onClick={() => { setUploadMode('master'); setUploadStatus('idle'); }}
                   className={`flex items-center gap-3 px-6 py-3 rounded-xl text-[10px] font-sans font-black uppercase tracking-widest transition-all ${uploadMode === 'master' ? 'bg-magenta text-white shadow-lg shadow-magenta/20' : 'text-muted hover:text-cream'}`}
                 >
-                  <Layers size={14} /> Fleet Backbone
+                  <Layers size={14} /> Bulk Upload
                 </button>
               </div>
 
@@ -282,7 +283,7 @@ export default function AdjustmentsPage() {
                           onChange={(e) => { setSelectedTeacherId(e.target.value); setPreviewData(null); setUploadStatus("idle"); }}
                           className="w-full bg-ink border border-grid rounded-xl px-5 py-4 text-cream font-sans font-bold uppercase tracking-[0.1em] focus:border-copper transition-all outline-none appearance-none cursor-pointer hover:bg-surface2"
                         >
-                          <option value="">Choose Node...</option>
+                          <option value="">Choose Faculty...</option>
                           {teacherIds.map(id => (
                             <option key={id} value={id}>{TEACHERS[id].name} ({TEACHERS[id].department})</option>
                           ))}
@@ -302,14 +303,14 @@ export default function AdjustmentsPage() {
                           <div className="border-2 border-dashed border-grid group-hover:border-copper transition-all rounded-2xl p-8 flex flex-col items-center justify-center gap-4 bg-ink/30 relative overflow-hidden">
                             <Upload size={32} className="text-muted group-hover:text-copper transition-transform group-hover:-translate-y-1" />
                             <span className="text-[11px] font-sans font-bold text-muted uppercase tracking-[0.2em]">Drop .xlsx or click to browse</span>
-                            <div className="text-[9px] font-sans text-muted/50 uppercase tracking-widest mt-2 px-6 py-2 border border-grid rounded-full">Individual TT Format Only</div>
+                            <div className="text-[9px] font-sans text-muted/50 uppercase tracking-widest mt-2 px-6 py-2 border border-grid rounded-full">Individual Format Only</div>
                           </div>
                         </div>
                       </div>
                     </>
                   ) : (
                     <div className="flex flex-col gap-4">
-                      <label className="text-[10px] font-sans font-black text-muted uppercase tracking-[0.3em] mb-2 px-1">Master Backbone Upload</label>
+                      <label className="text-[10px] font-sans font-black text-muted uppercase tracking-[0.3em] mb-2 px-1">Master Excel Upload</label>
                       <div className="relative group">
                         <input 
                           type="file" 
@@ -320,8 +321,8 @@ export default function AdjustmentsPage() {
                         />
                         <div className="border-2 border-dashed border-magenta/30 group-hover:border-magenta transition-all rounded-2xl p-12 flex flex-col items-center justify-center gap-4 bg-magenta/5 relative overflow-hidden">
                           <Layers size={40} className="text-magenta/40 group-hover:text-magenta transition-transform group-hover:-translate-y-1" />
-                          <span className="text-[11px] font-sans font-black text-magenta uppercase tracking-[0.4em] text-center">Protocol: Fleet Update</span>
-                          <span className="text-[10px] font-sans font-bold text-muted/60 uppercase tracking-[0.2em]">Drop TM-08 Master Sheet</span>
+                          <span className="text-[11px] font-sans font-black text-magenta uppercase tracking-[0.4em] text-center">Bulk Process</span>
+                          <span className="text-[10px] font-sans font-bold text-muted/60 uppercase tracking-[0.2em]">Upload Master Sheet</span>
                         </div>
                       </div>
                       <div className="mt-4 p-4 border border-grid rounded-xl bg-ink/30 flex items-start gap-3">
@@ -338,7 +339,7 @@ export default function AdjustmentsPage() {
                    {uploadStatus === "processing" ? (
                      <div className="flex flex-col items-center gap-6 py-10">
                         <div className="w-12 h-12 border-4 border-copper/10 border-t-copper rounded-full animate-spin" />
-                        <span className="text-[10px] font-sans font-black text-copper uppercase tracking-[0.4em]">Deciphering Nodes...</span>
+                        <span className="text-[10px] font-sans font-black text-copper uppercase tracking-[0.4em]">Processing Files...</span>
                      </div>
                    ) : uploadStatus === "success" ? (
                      <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
@@ -348,10 +349,10 @@ export default function AdjustmentsPage() {
                               <CheckCircle size={16} />
                               <span className="text-[10px] font-sans font-black uppercase tracking-widest">Parsing Successful</span>
                             </div>
-                            <h3 className="text-2xl font-display font-black text-cream uppercase mb-4">Node Extracted</h3>
+                            <h3 className="text-2xl font-display font-black text-cream uppercase mb-4">Faculty Found</h3>
                             <p className="text-muted text-xs font-sans leading-relaxed mb-8">
                               Verified schedule for <span className="text-copper font-bold">{currentTeacher?.name}</span>. 
-                              Ready for protocol injection.
+                              Ready to apply changes.
                             </p>
                             <button 
                               onClick={saveOverride}
@@ -364,15 +365,30 @@ export default function AdjustmentsPage() {
                          <div className="flex flex-col">
                             <div className="flex items-center gap-3 text-magenta mb-6 bg-magenta/10 w-fit px-4 py-2 rounded-full border border-magenta/20">
                               <Layers size={16} />
-                              <span className="text-[10px] font-sans font-black uppercase tracking-widest">Fleet Scan: {masterResults.length} Detected</span>
+                              <span className="text-[10px] font-sans font-black uppercase tracking-widest">Found: {masterResults.length} Faculty</span>
                             </div>
                             <div className="flex-1 overflow-y-auto max-h-[200px] custom-scrollbar mb-8 pr-4 flex flex-col gap-2">
                                {masterResults.map((res, i) => (
                                  <div key={i} className="flex justify-between items-center bg-ink/40 p-3 rounded-lg border border-grid/30">
-                                   <span className="text-[10px] font-sans font-black text-cream uppercase tracking-tight truncate max-w-[150px]">{res.name}</span>
-                                   <div className={`p-1 rounded ${res.status === 'success' ? 'text-emerald-400 bg-emerald-400/5' : res.status === 'warning' ? 'text-amber-400 bg-amber-400/5' : 'text-red-400 bg-red-400/5'}`}>
-                                      {res.status === 'success' ? <Check size={12}/> : res.status === 'warning' ? <Info size={12}/> : <X size={12}/>}
-                                   </div>
+                                   <span className="text-[10px] font-sans font-black text-cream uppercase tracking-tight truncate flex-1 mr-2">{res.name}</span>
+                                   {res.status === 'success' ? (
+                                      <button
+                                        onClick={() => {
+                                          const newBuf = { ...masterBuffer };
+                                          if (res.id) delete newBuf[res.id];
+                                          setMasterBuffer(newBuf);
+                                          setMasterResults(prev => prev.filter((_, idx) => idx !== i));
+                                        }}
+                                        className="p-1 rounded text-red-400 bg-red-400/10 hover:bg-red-400/30 transition-colors cursor-pointer shrink-0"
+                                        title="Remove from update"
+                                      >
+                                        <X size={12}/>
+                                      </button>
+                                    ) : (
+                                      <div className={`p-1 rounded shrink-0 ${res.status === 'warning' ? 'text-amber-400 bg-amber-400/5' : 'text-red-400 bg-red-400/5'}`}>
+                                        {res.status === 'warning' ? <Info size={12}/> : <X size={12}/>}
+                                      </div>
+                                    )}
                                  </div>
                                ))}
                             </div>
@@ -381,7 +397,7 @@ export default function AdjustmentsPage() {
                               disabled={Object.keys(masterBuffer).length === 0}
                               className="w-full bg-magenta text-white font-sans font-black uppercase tracking-[0.3em] py-5 rounded-xl hover:shadow-[0_0_30px_rgba(226,31,135,0.4)] transition-all flex items-center justify-center gap-4 disabled:opacity-30 disabled:pointer-events-none"
                             >
-                              <Users size={18} /> Inject Fleet Update
+                               <Users size={18} /> Apply All Updates
                             </button>
                          </div>
                        )}
@@ -390,7 +406,7 @@ export default function AdjustmentsPage() {
                      <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
                         <div className="flex items-center gap-3 text-red-400 mb-6 bg-red-400/10 w-fit px-4 py-2 rounded-full border border-red-400/20">
                          <AlertCircle size={16} />
-                         <span className="text-[10px] font-sans font-black uppercase tracking-widest">Protocol Failure</span>
+                          <span className="text-[10px] font-sans font-black uppercase tracking-widest">Update Failed</span>
                        </div>
                        <p className="text-muted text-xs font-sans leading-relaxed mb-8">
                          {errorMessage}
@@ -405,9 +421,9 @@ export default function AdjustmentsPage() {
                    ) : (
                      <div className="opacity-40 flex flex-col items-center text-center">
                         <Calendar size={40} className="mb-4 text-muted" />
-                        <h4 className="text-sm font-display font-bold uppercase tracking-widest text-muted">Awaiting Node Data</h4>
+                         <h4 className="text-sm font-display font-bold uppercase tracking-widest text-muted">Ready for Upload</h4>
                         <p className="text-[10px] font-sans mt-3 text-muted/60 leading-relaxed max-w-xs">
-                          {uploadMode === 'individual' ? 'Select a teacher and upload their latest Excel schedule.' : 'Upload the Master Fleet Workbook to update the entire network.'}
+                           {uploadMode === 'individual' ? 'Select a faculty member and upload their latest Excel schedule.' : 'Upload the Master Workbook to update the entire system.'}
                         </p>
                      </div>
                    )}
@@ -473,14 +489,14 @@ export default function AdjustmentsPage() {
                       <AlertCircle size={60} />
                    </div>
                    <h3 className="text-xl font-display font-black text-cream uppercase mb-6 flex items-center gap-3">
-                     <span className="w-1.5 h-6 bg-magenta rounded-sm" /> Adjustment Rules
+                     <span className="w-1.5 h-6 bg-magenta rounded-sm" /> Help & Guidelines
                    </h3>
                    <ul className="flex flex-col gap-4">
                       {[
-                        "Manual uploads take priority over master extraction.",
-                        "All duty recommendations will recalibrate instantly.",
-                        "Availability scanner syncs globally for all users.",
-                        "Conflicts with active duties will be highlighted."
+                        "Manual updates override existing master data.",
+                        "Duty lists will automatically update instantly.",
+                        "Availability scanner data is shared globally.",
+                        "Schedule conflicts will be highlighted in the UI."
                       ].map((rule, i) => (
                         <li key={i} className="flex gap-4 items-start group">
                            <ArrowRight size={14} className="text-copper mt-0.5 group-hover:translate-x-1 transition-transform" />
@@ -494,9 +510,9 @@ export default function AdjustmentsPage() {
                   <div className="absolute top-0 left-0 w-full h-1 bg-grid group-hover:bg-copper transition-colors" />
                    <h3 className="text-xl font-display font-black text-muted uppercase mb-4 opacity-50">Global Sync</h3>
                    <p className="text-[10px] font-sans text-muted font-black uppercase tracking-[0.2em] leading-relaxed">
-                     System currently running on <span className="text-cream">PROTOTYPE MODE</span>. 
-                     All adjustments are local to this terminal. 
-                     Syncing with network backbone...
+                     System currently running in <span className="text-cream">LOCAL MODE</span>. 
+                     All adjustments are stored on this machine. 
+                     Syncing with database...
                    </p>
                    <div className="mt-6 w-full h-1 bg-grid rounded-full overflow-hidden">
                       <motion.div 

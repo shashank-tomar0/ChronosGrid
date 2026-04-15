@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
-import { CinematicLoader } from "@/components/layout/CinematicLoader";
+
 import { Navbar } from "@/components/layout/Navbar";
 import { CommandPalette } from "@/components/layout/CommandPalette";
 
@@ -42,7 +42,7 @@ export default function RootLayout({
         >
           <Navbar />
           <CommandPalette />
-          <CinematicLoader />
+
           {children}
         </ThemeProvider>
       </body>
